@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "description": "preview software in an app",
   "dependencies": {
+    "d3": "^3.5.14",
     "dnode": "^1.2.0",
     "electron-prebuilt": "^0.25.1",
     "geojson-extent": "^0.3.1",
