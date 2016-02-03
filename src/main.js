@@ -1,0 +1,1 @@
+magnifyApp.menu.init();

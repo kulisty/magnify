@@ -1,0 +1,1 @@
+node.exe .\bin\magnify.js

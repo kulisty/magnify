@@ -1,0 +1,30 @@
+{
+  "name": "magnifyapp",
+  "appname": "magnifyapp",
+  "version": "0.1.0",
+  "description": "preview software in an app",
+  "dependencies": {
+    "dnode": "^1.2.0",
+    "electron-prebuilt": "^0.25.1",
+    "geojson-extent": "^0.3.1",
+    "geojson-normalize": "0.0.0",
+    "minimist": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo 'not yet'"
+  },
+  "main": "index.js",
+  "bin": {
+    "magnifyapp": "./bin/magnify.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kulisty/magnify.git"
+  },
+  "author": "Robert Dabrowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kulisty/magnify/issues"
+  }
+}
