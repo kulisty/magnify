@@ -1,25 +1,3 @@
-<!DOCTYPE html>
-
-<html>
-
-<meta charset="utf-8">
-
-<head>
-  <title>Magnify</title>
-  <style>
-    .node { stroke: #fff; stroke-width: 1.5px; }
-    .link { stroke: #999; stroke-opacity: .6; }
-  </style>
-</head>
-
-<body>
-
-<script src='src/menu.js'></script>
-
-<script src='src/main.js'></script>
-
-<script>
-
 var d3 = require('d3');
 
 var width = 4000,
@@ -36,7 +14,7 @@ var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-d3.json("data/commits.json", function(error, graph) {
+d3.json("../data/commits.json", function(error, graph) {
   if (error) throw error;
 
   force
@@ -71,9 +49,3 @@ d3.json("data/commits.json", function(error, graph) {
         .attr("cy", function(d) { return d.y; });
   });
 });
-
-</script>
-
-</body>
-
-</html>

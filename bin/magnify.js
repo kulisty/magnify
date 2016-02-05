@@ -8,4 +8,6 @@ var proc = require('child_process') // ability to spawn child processes
 var net = require('net'); // creating servers and clients (called streams)
 
 // start app as a child process
-var child = proc.spawn(electron, [__dirname+'/../index.js'], {detached:true});
+var child = proc.spawn(electron, [__dirname+'/../src/index.js'], {
+  stdio: 'inherit'
+});

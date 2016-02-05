@@ -13,7 +13,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo 'not yet'"
+    "test": "echo 'test message'",
+    "start": "electron ./src/index.js"
   },
   "main": "index.js",
   "bin": {
