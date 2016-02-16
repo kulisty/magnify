@@ -1,10 +1,10 @@
-var magnifyApp = magnifyApp || {};
-var remote = require('remote');
+var app = app || {};
 var fs = require('fs');
+var remote = require('remote');
 var Menu = remote.require('menu');
 var dialog = remote.require('dialog');
 
-magnifyApp.menu = function() {
+app.menu = function() {
 
   var template = [
     // Top level item: file
@@ -105,3 +105,5 @@ magnifyApp.menu = function() {
   return { init: initialize }
 
 }();
+
+app.menu.init();

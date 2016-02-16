@@ -8,4 +8,4 @@ Install:
 
 Run:
 
-`magnify.bat`
+`npm start`
