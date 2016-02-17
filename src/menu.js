@@ -1,10 +1,30 @@
-var app = app || {};
-var fs = require('fs');
 var remote = require('remote');
 var Menu = remote.require('menu');
 var dialog = remote.require('dialog');
+var d3 = require('d3');
+var fs = require('fs');
 
-app.menu = function() {
+var width = 4000,
+    height = 2000;
+
+var color = d3.scale.category20();
+
+var force = d3.layout.force()
+    .charge(-120)
+    .linkDistance(30)
+    .size([width, height]);
+
+// Container for my application view.
+var view = {};
+
+// Handle to the current canvas; no canvas at the beginning.
+var svg = null;
+
+// Default file.
+view.file = "C:\\Project Files\\hab\\magnify\\data\\default.json";
+
+// New menu overloading the default one.
+view.menu = function() {
 
   var template = [
     // Top level item: file
@@ -12,19 +32,35 @@ app.menu = function() {
       label: 'File',
       submenu: [
         {
+          label: 'New',
+          accelerator: 'CmdOrCtrl+N',
+          click: function(item, focusedWindows) {
+            //## nothing being done, yet
+            view.file = "C:\\Project Files\\hab\\magnify\\data\\commits.json";
+            // DEBUG
+            console.log("File changed to %s", view.file);
+            svg = d3.select("body").append("svg")
+                .attr("width", width)
+                .attr("height", height);
+            d3.json(view.file, drawThePicture);
+          } // click for new
+        },
+        {
           label: 'Open',
           accelerator: 'CmdOrCtrl+O',
           click: function(item, focusedWindow) {
             if (focusedWindow) {
               dialog.showOpenDialog({ filters: [
-                 { name: 'Git', extensions: ['git', 'github', 'gitlab'] }
+                 { name: 'Source code', extensions: ['json','git', 'github', 'gitlab'] }
                ]}, function (fileNames) {
                 if (fileNames === undefined) return;
-                var fileName = fileNames[0];
-                fs.readFile(fileName, 'utf-8', function (err, data) {
-                  //## geojson(JSON.parse(data));
-                  //## nothing being done, yet
-                });
+                view.file = fileNames[0];
+                // DEBUG
+                console.log("File changed to %s", view.file);
+                svg = d3.select("body").append("svg")
+                    .attr("width", width)
+                    .attr("height", height);
+                d3.json(view.file, drawThePicture);
               });
             }
           } // click for open
@@ -34,6 +70,12 @@ app.menu = function() {
           accelerator: 'CmdOrCtrl+C',
           click: function(item, focusedWindows) {
             //## nothing being done, yet
+            view.file = "C:\\Project Files\\hab\\magnify\\data\\default.json";
+            // DEBUG
+            console.log("File changed to %s", view.file);
+            // remove svg
+            d3.select('body').select('svg').remove();
+            // svg = null;
           } // click for close
         }
       ]
@@ -106,4 +148,5 @@ app.menu = function() {
 
 }();
 
-app.menu.init();
+// Build the menu so it is visible.
+view.menu.init();

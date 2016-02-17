@@ -1,0 +1,9 @@
+{
+    "nodes":[
+        { "name":"847256809a3d518cd36b8f81859401416fe8d945" , "group": 0  },
+        { "name":"cd95b7eb8d8fb7560dc820b1e20edff427429707" , "group": 1  }
+    ],
+    "links":[
+        { "source": 0  , "target": 1  , "value": 7 }
+    ]
+}
