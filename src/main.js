@@ -19,13 +19,13 @@ function createWindow () {
   mainWindow.loadURL('file://' + __dirname + '/index.html');
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  //mainWindow.webContents.openDevTools();
 
   // Maximize the window.
-  mainWindow.maximize();
+  //mainWindow.maximize();
 
-  // Scroll into the center.
-  // TODO
+  // Scroll to the middle
+  // TODO: window.scrollBy(400, 300);
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {

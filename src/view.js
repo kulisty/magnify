@@ -4,15 +4,8 @@ var dialog = remote.require('dialog');
 var d3 = require('d3');
 var fs = require('fs');
 
-var width = 4000,
+var width = 2000,
     height = 2000;
-
-var color = d3.scale.category20();
-
-var force = d3.layout.force()
-    .charge(-120)
-    .linkDistance(30)
-    .size([width, height]);
 
 // Container for my application view.
 var view = {};
@@ -32,6 +25,13 @@ view.menu = function() {
       label: 'File',
       submenu: [
         {
+          label: 'Test',
+          accelerator: 'CmdOrCtrl+T',
+          click: function(item, focusedWindows) {
+            // DEBUG
+            console.log("Test mode");
+          } // click for test
+        },        {
           label: 'New',
           accelerator: 'CmdOrCtrl+N',
           click: function(item, focusedWindows) {
@@ -40,6 +40,7 @@ view.menu = function() {
             // DEBUG
             console.log("File changed to %s", view.file);
             svg = d3.select("body").append("svg")
+                //.attr("viewBox", "0 0 4000 4000")
                 .attr("width", width)
                 .attr("height", height);
             d3.json(view.file, drawThePicture);
