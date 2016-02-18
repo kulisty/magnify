@@ -4,14 +4,26 @@ var dialog = remote.require('dialog');
 var d3 = require('d3');
 var fs = require('fs');
 
-var width = 2000,
-    height = 2000;
-
 // Container for my application view.
 var view = {};
 
 // Handle to the current canvas; no canvas at the beginning.
 var svg = null;
+
+// Viewport
+var width = 2000,
+    height = 2000;
+// and viewbox
+var vbx = 0,
+    vby = 0,
+    vbw = 4000,
+    vbh = 4000;
+// and zoom factor
+var zmf = 1;
+// also as string
+function vb(x,y,w,h) {
+    return ""+zmf*x+" "+zmf*y+" "+zmf*w+" "+zmf*h+"";
+}
 
 // Default file.
 view.file = "C:\\Project Files\\hab\\magnify\\data\\default.json";
@@ -20,18 +32,12 @@ view.file = "C:\\Project Files\\hab\\magnify\\data\\default.json";
 view.menu = function() {
 
   var template = [
+
     // Top level item: file
     {
       label: 'File',
       submenu: [
-        {
-          label: 'Test',
-          accelerator: 'CmdOrCtrl+T',
-          click: function(item, focusedWindows) {
-            // DEBUG
-            console.log("Test mode");
-          } // click for test
-        },        {
+        { // File / New
           label: 'New',
           accelerator: 'CmdOrCtrl+N',
           click: function(item, focusedWindows) {
@@ -40,13 +46,13 @@ view.menu = function() {
             // DEBUG
             console.log("File changed to %s", view.file);
             svg = d3.select("body").append("svg")
-                //.attr("viewBox", "0 0 4000 4000")
+                .attr("viewBox", vb(vbx,vby,vbw,vbh))
                 .attr("width", width)
                 .attr("height", height);
             d3.json(view.file, drawThePicture);
           } // click for new
         },
-        {
+        { // File / Open
           label: 'Open',
           accelerator: 'CmdOrCtrl+O',
           click: function(item, focusedWindow) {
@@ -59,6 +65,7 @@ view.menu = function() {
                 // DEBUG
                 console.log("File changed to %s", view.file);
                 svg = d3.select("body").append("svg")
+                    .attr("viewBox", vb(vbx,vby,vbw,vbh))
                     .attr("width", width)
                     .attr("height", height);
                 d3.json(view.file, drawThePicture);
@@ -66,11 +73,11 @@ view.menu = function() {
             }
           } // click for open
         },
-        {
+        { // File / Close
           label: 'Close',
           accelerator: 'CmdOrCtrl+C',
           click: function(item, focusedWindows) {
-            //## nothing being done, yet
+            // back to the default file
             view.file = "C:\\Project Files\\hab\\magnify\\data\\default.json";
             // DEBUG
             console.log("File changed to %s", view.file);
@@ -78,14 +85,39 @@ view.menu = function() {
             d3.select('body').select('svg').remove();
             // svg = null;
           } // click for close
+        },
+        { // File / Test
+          label: 'Test',
+          accelerator: 'CmdOrCtrl+T',
+          click: function(item, focusedWindows) {
+            // TODO
+            console.log("Just testing...");
+          } // click for test
         }
       ]
     }, // file
+
     // Top level item: view
     {
       label: 'View',
       submenu: [
-        {
+        { // View / Zoom in
+          label: 'Zoom in',
+          accelerator: 'CmdOrCtrl+I',
+          click: function(item, focusedWindow) {
+            zmf = zmf / 2;
+            svg.attr("viewBox", vb(vbx,vby,vbw,vbh));
+          }
+        },
+        { // View / Zoom out
+          label: 'Zoom out',
+          accelerator: 'CmdOrCtrl+O',
+          click: function(item, focusedWindow) {
+            zmf = zmf * 2;
+            svg.attr("viewBox", vb(vbx,vby,vbw,vbh));
+          }
+        },
+        { // View / Reload
           label: 'Reload',
           accelerator: 'CmdOrCtrl+R',
           click: function(item, focusedWindow) {
@@ -93,7 +125,7 @@ view.menu = function() {
               focusedWindow.reload();
           }
         },
-        {
+        { // View / Toggle full screen
           label: 'Toggle Full Screen',
           accelerator: (function() {
             if (process.platform == 'darwin')
@@ -106,7 +138,7 @@ view.menu = function() {
               focusedWindow.setFullScreen(!focusedWindow.isFullScreen());
           }
         },
-        {
+        { // View / Toggle developer tools
           label: 'Toggle Developer Tools',
           accelerator: (function() {
             if (process.platform == 'darwin')
@@ -121,23 +153,25 @@ view.menu = function() {
         },
       ]
     }, // view
+
     // Top level item: window
     {
       label: 'Window',
       role: 'window',
       submenu: [
-        {
+        { // Window / Minimize
           label: 'Minimize',
           accelerator: 'CmdOrCtrl+M',
           role: 'minimize'
         },
-        {
+        { // Window / Close
           label: 'Close',
           accelerator: 'CmdOrCtrl+W',
           role: 'close'
         },
       ]
     } // window
+
   ]; // template
 
   function initialize() {

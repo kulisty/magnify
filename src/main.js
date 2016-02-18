@@ -24,9 +24,6 @@ function createWindow () {
   // Maximize the window.
   //mainWindow.maximize();
 
-  // Scroll to the middle
-  // TODO: window.scrollBy(400, 300);
-
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {
     // Dereference the window object, usually you would store windows

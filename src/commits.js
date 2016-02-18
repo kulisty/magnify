@@ -1,4 +1,4 @@
-function drawThePicture (error, graph) {
+function drawThePicture(error, graph) {
 
   if (error) throw error;
 
