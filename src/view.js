@@ -1,3 +1,12 @@
+/* ==========================================================
+ *         Magnify - Browse source code as a graph
+ *        https://github.com/kulisty/magnify.js
+ * ==========================================================
+ * Copyright (c) 2016 Robert Dabrowski (r.dabrowski@uw.edu.pl)
+ *
+ * Magnify is distributed under the MIT Licence
+ * ========================================================== */
+
 var remote = require('remote');
 var Menu = remote.require('menu');
 var dialog = remote.require('dialog');
@@ -101,6 +110,15 @@ view.menu = function() {
     {
       label: 'View',
       submenu: [
+        { // View / Freeze
+          label: 'Freeze',
+          accelerator: 'CmdOrCtrl+F',
+          click: function(item, focusedWindow) {
+            svg.selectAll(".node")
+              .classed("fixed", function(d) {d.fixed = true} )
+              .attr("r", 7);
+          }
+        },
         { // View / Zoom in
           label: 'Zoom in',
           accelerator: 'CmdOrCtrl+I',
@@ -115,6 +133,13 @@ view.menu = function() {
           click: function(item, focusedWindow) {
             zmf = zmf * 2;
             svg.attr("viewBox", vb(vbx,vby,vbw,vbh));
+          }
+        },
+        { // View / Center
+          label: 'Center',
+          accelerator: 'CmdOrCtrl+C',
+          click: function(item, focusedWindow) {
+            window.scrollBy(vbw/4,vbh/4);
           }
         },
         { // View / Reload

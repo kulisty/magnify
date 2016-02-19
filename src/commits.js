@@ -7,7 +7,7 @@ function drawThePicture(error, graph) {
   var force = d3.layout.force()
       .size([width, height])
       .charge(-120)
-      .linkDistance(30);
+      .linkDistance(20);
 
   var drag = force.drag()
       .on("dragstart", dragstart);
@@ -26,6 +26,9 @@ function drawThePicture(error, graph) {
       .style("fill", function(d) { return color(d.group); })
       .on("dblclick", dblclick)
       .call(drag);
+
+  node.append("title")
+      .text(function(d) { return d.name; });
 
   function tick() {
     link.attr("x1", function(d) { return d.source.x; })
@@ -48,9 +51,6 @@ function drawThePicture(error, graph) {
       .nodes(graph.nodes)
       .links(graph.links)
       .start();
-
-  node.append("title")
-      .text(function(d) { return d.name; });
 
   force.on("tick", tick);
 

@@ -1,3 +1,12 @@
+/* ==========================================================
+ *         Magnify - Browse source code as a graph
+ *        https://github.com/kulisty/magnify.js
+ * ==========================================================
+ * Copyright (c) 2016 Robert Dabrowski (r.dabrowski@uw.edu.pl)
+ *
+ * Magnify is distributed under the MIT Licence
+ * ========================================================== */
+
 'use strict';
 
 const electron = require('electron');
