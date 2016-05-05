@@ -2,9 +2,11 @@ function drawThePicture(error, graph) {
 
   if (error) throw error;
 
+  gph = graph;
+
   var color = d3.scale.category20();
 
-  var force = d3.layout.force()
+  force = d3.layout.force()
       .size([width, height])
       .charge(-120)
       .linkDistance(20);
@@ -14,21 +16,25 @@ function drawThePicture(error, graph) {
 
   var link = svg.selectAll(".link")
       .data(graph.links)
-      .enter().append("line")
+      .enter()
+      .append("line")
       .attr("class", "link")
       .style("stroke-width", function(d) { return Math.sqrt(d.value); });
 
   var node = svg.selectAll(".node")
       .data(graph.nodes)
-      .enter().append("circle")
+      .enter()
+      .append("circle")
       .attr("class", "node")
       .attr("r", 5)
       .style("fill", function(d) { return color(d.group); })
+      .on("contextmenu", rgtclick)
       .on("dblclick", dblclick)
       .call(drag);
 
   node.append("title")
-      .text(function(d) { return d.name; });
+      //.text(function(d) { return d.name; });
+      .text(function(d) { return d.name + "\n" + d.url; });
 
   function tick() {
     link.attr("x1", function(d) { return d.source.x; })
@@ -37,6 +43,11 @@ function drawThePicture(error, graph) {
         .attr("y2", function(d) { return d.target.y; });
     node.attr("cx", function(d) { return d.x; })
         .attr("cy", function(d) { return d.y; });
+  }
+
+  function rgtclick(d, i) {
+    console.log(d.url)
+    window.open(d.url)
   }
 
   function dblclick(d) {

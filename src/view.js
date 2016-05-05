@@ -19,14 +19,22 @@ var view = {};
 // Handle to the current canvas; no canvas at the beginning.
 var svg = null;
 
+// Global handle to manipulate force.
+var force = null;
+
+// Global handle to manipulate graph data.
+var gph = null;
+
 // Viewport
-var width = 2000,
-    height = 2000;
+var width = 1000,
+    height = 1000;
+    //var width = window.innerWidth * 0.9
+    //var height = window.innerHeight * 0.9
 // and viewbox
 var vbx = 0,
     vby = 0,
-    vbw = 4000,
-    vbh = 4000;
+    vbw = 1000,
+    vbh = 1000;
 // and zoom factor
 var zmf = 1;
 // also as string
@@ -101,6 +109,10 @@ view.menu = function() {
           click: function(item, focusedWindows) {
             // TODO
             console.log("Just testing...");
+            svg.selectAll(".node").transition()
+              .attr("cx", function(d) { return 100; })
+              .attr("cy", function(d) { return d.y/2; } )
+              .attr("r", 7);
           } // click for test
         }
       ]
@@ -114,9 +126,18 @@ view.menu = function() {
           label: 'Freeze',
           accelerator: 'CmdOrCtrl+F',
           click: function(item, focusedWindow) {
+            force.stop();
             svg.selectAll(".node")
-              .classed("fixed", function(d) {d.fixed = true} )
-              .attr("r", 7);
+              .classed("fixed", function(d) {d.fixed = true} );
+          }
+        },
+        { // View / Freeze
+          label: 'Unfreeze',
+          accelerator: 'CmdOrCtrl+U',
+          click: function(item, focusedWindow) {
+            svg.selectAll(".node")
+              .classed("fixed", function(d) {d.fixed = false} );
+            force.start();
           }
         },
         { // View / Zoom in
