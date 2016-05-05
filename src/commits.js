@@ -46,8 +46,10 @@ function drawThePicture(error, graph) {
   }
 
   function rgtclick(d, i) {
-    console.log(d.url)
-    window.open(d.url)
+    //console.log(d.url)
+    //window.open(d.url)
+    clipboard.writeText(d.url);
+    shell.openExternal(d.url);
   }
 
   function dblclick(d) {

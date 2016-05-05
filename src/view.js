@@ -12,6 +12,8 @@ var Menu = remote.require('menu');
 var dialog = remote.require('dialog');
 var d3 = require('d3');
 var fs = require('fs');
+var clipboard = require('clipboard');
+var shell = require('electron').shell;
 
 // Container for my application view.
 var view = {};
