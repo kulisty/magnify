@@ -33,8 +33,8 @@ var width = 1000,
     //var width = window.innerWidth * 0.9
     //var height = window.innerHeight * 0.9
 // and viewbox
-var vbx = 0,
-    vby = 0,
+var vbx = -100,
+    vby = -100,
     vbw = 1000,
     vbh = 1000;
 // and zoom factor
@@ -159,10 +159,11 @@ view.menu = function() {
           }
         },
         { // View / Center
-          label: 'Center',
+          label: 'Zoom to fit',
           accelerator: 'CmdOrCtrl+C',
           click: function(item, focusedWindow) {
-            window.scrollBy(vbw/4,vbh/4);
+            svg.attr("viewBox", vb(-500,-500,3000,3000));
+            //window.scrollBy(vbw/4,vbh/4);
           }
         },
         { // View / Reload
