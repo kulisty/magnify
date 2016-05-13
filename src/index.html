@@ -1,53 +1,66 @@
 <!DOCTYPE html>
-
 <html>
 
 <meta charset="utf-8">
 
 <head>
-  <title>Magnify</title>
-  <style>
-    .node { stroke: #fff; stroke-width: 0.5px; }
-    .link { stroke: #999; stroke-opacity: 0.6; }
-  </style>
+	<title>Magnify</title>
+	<style>
+		.node {	stroke: #fff; stroke-width: 0.5px; }
+		.link {	stroke: #999; stroke-opacity: 0.6; }
+	</style>
 </head>
 
 <body>
 
-<!-- -->
-  <script src="http://d3js.org/d3.v3.js"></script>
-<!-- -->
+	<script src="http://d3js.org/d3.v3.js"></script>
 
-<!-- -->
-  <link href="mapbox.css" rel="stylesheet">
-<!--
-  <script src="mapbox.js"></script>
--->
+	<script src="./dist/lib.js"></script>
+	<script src="./dist/site.js"></script>
+	<link href="./css/base.css" rel="stylesheet">
+	<link href="./css/site.css" rel="stylesheet">
+	<link href="./css/map.css" rel="stylesheet">
 
-<div class="leaflet-top leaflet-right">
-  <div class="leaflet-control-zoom leaflet-bar leaflet-control">
-    <a class="leaflet-control-zoom-in" href="#" title="Zoom in">+</a>
-    <a class="leaflet-control-zoom-out" href="#" title="Zoom out">-</a>
-  </div>
-</div>
+	<div class="container">
+		<div class="leaflet-container leaflet-retina leaflet-fade-anim" tabindex="0">
+				<div class="leaflet-top leaflet-left">
+				</div>
 
-<!--
-  <script src="gitgraph.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="gitgraph.css" />
-  <canvas id="gitGraph"></canvas>
-  <script src="gitgraph.test.js"></script>
--->
+				<div class="leaflet-top leaflet-right">
+					<div class="leaflet-control-attribution leaflet-control">
+						<a onclick="clickGithub()">Github</a> |
+						<a onclick="clickMagnify()">Magnify</a> |
+						<a onclick="clickSova()">Sova</a>
+					</div>
+					<div class="leaflet-control-zoom leaflet-bar leaflet-control">
+						<a class="leaflet-control-zoom-in" href="#" title="Zoom in" onclick="clickZoomIn()"></a>
+						<a class="leaflet-control-zoom-out" href="#" title="Zoom out" onclick="clickZoomOut()"></a>
+					</div>
+				</div>
 
-<!--
-  <script src='commits6.js'></script>
--->
-<!--
-  <script src="d3-context-menu.js"></script>
-  <link href="d3-context-menu.css" rel="stylesheet">
--->
+				<div class="leaflet-bottom leaflet-left">
+				</div>
 
-  <script src='view.js'></script>
-  <script src='commits.js'></script>
+				<div class="leaflet-bottom leaflet-right">
+					<div class="leaflet-control-attribution leaflet-control leaflet-compact-attribution">
+						<!-- <button class="name">Project summary: </button> -->
+						1754 files, 5564 classes, 17664 revisions, 23 authors
+						<!-- <button class="clickable">| press to refresh...</button> -->
+					</div>
+				</div>
+
+				<div class="layer-switch">
+					<button class="pad0x" onclick="clickFiles()">Files</button>
+					<button class="pad0x" onclick="clickClasses()">Classes</button>
+					<button class="pad0x active" onclick="clickCommits()">Commits</button>
+					<button class="pad0x" onclick="clickAuthors()">Authors</button>
+				</div>
+
+		</div>
+	</div>
+
+	<script src="view.js"></script>
+	<script src="commits.js"></script>
 
 </body>
 

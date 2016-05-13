@@ -15,23 +15,15 @@ var fs = require('fs');
 var clipboard = require('clipboard');
 var shell = require('electron').shell;
 
-// Container for my application view.
-var view = {};
-
-// Handle to the current canvas; no canvas at the beginning.
+// Global handles; null at the beginning
 var svg = null;
-
-// Global handle to manipulate force.
 var force = null;
-
-// Global handle to manipulate graph data.
-var gph = null;
+var links = null;
+var nodes = null;
 
 // Viewport
-var width = 1000,
-    height = 1000;
-    //var width = window.innerWidth * 0.9
-    //var height = window.innerHeight * 0.9
+var width = window.innerWidth - 26,
+    height = window.innerHeight - 26;
 // and viewbox
 var vbx = -100,
     vby = -100,
@@ -44,8 +36,15 @@ function vb(x,y,w,h) {
     return ""+zmf*x+" "+zmf*y+" "+zmf*w+" "+zmf*h+"";
 }
 
-// Default file.
-view.file = "C:\\Project Files\\hab\\magnify\\data\\default.json";
+// Container for my application view.
+var view = {};
+
+// Default file
+view.file = '';
+
+// Graph model
+view.model = null;
+view.data = { nodes: [], links: [] };
 
 // New menu overloading the default one.
 view.menu = function() {
@@ -60,14 +59,11 @@ view.menu = function() {
           label: 'New',
           accelerator: 'CmdOrCtrl+N',
           click: function(item, focusedWindows) {
-            //## nothing being done, yet
             view.file = "C:\\Project Files\\hab\\magnify\\data\\commits.json";
-            // DEBUG
-            console.log("File changed to %s", view.file);
-            svg = d3.select("body").append("svg")
-                .attr("viewBox", vb(vbx,vby,vbw,vbh))
-                .attr("width", width)
-                .attr("height", height);
+            d3.select("body").append("svg")
+              .attr("viewBox", vb(vbx,vby,vbw,vbh))
+              .attr("width", width)
+              .attr("height", height);
             d3.json(view.file, drawThePicture);
           } // click for new
         },
@@ -78,16 +74,17 @@ view.menu = function() {
             if (focusedWindow) {
               dialog.showOpenDialog({ filters: [
                  { name: 'Source code', extensions: ['json','git', 'github', 'gitlab'] }
-               ]}, function (fileNames) {
+                ]}, function (fileNames) {
                 if (fileNames === undefined) return;
                 view.file = fileNames[0];
-                // DEBUG
-                console.log("File changed to %s", view.file);
-                svg = d3.select("body").append("svg")
-                    .attr("viewBox", vb(vbx,vby,vbw,vbh))
-                    .attr("width", width)
-                    .attr("height", height);
-                d3.json(view.file, drawThePicture);
+                view.model = JSON.parse(fs.readFileSync(view.file, 'utf8'));
+                fs.writeFile('zrodlowy.json', JSON.stringify(view.model, null, 2));
+                d3.select("body").append("svg")
+                  .attr("viewBox", vb(vbx,vby,vbw,vbh))
+                  .attr("width", width)
+                  .attr("height", height);
+                //d3.json(view.file, drawThePicture);
+                drawThePicture(null, view.model);
               });
             }
           } // click for open
@@ -96,26 +93,26 @@ view.menu = function() {
           label: 'Close',
           accelerator: 'CmdOrCtrl+C',
           click: function(item, focusedWindows) {
-            // back to the default file
-            view.file = "C:\\Project Files\\hab\\magnify\\data\\default.json";
-            // DEBUG
-            console.log("File changed to %s", view.file);
-            // remove svg
             d3.select('body').select('svg').remove();
-            // svg = null;
+            view.file = "";
+            view.model = null;
           } // click for close
         },
-        { // File / Test
-          label: 'Test',
-          accelerator: 'CmdOrCtrl+T',
+        { // File / Save
+          label: 'Save',
+          accelerator: 'CmdOrCtrl+S',
           click: function(item, focusedWindows) {
-            // TODO
-            console.log("Just testing...");
-            svg.selectAll(".node").transition()
-              .attr("cx", function(d) { return 100; })
-              .attr("cy", function(d) { return d.y/2; } )
-              .attr("r", 7);
+            fs.writeFile('testowy.json', JSON.stringify(view.model, null, 2));
           } // click for test
+        },
+        { // File / Load
+          label: 'Load',
+          accelerator: 'CmdOrCtrl+L',
+          click: function(item, focusedWindows) {
+            updateThePicture(null,
+              JSON.parse(fs.readFileSync('testowy.json', 'utf8'))
+            );
+          } // click for load
         }
       ]
     }, // file
@@ -128,41 +125,35 @@ view.menu = function() {
           label: 'Freeze',
           accelerator: 'CmdOrCtrl+F',
           click: function(item, focusedWindow) {
-            force.stop();
-            svg.selectAll(".node")
-              .classed("fixed", function(d) {d.fixed = true} );
+            clickFreeze();
           }
         },
         { // View / Freeze
           label: 'Unfreeze',
           accelerator: 'CmdOrCtrl+U',
           click: function(item, focusedWindow) {
-            svg.selectAll(".node")
-              .classed("fixed", function(d) {d.fixed = false} );
-            force.start();
+            clickUnfreeze();
           }
         },
         { // View / Zoom in
           label: 'Zoom in',
           accelerator: 'CmdOrCtrl+I',
           click: function(item, focusedWindow) {
-            zmf = zmf / 2;
-            svg.attr("viewBox", vb(vbx,vby,vbw,vbh));
+            clickZoomIn();
           }
         },
         { // View / Zoom out
           label: 'Zoom out',
           accelerator: 'CmdOrCtrl+O',
           click: function(item, focusedWindow) {
-            zmf = zmf * 2;
-            svg.attr("viewBox", vb(vbx,vby,vbw,vbh));
+            clickZoomOut();
           }
         },
         { // View / Center
           label: 'Zoom to fit',
           accelerator: 'CmdOrCtrl+C',
           click: function(item, focusedWindow) {
-            svg.attr("viewBox", vb(-500,-500,3000,3000));
+            clickZoomFit();
             //window.scrollBy(vbw/4,vbh/4);
           }
         },
@@ -170,8 +161,8 @@ view.menu = function() {
           label: 'Reload',
           accelerator: 'CmdOrCtrl+R',
           click: function(item, focusedWindow) {
-            if (focusedWindow)
-              focusedWindow.reload();
+            clickReload();
+            //window.reload();
           }
         },
         { // View / Toggle full screen
