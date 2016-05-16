@@ -34,9 +34,12 @@ function clickZoomFit() {
 }
 
 function clickReload() {
-  clickUnfreeze();
-  force.stop();
-  force.start();
+  //clickUnfreeze();
+  //force.stop();
+  //force.start();
+  d3.select('body').select('svg').selectAll('.node').classed("fixed", function(d) {d.fixed = false} );
+  d3.layout.force().stop();
+  d3.layout.force().start();
 }
 
 function clickFiles() {

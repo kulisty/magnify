@@ -22,19 +22,46 @@ var links = null;
 var nodes = null;
 
 // Viewport
-var width = window.innerWidth - 26,
-    height = window.innerHeight - 26;
-// and viewbox
+var margin = {top: 13, right: 13, bottom: 13, left: 13},
+    width = window.innerWidth - margin.left - margin.right,
+    height = window.innerHeight - margin.top - margin.bottom;
+// viewbox
 var vbx = -100,
     vby = -100,
     vbw = 1000,
     vbh = 1000;
-// and zoom factor
+// zoom factor
 var zmf = 1;
 // also as string
 function vb(x,y,w,h) {
     return ""+zmf*x+" "+zmf*y+" "+zmf*w+" "+zmf*h+"";
 }
+
+// Support for panning and zooming
+var x = d3.scale.linear()
+    .domain([-width / 2, width / 2])
+    .range([0, width]);
+//
+var y = d3.scale.linear()
+    .domain([-height / 2, height / 2])
+    .range([height, 0]);
+//
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom")
+    .tickSize(-height);
+//
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .ticks(5)
+    .tickSize(-width);
+//
+var zoom = d3.behavior.zoom()
+    .x(x)
+    .y(y)
+    .scaleExtent([1, 32]);
+    //.on("zoom", zoomed);
 
 // Container for my application view.
 var view = {};
@@ -60,10 +87,16 @@ view.menu = function() {
           accelerator: 'CmdOrCtrl+N',
           click: function(item, focusedWindows) {
             view.file = "C:\\Project Files\\hab\\magnify\\data\\commits.json";
-            d3.select("body").append("svg")
-              .attr("viewBox", vb(vbx,vby,vbw,vbh))
-              .attr("width", width)
-              .attr("height", height);
+            svg = d3.select("body").append("svg")
+               .attr("viewBox", vb(vbx,vby,vbw,vbh))
+               .attr("width", width)
+               .attr("height", height);
+            svg.append("g")
+               .attr("transform", "translate(" + 0 + "," + 0 + ")");
+               //.call(zoom);
+            svg.append("rect")
+               .attr("width", width)
+               .attr("height", height);
             d3.json(view.file, drawThePicture);
           } // click for new
         },
