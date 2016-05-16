@@ -3,6 +3,10 @@
 
 <meta charset="utf-8">
 
+<style type="text/css">
+	html { overflow: hidden; }
+</style>
+
 <head>
 	<title>Magnify</title>
 	<style>
@@ -15,12 +19,15 @@
 
 	<script src="http://d3js.org/d3.v3.js"></script>
 
+<!-- -->
 	<script src="./dist/lib.js"></script>
 	<script src="./dist/site.js"></script>
 	<link href="./css/base.css" rel="stylesheet">
 	<link href="./css/site.css" rel="stylesheet">
 	<link href="./css/map.css" rel="stylesheet">
+<!-- -->
 
+<!-- -->
 	<div class="container">
 		<div class="leaflet-container leaflet-retina leaflet-fade-anim" tabindex="0">
 				<div class="leaflet-top leaflet-left">
@@ -43,9 +50,9 @@
 
 				<div class="leaflet-bottom leaflet-right">
 					<div class="leaflet-control-attribution leaflet-control leaflet-compact-attribution">
-						<!-- <button class="name">Project summary: </button> -->
+						<button class="name">Project summary: </button>
 						1754 files, 5564 classes, 17664 revisions, 23 authors
-						<!-- <button class="clickable">| press to refresh...</button> -->
+						<button class="clickable">| press to refresh...</button>
 					</div>
 				</div>
 
@@ -55,9 +62,9 @@
 					<button class="pad0x active" onclick="clickCommits()">Commits</button>
 					<button class="pad0x" onclick="clickAuthors()">Authors</button>
 				</div>
-
 		</div>
 	</div>
+<!-- -->
 
 	<script src="view.js"></script>
 	<script src="commits.js"></script>

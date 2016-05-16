@@ -16,52 +16,15 @@ var clipboard = require('clipboard');
 var shell = require('electron').shell;
 
 // Global handles; null at the beginning
-var svg = null;
-var force = null;
-var links = null;
-var nodes = null;
+var svg = null,
+    force = null,
+    links = null,
+    nodes = null;
 
 // Viewport
-var margin = {top: 13, right: 13, bottom: 13, left: 13},
-    width = window.innerWidth - margin.left - margin.right,
-    height = window.innerHeight - margin.top - margin.bottom;
-// viewbox
-var vbx = -100,
-    vby = -100,
-    vbw = 1000,
-    vbh = 1000;
-// zoom factor
-var zmf = 1;
-// also as string
-function vb(x,y,w,h) {
-    return ""+zmf*x+" "+zmf*y+" "+zmf*w+" "+zmf*h+"";
-}
-
-// Support for panning and zooming
-var x = d3.scale.linear()
-    .domain([-width / 2, width / 2])
-    .range([0, width]);
-//
-var y = d3.scale.linear()
-    .domain([-height / 2, height / 2])
-    .range([height, 0]);
-//
-var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom")
-    .tickSize(-height);
-//
-var yAxis = d3.svg.axis()
-    .scale(y)
-    .orient("left")
-    .ticks(5)
-    .tickSize(-width);
-//
-var zoom = d3.behavior.zoom()
-    .x(x)
-    .y(y)
-    .scaleExtent([1, 32]);
-    //.on("zoom", zoomed);
+var margin = {top: 0, right: 0, bottom: 0, left: 0},
+    width = window.innerWidth,
+    height = window.innerHeight;
 
 // Container for my application view.
 var view = {};
@@ -72,6 +35,16 @@ view.file = '';
 // Graph model
 view.model = null;
 view.data = { nodes: [], links: [] };
+
+// Handle window events
+/*
+window.onresize = function () {
+  //console.log("Resize new");
+  d3.select('body').select('svg')
+    .attr("width", window.innerWidth)
+    .attr("height", window.innerHeight);
+};
+*/
 
 // New menu overloading the default one.
 view.menu = function() {
@@ -86,17 +59,57 @@ view.menu = function() {
           label: 'New',
           accelerator: 'CmdOrCtrl+N',
           click: function(item, focusedWindows) {
-            view.file = "C:\\Project Files\\hab\\magnify\\data\\commits.json";
+            view.file = "C:\\Project Files\\hab\\magnify\\files.json";
             svg = d3.select("body").append("svg")
-               .attr("viewBox", vb(vbx,vby,vbw,vbh))
-               .attr("width", width)
-               .attr("height", height);
-            svg.append("g")
-               .attr("transform", "translate(" + 0 + "," + 0 + ")");
-               //.call(zoom);
-            svg.append("rect")
-               .attr("width", width)
-               .attr("height", height);
+               .attr("width", window.innerWidth)
+               .attr("height", window.innerHeight)
+               .call(d3.behavior.zoom().on("zoom", function () {
+                  //console.log("Zoom on canvas");
+                  svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
+                  //d3.event.sourceEvent.stopPropagation(); // silence other listeners
+                }))
+                .call(d3.behavior.drag().on('dragstart', function () {
+                  //console.log("Drag on canvas");
+                  //d3.event.sourceEvent.stopPropagation(); // silence other listeners
+                }))
+               .append("g");
+
+
+
+               // We're passing in a function in d3.max to tell it what we're maxing (x value)
+               var xScale = d3.scale.linear()
+                   //.domain([0, d3.max(dataset, function (d) { return d.x + 10; })])
+                   //.range([margin.left, w - margin.right]);  // Set margins for x specific
+                   .domain([0, 10])
+                   .range([0, window.innerWidth]);
+               // We're passing in a function in d3.max to tell it what we're maxing (y value)
+               var yScale = d3.scale.linear()
+                   //.domain([0, d3.max(dataset, function (d) { return d.y + 10; })])
+                   //.range([margin.top, h - margin.bottom]);  // Set margins for y specific
+                   .domain([0, 10])
+                   .range([0, window.innerHeight]);
+               // Add a X and Y Axis (Note: orient means the direction that ticks go, not position)
+               var xAxis = d3.svg.axis().scale(xScale).orient("top");
+               var yAxis = d3.svg.axis().scale(yScale).orient("left");
+               //
+               var circleAttrs = {
+                   cx: function(d) { return xScale(d.x); },
+                   cy: function(d) { return yScale(d.y); },
+                   r: 10
+               };
+               // Adds X-Axis as a 'g' element
+               svg.append("g").attr({
+                 "class": "axis",  // Give class so we can style it
+                 transform: "translate(" + [0, margin.top] + ")"  // Translate just moves it down into position (or will be on top)
+               }).call(xAxis);  // Call the xAxis function on the group
+               // Adds Y-Axis as a 'g' element
+               svg.append("g").attr({
+                 "class": "axis",
+                 transform: "translate(" + [margin.left, 0] + ")"
+               }).call(yAxis);  // Call the yAxis function on the group
+
+
+
             d3.json(view.file, drawThePicture);
           } // click for new
         },
@@ -104,7 +117,7 @@ view.menu = function() {
           label: 'Open',
           accelerator: 'CmdOrCtrl+O',
           click: function(item, focusedWindow) {
-            if (focusedWindow) {
+            //if (focusedWindow) {
               dialog.showOpenDialog({ filters: [
                  { name: 'Source code', extensions: ['json','git', 'github', 'gitlab'] }
                 ]}, function (fileNames) {
@@ -112,14 +125,22 @@ view.menu = function() {
                 view.file = fileNames[0];
                 view.model = JSON.parse(fs.readFileSync(view.file, 'utf8'));
                 fs.writeFile('zrodlowy.json', JSON.stringify(view.model, null, 2));
-                d3.select("body").append("svg")
-                  .attr("viewBox", vb(vbx,vby,vbw,vbh))
-                  .attr("width", width)
-                  .attr("height", height);
+                svg = d3.select("body").append("svg")
+                   .attr("width", window.innerWidth)
+                   .attr("height", window.innerHeight)
+                   .call(d3.behavior.zoom().on("zoom", function () {
+                     //console.log("Drag canvas");
+                     svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
+                    }))
+                    .call(d3.behavior.drag().on('dragstart', function () {
+                      //console.log("Drag on canvas");
+                      //d3.event.sourceEvent.stopPropagation(); // silence other listeners
+                    }))
+                    .append("g");
                 //d3.json(view.file, drawThePicture);
                 drawThePicture(null, view.model);
               });
-            }
+            //} // if (focusedWindow)
           } // click for open
         },
         { // File / Close
