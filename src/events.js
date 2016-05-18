@@ -116,7 +116,7 @@ function handleMouseOver(d, i) {
   div.transition()
      .duration(500)
      .style("opacity", 0.7);
-  div.html(d.url)
+  div.html("<p>"+d.url+"</p>")
      //.style("left", (d3.event.pageX) + "px")
      //.style("top", (d3.event.pageY - 28) + "px");
      .style("left", width-300 + "px")
