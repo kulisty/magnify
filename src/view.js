@@ -12,11 +12,13 @@ var Menu = remote.require('menu');
 var dialog = remote.require('dialog');
 var d3 = require('d3');
 var fs = require('fs');
+var path = require("path");
 var clipboard = require('clipboard');
 var shell = require('electron').shell;
 
 // Global handles; null at the beginning
 var svg = null,
+    div = null,
     force = null,
     links = null,
     nodes = null;
@@ -55,11 +57,17 @@ view.menu = function() {
     {
       label: 'File',
       submenu: [
+        /*
         { // File / New
           label: 'New',
           accelerator: 'CmdOrCtrl+N',
           click: function(item, focusedWindows) {
             view.file = "C:\\Project Files\\hab\\magnify\\files.json";
+            // Define 'div' for tooltips
+            div = d3.select("body")
+          	  .append("div") // declare the tooltip div
+          	  .attr("class", "tooltip") // apply the 'tooltip' class
+          	  .style("opacity", 0); // set the opacity to nil
             svg = d3.select("body").append("svg")
                .attr("width", window.innerWidth)
                .attr("height", window.innerHeight)
@@ -73,8 +81,6 @@ view.menu = function() {
                   //d3.event.sourceEvent.stopPropagation(); // silence other listeners
                 }))
                .append("g");
-
-
 
                // We're passing in a function in d3.max to tell it what we're maxing (x value)
                var xScale = d3.scale.linear()
@@ -108,11 +114,10 @@ view.menu = function() {
                  transform: "translate(" + [margin.left, 0] + ")"
                }).call(yAxis);  // Call the yAxis function on the group
 
-
-
             d3.json(view.file, drawThePicture);
           } // click for new
         },
+        */
         { // File / Open
           label: 'Open',
           accelerator: 'CmdOrCtrl+O',
@@ -124,7 +129,10 @@ view.menu = function() {
                 if (fileNames === undefined) return;
                 view.file = fileNames[0];
                 view.model = JSON.parse(fs.readFileSync(view.file, 'utf8'));
-                fs.writeFile('zrodlowy.json', JSON.stringify(view.model, null, 2));
+                //fs.writeFile('zrodlowy.json', JSON.stringify(view.model, null, 2));
+                // Destroy old
+                d3.select('body').select('svg').remove();
+                // then create new
                 svg = d3.select("body").append("svg")
                    .attr("width", window.innerWidth)
                    .attr("height", window.innerHeight)
@@ -134,7 +142,6 @@ view.menu = function() {
                     }))
                     .call(d3.behavior.drag().on('dragstart', function () {
                       //console.log("Drag on canvas");
-                      //d3.event.sourceEvent.stopPropagation(); // silence other listeners
                     }))
                     .append("g");
                 //d3.json(view.file, drawThePicture);
@@ -153,18 +160,18 @@ view.menu = function() {
           } // click for close
         },
         { // File / Save
-          label: 'Save',
+          label: 'Save fix',
           accelerator: 'CmdOrCtrl+S',
           click: function(item, focusedWindows) {
-            fs.writeFile('testowy.json', JSON.stringify(view.model, null, 2));
+            fs.writeFile(path.basename(view.file, '.json')+'_fix'+path.extname(view.file), JSON.stringify(view.model, null, 2));
           } // click for test
         },
         { // File / Load
-          label: 'Load',
+          label: 'Load fix',
           accelerator: 'CmdOrCtrl+L',
           click: function(item, focusedWindows) {
             updateThePicture(null,
-              JSON.parse(fs.readFileSync('testowy.json', 'utf8'))
+              JSON.parse(fs.readFileSync(path.basename(view.file, '.json')+'_fix'+path.extname(view.file), 'utf8'))
             );
           } // click for load
         }
@@ -189,6 +196,7 @@ view.menu = function() {
             clickUnfreeze();
           }
         },
+        /*
         { // View / Zoom in
           label: 'Zoom in',
           accelerator: 'CmdOrCtrl+I',
@@ -211,9 +219,10 @@ view.menu = function() {
             //window.scrollBy(vbw/4,vbh/4);
           }
         },
+        */
         { // View / Reload
           label: 'Reload',
-          accelerator: 'CmdOrCtrl+R',
+          accelerator: 'F5',
           click: function(item, focusedWindow) {
             clickReload();
             //window.reload();
