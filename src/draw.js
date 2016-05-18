@@ -8,18 +8,19 @@ function drawThePicture(error, graph) {
       .size([width, height])
       .charge(-120)
       .linkDistance(20)
+      .gravity(0.05)
+      .linkStrength(1)
+      //.friction(0.9)
+      //.theta(0.8)
+      //.alpha(0.1)
       .on("tick", onTick);
 
   var color = d3.scale.category20();
-  var drag = force.drag().on("dragstart", dragstart);
-
-  /*
-  var drag = d3.behavior.drag()
-      .origin(function(d) { return d; })
+  var drag = force.drag()
+      //.origin(function(d) { return d; })
       .on("dragstart", dragstarted)
       .on("drag", dragged)
       .on("dragend", dragended);
-  */
 
   link = svg.selectAll(".link")
       .data(graph.links)
@@ -40,14 +41,8 @@ function drawThePicture(error, graph) {
       .on("mouseout", handleMouseOut)
       .on("contextmenu", rgtclick)
       //.on("dblclick", dblclick)
-      .on("click", function(d) {
-        if (d3.event.defaultPrevented) return; // click suppressed
-        d3.select().classed("fixed", d.fixed = false);
-        force.resume();
-      })
-      .call(
-        force.drag().on("dragstart", dragstart)
-      );
+      .on("click", handleClicked)
+      .call(force.drag); //force.drag().on("dragstart", dragstarted)
 
   // Tooltips handled by the browser
   svg.selectAll("circle")

@@ -8,14 +8,38 @@
 </style>
 
 <head>
+
 	<title>Magnify</title>
+
 	<style>
-		.node {	stroke: #fff; stroke-width: 0.5px; }
-		.link {	stroke: #999; stroke-opacity: 0.6; }
+
+	.node {	stroke: #fff; stroke-width: 0.5px; }
+
+	.link {	stroke: #999; stroke-opacity: 0.6; }
+
+	div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    padding: 2px;
+    font: 11px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 4px;
+		pointer-events: none;
+	}
+
 	</style>
+
 </head>
 
 <body>
+<!--
+	.link { stroke: #000; stroke-width: 1.5px; }
+	.node { cursor: move; fill: #ccc; stroke: #000; stroke-width: 1.5px; }
+	.node.fixed { fill: #f00; }
+-->
 
 	<script src="http://d3js.org/d3.v3.js"></script>
 
@@ -66,9 +90,10 @@
 	</div>
 -->
 
+	<script src="xml2json.js"></script>
 	<script src="view.js"></script>
 	<script src="events.js"></script>
-	<script src="model.js"></script>	
+	<script src="model.js"></script>
 	<script src="draw.js"></script>
 
 </body>

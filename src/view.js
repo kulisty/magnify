@@ -145,23 +145,18 @@ view.menu = function() {
                       //console.log("Drag on canvas");
                     }))
                     .append("g");
+                // Add tooltip div
+                div = d3.select("body").append("div")
+                  .attr("class", "tooltip") // apply the 'tooltip' class
+                  .style("opacity", 0); // set the opacity to nil
                 //d3.json(view.file, drawThePicture);
                 drawThePicture(null, view.model);
               });
             //} // if (focusedWindow)
           } // click for open
         },
-        { // File / Close
-          label: 'Close',
-          accelerator: 'CmdOrCtrl+C',
-          click: function(item, focusedWindows) {
-            d3.select('body').select('svg').remove();
-            view.file = "";
-            view.model = null;
-          } // click for close
-        },
         { // File / Save
-          label: 'Save fix',
+          label: 'Save',
           accelerator: 'CmdOrCtrl+S',
           click: function(item, focusedWindows) {
             view.data = saveFix(view.model);
@@ -170,15 +165,26 @@ view.menu = function() {
               view.file,
               JSON.stringify(view.data, null, 2)
             );
-          } // click for test
+          } // click for save
         },
+        { // File / Close
+          label: 'Close',
+          accelerator: 'CmdOrCtrl+W',
+          click: function(item, focusedWindows) {
+            d3.select('body').select('svg').remove();
+            view.file = "";
+            view.model = null;
+          } // click for close
+        },
+        /*
         { // File / Load
           label: 'Load fix',
           accelerator: 'CmdOrCtrl+L',
           click: function(item, focusedWindows) {
             updateThePicture(null, JSON.parse(fs.readFileSync(view.file, 'utf8')));
           } // click for load
-        }
+        },
+        */
       ]
     }, // file
 
@@ -273,7 +279,7 @@ view.menu = function() {
         },
         { // Window / Close
           label: 'Close',
-          accelerator: 'CmdOrCtrl+W',
+          accelerator: 'CmdOrCtrl+Q',
           role: 'close'
         },
       ]

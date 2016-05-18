@@ -71,10 +71,25 @@ function dblclick(d) {
   //d3.event.sourceEvent.stopPropagation();
 }
 
-function dragstart(d) {
+function handleClicked(d) {
+  console.log('click');
+  if (d3.event.defaultPrevented) return; // click suppressed
+  //d3.select().classed("fixed", d.fixed = false);
+  d3.select().classed("fixed", d.fixed = false);
+  force.resume();
+}
+
+function dragstarted(d) {
   //d3.select(this)
   d3.select().classed("fixed", d.fixed = true);
   d3.event.sourceEvent.stopPropagation();
+}
+
+function dragged(d) {
+}
+
+function dragended(d) {
+  d3.select(this).attr("fill", "rgb(17,19,21)");
 }
 
 function onResize() {
@@ -98,12 +113,17 @@ function handleMouseOver(d, i) {
     //fill: "orange",
     r: 10
   });
+  div.transition()
+     .duration(500)
+     .style("opacity", 0.7);
+  div.html(d.url)
+     //.style("left", (d3.event.pageX) + "px")
+     //.style("top", (d3.event.pageY - 28) + "px");
+     .style("left", width-300 + "px")
+     .style("top", height-50 + "px");
   //div.transition()
-  //   .duration(500)
-  //   .style("opacity", 0);
-  //div.transition()
-  //   .duration(200)
-  //   .style("opacity", .9);
+  //    .duration(500)
+  //    .style("opacity", 0);
   //div.html(
   //      '<a href="http://google.com">'+ // The first <a> tag
   //      //formatTime(d.date)+
@@ -132,9 +152,9 @@ function handleMouseOut(d, i) {
     //fill: "black",
     r: 5
   });
-  //div.transition()
-  //   .duration(500)
-  //   .style("opacity", 0);
+  div.transition()
+     .duration(500)
+     .style("opacity", 0);
   // Select text by id and then remove
   //d3.select("#t" + d.x + "-" + d.y + "-" + i).remove();  // Remove text location
 }
