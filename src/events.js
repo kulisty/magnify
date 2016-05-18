@@ -39,13 +39,13 @@ function clickAuthors() {
 }
 
 function clickFreeze() {
-  d3.layout.force().stop();
+  force.stop();
   d3.select('body').select('svg').selectAll('.node').classed("fixed", function(d) {d.fixed = true} );
 }
 
 function clickUnfreeze() {
-  d3.layout.force().resume();
   d3.select('body').select('svg').selectAll('.node').classed("fixed", function(d) {d.fixed = false} );
+  force.resume();
 }
 
 function clickReload() {
