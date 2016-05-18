@@ -21,7 +21,7 @@ const BrowserWindow = electron.BrowserWindow;
 var mainWindow = null;
 
 function createWindow () {
-  
+
   // Create the browser window.
   mainWindow = new BrowserWindow({width: 800, height: 600});
   //mainWindow = new BrowserWindow({width: 1000, height: 1000, frame: false, frame: true});
@@ -35,7 +35,7 @@ function createWindow () {
   //mainWindow.webContents.openDevTools();
 
   // Maximize the window.
-  //mainWindow.maximize();
+  mainWindow.maximize();
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {

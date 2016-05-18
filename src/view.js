@@ -36,7 +36,8 @@ view.file = '';
 
 // Graph model
 view.model = null;
-view.data = { nodes: [], links: [] };
+// and copy of its data
+view.data = null;
 
 // Handle window events
 /*
@@ -163,16 +164,19 @@ view.menu = function() {
           label: 'Save fix',
           accelerator: 'CmdOrCtrl+S',
           click: function(item, focusedWindows) {
-            fs.writeFile(path.basename(view.file, '.json')+'_fix'+path.extname(view.file), JSON.stringify(view.model, null, 2));
+            view.data = saveFix(view.model);
+            fs.writeFile(
+              //path.basename(view.file, '.json')+'_fix'+path.extname(view.file),
+              view.file,
+              JSON.stringify(view.data, null, 2)
+            );
           } // click for test
         },
         { // File / Load
           label: 'Load fix',
           accelerator: 'CmdOrCtrl+L',
           click: function(item, focusedWindows) {
-            updateThePicture(null,
-              JSON.parse(fs.readFileSync(path.basename(view.file, '.json')+'_fix'+path.extname(view.file), 'utf8'))
-            );
+            updateThePicture(null, JSON.parse(fs.readFileSync(view.file, 'utf8')));
           } // click for load
         }
       ]
@@ -221,7 +225,7 @@ view.menu = function() {
         },
         */
         { // View / Reload
-          label: 'Reload',
+          label: 'Shake',
           accelerator: 'F5',
           click: function(item, focusedWindow) {
             clickReload();

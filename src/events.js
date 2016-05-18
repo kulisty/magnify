@@ -49,10 +49,14 @@ function clickUnfreeze() {
 }
 
 function clickReload() {
-  d3.layout.force().stop();
-  d3.layout.force().start();
-  d3.select('body').select('svg').selectAll('.node').classed("fixed", function(d) {d.fixed = false} );
-  d3.layout.force().resume();
+  force.stop();
+  force.resume();
+  force.nodes().forEach(
+    function(o, i) {
+      o.x += (Math.random() - .5) * 40;
+      o.y += (Math.random() - .5) * 40;
+    }
+  );
 }
 
 function rgtclick(d, i) {

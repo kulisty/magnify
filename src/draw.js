@@ -43,6 +43,7 @@ function drawThePicture(error, graph) {
       .on("click", function(d) {
         if (d3.event.defaultPrevented) return; // click suppressed
         d3.select().classed("fixed", d.fixed = false);
+        force.resume();
       })
       .call(
         force.drag().on("dragstart", dragstart)
