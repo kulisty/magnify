@@ -18,7 +18,9 @@ var shell = require('electron').shell;
 
 // Global handles; null at the beginning
 var svg = null,
-    div = null,
+    tip = null,
+    b01 = null,
+    b02 = null,
     force = null,
     links = null,
     nodes = null;
@@ -130,7 +132,6 @@ view.menu = function() {
                 if (fileNames === undefined) return;
                 view.file = fileNames[0];
                 view.model = JSON.parse(fs.readFileSync(view.file, 'utf8'));
-                //fs.writeFile('zrodlowy.json', JSON.stringify(view.model, null, 2));
                 // Destroy old
                 d3.select('body').select('svg').remove();
                 // then create new
@@ -138,17 +139,25 @@ view.menu = function() {
                    .attr("width", window.innerWidth)
                    .attr("height", window.innerHeight)
                    .call(d3.behavior.zoom().on("zoom", function () {
-                     //console.log("Drag canvas");
                      svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
                     }))
                     .call(d3.behavior.drag().on('dragstart', function () {
-                      //console.log("Drag on canvas");
                     }))
                     .append("g");
-                // Add tooltip div
-                div = d3.select("body").append("div")
-                  .attr("class", "tooltip") // apply the 'tooltip' class
-                  .style("opacity", 0); // set the opacity to nil
+                // Add tooltip
+                tip = d3.select("body").append("div")
+                  .attr("class", "tooltip")
+                  .style("opacity", 0);
+                // Add buttons
+                b01 = d3.select("body").append("div")
+                  .attr("class", "button")
+                  .style("opacity", 0);
+                b02 = d3.select("body").append("div")
+                  .attr("class", "button")
+                  .style("opacity", 0);
+                b03 = d3.select("body").append("div")
+                  .attr("class", "button")
+                  .style("opacity", 0);
                 //d3.json(view.file, drawThePicture);
                 drawThePicture(null, view.model);
               });

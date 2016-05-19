@@ -44,7 +44,7 @@ function drawThePicture(error, graph) {
       .on("click", handleClicked)
       .call(force.drag); //force.drag().on("dragstart", dragstarted)
 
-  // Tooltips handled by the browser
+  // Tool-tips handled by the browser
   svg.selectAll("circle")
      .append("title")
      .text(function(d) { return d.name + "\n" + d.url; });

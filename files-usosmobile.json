@@ -1,0 +1,6206 @@
+{
+  "nodes": [
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": ".gitignore", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\.gitignore", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 0
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\.gitignore", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\.gitignore", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 1
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\build.gradle", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\build.gradle", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 2
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\build.gradle.old", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\build.gradle.old", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 3
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\model.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\model.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 4
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\proguard-rules.pro", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\proguard-rules.pro", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 5
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\androidTest\\java\\com\\usosmobile\\usosmobile\\ApplicationTest.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\androidTest\\java\\com\\usosmobile\\usosmobile\\ApplicationTest.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 6
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\AndroidManifest.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\AndroidManifest.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 7
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\LICENSE.txt", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\LICENSE.txt", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 8
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\UsosApi.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\UsosApi.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 9
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\UsosMobileApplication.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\UsosMobileApplication.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 10
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\AboutActivity.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\AboutActivity.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 11
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\ChooseLanguageActivity.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\ChooseLanguageActivity.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 12
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\CourseDetailActivity.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\CourseDetailActivity.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 13
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\DrawerActivity.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\DrawerActivity.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 14
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\MainActivity.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\MainActivity.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 15
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\NotificationsActivity.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\NotificationsActivity.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 16
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\ObservableScrollView.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\ObservableScrollView.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 17
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\RowAdapter.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\RowAdapter.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 18
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\ScrollViewListener.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\ScrollViewListener.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 19
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\SelectUsosActivity.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\SelectUsosActivity.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 20
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\TimetableActivity.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\TimetableActivity.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 21
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\TimetableFragment.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities\\TimetableFragment.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 22
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\UsosMobileSQLiteOpenHelper.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\UsosMobileSQLiteOpenHelper.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 23
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\Building.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\Building.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 24
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\BuildingDAO.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\BuildingDAO.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 25
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\BuildingDAOImpl.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\BuildingDAOImpl.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 26
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\DAOProvider.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\DAOProvider.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 27
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\Grade.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\Grade.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 28
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\GradeDAO.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\GradeDAO.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 29
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\GradeDAOImpl.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\GradeDAOImpl.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 30
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\PlanField.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\PlanField.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 31
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\PlanFieldDAO.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\PlanFieldDAO.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 32
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\PlanFieldDAOImpl.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\PlanFieldDAOImpl.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 33
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\Points.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\Points.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 34
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\PointsDAO.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\PointsDAO.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 35
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\PointsDAOImpl.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen\\PointsDAOImpl.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 36
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\dao\\BaseDAO.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\dao\\BaseDAO.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 37
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\dao\\DAO.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\dao\\DAO.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 38
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\dao\\QueryFetchException.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\dao\\QueryFetchException.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 39
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\dao\\SelectObjectListResult.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\dao\\SelectObjectListResult.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 40
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\AExp.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\AExp.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 41
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\BinaryAExp.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\BinaryAExp.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 42
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\BinaryLExp.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\BinaryLExp.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 43
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\CollectionAExp.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\CollectionAExp.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 44
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\Column.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\Column.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 45
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\DeleteStatement.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\DeleteStatement.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 46
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\Expression.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\Expression.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 47
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\FunctionAExp.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\FunctionAExp.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 48
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\InsertStatement.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\InsertStatement.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 49
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\LExp.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\LExp.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 50
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\LeftOperatorLExp.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\LeftOperatorLExp.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 51
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\Limit.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\Limit.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 52
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\Offset.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\Offset.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 53
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\OrderBy.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\OrderBy.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 54
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\OrderByDirection.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\OrderByDirection.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 55
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\ParenthesesAExp.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\ParenthesesAExp.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 56
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\ParenthesesLExp.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\ParenthesesLExp.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 57
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\RightOperatorLExp.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\RightOperatorLExp.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 58
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\SelectQuery.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\SelectQuery.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 59
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\Subselect.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\Subselect.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 60
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\TableExpression.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\TableExpression.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 61
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\TableReference.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\TableReference.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 62
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\UpdateStatement.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\UpdateStatement.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 63
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\Value.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\Value.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 64
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\WhereQuery.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query\\WhereQuery.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 65
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\BlobResultSetHandler.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\BlobResultSetHandler.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 66
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\DAOMonitor.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\DAOMonitor.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 67
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\ResultSetHandler.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\ResultSetHandler.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 68
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\SQLiteDataSource.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\SQLiteDataSource.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 69
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\SQLiteOpenHelperDataSource.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\SQLiteOpenHelperDataSource.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 70
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\SQLiteType.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\SQLiteType.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 71
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\SimpleSQLiteDataSource.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\SimpleSQLiteDataSource.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 72
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\SimpleSQLiteOpenHelper.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\SimpleSQLiteOpenHelper.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 73
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\BigDecimalResultSetHandler.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\BigDecimalResultSetHandler.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 74
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\BooleanResultSetHandler.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\BooleanResultSetHandler.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 75
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\ByteArrayResultSetHandler.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\ByteArrayResultSetHandler.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 76
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\DateResultSetHandler.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\DateResultSetHandler.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 77
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\DoubleResultSetHandler.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\DoubleResultSetHandler.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 78
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\FloatResultSetHandler.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\FloatResultSetHandler.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 79
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\IntegerResultSetHandler.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\IntegerResultSetHandler.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 80
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\LongResultSetHandler.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\LongResultSetHandler.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 81
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\ShortResultSetHandler.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\ShortResultSetHandler.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 82
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\StringResultSetHandler.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\StringResultSetHandler.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 83
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\TimeResultSetHandler.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\TimeResultSetHandler.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 84
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\TimestampResultSetHandler.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers\\TimestampResultSetHandler.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 85
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\monitors\\EmptyDAOMonitor.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\monitors\\EmptyDAOMonitor.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 86
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\monitors\\PrintStreamDAOMonitor.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\monitors\\PrintStreamDAOMonitor.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 87
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\gcm\\GcmBroadcastReceiver.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\gcm\\GcmBroadcastReceiver.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 88
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\gcm\\GcmMessageHandler.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\gcm\\GcmMessageHandler.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 89
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\icons\\IconTitle.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\icons\\IconTitle.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 90
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\icons\\IconTitleAdapter.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\icons\\IconTitleAdapter.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 91
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\notifications\\UsosNotification.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\notifications\\UsosNotification.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 92
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\notifications\\UsosNotificationEmpty.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\notifications\\UsosNotificationEmpty.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 93
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\notifications_history\\UsosNotificationInfo.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\notifications_history\\UsosNotificationInfo.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 94
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\notifications_history\\UsosNotificationInfoGrade.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\notifications_history\\UsosNotificationInfoGrade.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 95
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\notifications_history\\UsosNotificationInfoPoints.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\notifications_history\\UsosNotificationInfoPoints.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 96
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\plan_downloader\\DownloadPlanService.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\plan_downloader\\DownloadPlanService.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 97
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\plan_downloader\\PlanDownloader.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\plan_downloader\\PlanDownloader.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 98
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\anim\\fade_in.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\anim\\fade_in.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 99
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\drawable-hdpi\\ic_refresh_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\drawable-hdpi\\ic_refresh_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 100
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\drawable-mdpi\\ic_refresh_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\drawable-mdpi\\ic_refresh_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 101
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\drawable-xhdpi\\ic_refresh_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\drawable-xhdpi\\ic_refresh_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 102
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\drawable-xxhdpi\\ic_refresh_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\drawable-xxhdpi\\ic_refresh_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 103
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\drawable-xxxhdpi\\ic_refresh_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\drawable-xxxhdpi\\ic_refresh_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 104
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\ic_account_balance_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\ic_account_balance_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 105
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\ic_account_circle_white_48dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\ic_account_circle_white_48dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 106
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\ic_check_circle_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\ic_check_circle_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 107
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\ic_exit_to_app_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\ic_exit_to_app_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 108
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\ic_gps_fixed_white_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\ic_gps_fixed_white_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 109
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\ic_group_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\ic_group_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 110
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\ic_history_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\ic_history_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 111
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\ic_info_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\ic_info_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 112
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\ic_language_white_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\ic_language_white_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 113
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\ic_location_on_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\ic_location_on_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 114
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\ic_refresh_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\ic_refresh_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 115
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\ic_schedule_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\ic_schedule_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 116
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\ic_school_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\ic_school_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 117
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\ic_view_week_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\ic_view_week_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 118
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-mdpi\\ic_account_balance_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-mdpi\\ic_account_balance_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 119
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-mdpi\\ic_account_circle_white_48dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-mdpi\\ic_account_circle_white_48dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 120
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-mdpi\\ic_check_circle_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-mdpi\\ic_check_circle_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 121
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-mdpi\\ic_exit_to_app_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-mdpi\\ic_exit_to_app_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 122
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-mdpi\\ic_gps_fixed_white_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-mdpi\\ic_gps_fixed_white_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 123
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-mdpi\\ic_group_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-mdpi\\ic_group_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 124
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-mdpi\\ic_history_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-mdpi\\ic_history_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 125
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-mdpi\\ic_info_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-mdpi\\ic_info_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 126
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-mdpi\\ic_language_white_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-mdpi\\ic_language_white_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 127
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-mdpi\\ic_location_on_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-mdpi\\ic_location_on_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 128
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-mdpi\\ic_refresh_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-mdpi\\ic_refresh_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 129
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-mdpi\\ic_schedule_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-mdpi\\ic_schedule_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 130
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-mdpi\\ic_school_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-mdpi\\ic_school_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 131
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-mdpi\\ic_view_week_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-mdpi\\ic_view_week_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 132
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-v21\\rectangle.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-v21\\rectangle.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 133
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xhdpi\\ic_account_balance_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xhdpi\\ic_account_balance_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 134
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xhdpi\\ic_account_circle_white_48dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xhdpi\\ic_account_circle_white_48dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 135
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xhdpi\\ic_check_circle_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xhdpi\\ic_check_circle_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 136
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xhdpi\\ic_exit_to_app_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xhdpi\\ic_exit_to_app_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 137
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xhdpi\\ic_gps_fixed_white_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xhdpi\\ic_gps_fixed_white_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 138
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xhdpi\\ic_group_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xhdpi\\ic_group_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 139
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xhdpi\\ic_history_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xhdpi\\ic_history_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 140
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xhdpi\\ic_info_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xhdpi\\ic_info_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 141
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xhdpi\\ic_language_white_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xhdpi\\ic_language_white_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 142
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xhdpi\\ic_location_on_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xhdpi\\ic_location_on_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 143
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xhdpi\\ic_refresh_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xhdpi\\ic_refresh_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 144
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xhdpi\\ic_schedule_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xhdpi\\ic_schedule_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 145
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xhdpi\\ic_school_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xhdpi\\ic_school_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 146
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xhdpi\\ic_view_week_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xhdpi\\ic_view_week_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 147
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxhdpi\\ic_account_balance_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxhdpi\\ic_account_balance_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 148
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxhdpi\\ic_account_circle_white_48dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxhdpi\\ic_account_circle_white_48dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 149
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxhdpi\\ic_check_circle_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxhdpi\\ic_check_circle_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 150
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxhdpi\\ic_exit_to_app_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxhdpi\\ic_exit_to_app_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 151
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxhdpi\\ic_gps_fixed_white_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxhdpi\\ic_gps_fixed_white_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 152
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxhdpi\\ic_group_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxhdpi\\ic_group_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 153
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxhdpi\\ic_history_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxhdpi\\ic_history_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 154
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxhdpi\\ic_info_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxhdpi\\ic_info_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 155
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxhdpi\\ic_language_white_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxhdpi\\ic_language_white_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 156
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxhdpi\\ic_location_on_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxhdpi\\ic_location_on_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 157
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxhdpi\\ic_refresh_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxhdpi\\ic_refresh_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 158
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxhdpi\\ic_schedule_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxhdpi\\ic_schedule_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 159
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxhdpi\\ic_school_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxhdpi\\ic_school_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 160
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxhdpi\\ic_view_week_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxhdpi\\ic_view_week_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 161
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxxhdpi\\ic_account_balance_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_account_balance_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 162
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxxhdpi\\ic_account_circle_white_48dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_account_circle_white_48dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 163
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxxhdpi\\ic_check_circle_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_check_circle_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 164
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxxhdpi\\ic_exit_to_app_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_exit_to_app_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 165
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxxhdpi\\ic_gps_fixed_white_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_gps_fixed_white_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 166
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxxhdpi\\ic_group_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_group_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 167
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxxhdpi\\ic_history_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_history_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 168
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxxhdpi\\ic_info_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_info_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 169
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxxhdpi\\ic_language_white_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_language_white_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 170
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxxhdpi\\ic_location_on_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_location_on_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 171
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxxhdpi\\ic_refresh_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_refresh_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 172
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxxhdpi\\ic_schedule_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_schedule_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 173
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxxhdpi\\ic_school_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_school_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 174
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable-xxxhdpi\\ic_view_week_black_24dp.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_view_week_black_24dp.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 175
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable\\big_logo.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable\\big_logo.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 176
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable\\current_time_bar.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable\\current_time_bar.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 177
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable\\drawer_header_bg.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable\\drawer_header_bg.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 178
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable\\ic_action_menu.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable\\ic_action_menu.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 179
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable\\logo_large.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable\\logo_large.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 180
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable\\logo_small.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable\\logo_small.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 181
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\drawable\\rectangle.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable\\rectangle.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 182
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\activity_about.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\activity_about.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 183
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\activity_choose_language.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\activity_choose_language.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 184
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\activity_course_detail.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\activity_course_detail.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 185
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\activity_main.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\activity_main.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 186
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\activity_notifications.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\activity_notifications.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 187
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\activity_select_usos.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\activity_select_usos.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 188
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\activity_timetable.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\activity_timetable.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 189
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\content_about.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\content_about.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 190
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\content_course_detail.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\content_course_detail.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 191
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\content_notifications.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\content_notifications.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 192
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\course.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\course.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 193
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\day_header.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\day_header.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 194
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\drawer_header.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\drawer_header.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 195
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\drawer_layout.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\drawer_layout.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 196
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\fragment_timetable.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\fragment_timetable.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 197
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\grade_row.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\grade_row.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 198
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\icon_title_item.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\icon_title_item.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 199
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\language_switch.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\language_switch.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 200
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\line.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\line.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 201
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\line_light.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\line_light.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 202
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\notification_empty_row.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\notification_empty_row.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 203
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\notifications.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\notifications.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 204
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\points_row.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\points_row.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 205
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\vertical_line.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\vertical_line.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 206
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\vertical_line_thick.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\vertical_line_thick.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 207
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\weekend_switch.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\weekend_switch.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 208
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\layout\\welcome_screen.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout\\welcome_screen.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 209
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\menu\\drawer.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\menu\\drawer.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 210
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 211
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 212
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 213
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 214
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 215
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\raw\\usos_list.json", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\raw\\usos_list.json", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 216
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\raw\\usos_mobile_create.sql", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\raw\\usos_mobile_create.sql", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 217
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\raw\\usos_mobile_drop.sql", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\raw\\usos_mobile_drop.sql", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 218
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\res\\drawable-hdpi\\ic_action_menu.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\res\\drawable-hdpi\\ic_action_menu.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 219
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\res\\drawable-mdpi\\ic_action_menu.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\res\\drawable-mdpi\\ic_action_menu.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 220
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\res\\drawable-xhdpi\\ic_action_menu.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\res\\drawable-xhdpi\\ic_action_menu.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 221
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\res\\drawable-xxhdpi\\ic_action_menu.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\res\\drawable-xxhdpi\\ic_action_menu.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 222
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\res\\drawable-xxxhdpi\\ic_action_menu.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\res\\drawable-xxxhdpi\\ic_action_menu.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 223
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\values-pl\\strings.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\values-pl\\strings.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 224
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\values-v21\\styles.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\values-v21\\styles.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 225
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\values-w820dp\\dimens.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\values-w820dp\\dimens.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 226
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\values\\colors.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\values\\colors.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 227
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\values\\dimens.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\values\\dimens.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 228
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\values\\strings.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\values\\strings.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 229
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\main\\res\\values\\styles.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\values\\styles.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 230
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "app\\src\\test\\java\\com\\usosmobile\\usosmobile\\ExampleUnitTest.java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\test\\java\\com\\usosmobile\\usosmobile\\ExampleUnitTest.java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 231
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "build.gradle", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\build.gradle", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 232
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "gradle.properties", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\gradle.properties", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 233
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "gradle\\wrapper\\gradle-wrapper.jar", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\gradle\\wrapper\\gradle-wrapper.jar", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 234
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "gradle\\wrapper\\gradle-wrapper.properties", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\gradle\\wrapper\\gradle-wrapper.properties", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 235
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\bib.bib", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\bib.bib", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 236
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\compile.sh", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\compile.sh", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 237
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\licencjat.pdf", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\licencjat.pdf", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 238
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\licencjat.tex", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\licencjat.tex", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 239
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\pracamgr.cls", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\pracamgr.cls", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 240
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\screenshoty\\about.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\screenshoty\\about.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 241
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\screenshoty\\coursedetails.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\screenshoty\\coursedetails.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 242
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\screenshoty\\drawer.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\screenshoty\\drawer.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 243
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\screenshoty\\drawer2.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\screenshoty\\drawer2.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 244
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\screenshoty\\feed.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\screenshoty\\feed.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 245
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\screenshoty\\gradenotif.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\screenshoty\\gradenotif.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 246
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\screenshoty\\grades.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\screenshoty\\grades.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 247
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\screenshoty\\login.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\screenshoty\\login.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 248
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\screenshoty\\pktnotif.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\screenshoty\\pktnotif.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 249
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\screenshoty\\plan.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\screenshoty\\plan.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 250
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\screenshoty\\plan2.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\screenshoty\\plan2.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 251
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\screenshoty\\topikonka.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\screenshoty\\topikonka.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 252
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\screenshoty\\usosgrade.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\screenshoty\\usosgrade.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 253
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "licencjat\\screenshoty\\usospkt.png", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\screenshoty\\usospkt.png", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 254
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "model.xml", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\model.xml", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 255
+    }, 
+    {
+      "style": "", 
+      "group": "Files", 
+      "name": "settings.gradle", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\settings.gradle", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 256
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "licencjat\\screenshoty", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat\\screenshoty", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 257
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "licencjat", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\licencjat", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 258
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "gradle\\wrapper", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\gradle\\wrapper", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 259
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\test\\java\\com\\usosmobile\\usosmobile", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\test\\java\\com\\usosmobile\\usosmobile", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 260
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\values-w820dp", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\values-w820dp", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 261
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\values-v21", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\values-v21", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 262
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\values-pl", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\values-pl", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 263
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\values", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\values", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 264
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\res\\drawable-xxxhdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\res\\drawable-xxxhdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 265
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\res\\drawable-xxhdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\res\\drawable-xxhdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 266
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\res\\drawable-xhdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\res\\drawable-xhdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 267
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\res\\drawable-mdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\res\\drawable-mdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 268
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\res\\drawable-hdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\res\\drawable-hdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 269
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\raw", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\raw", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 270
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\mipmap-xxxhdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\mipmap-xxxhdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 271
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\mipmap-xxhdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\mipmap-xxhdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 272
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\mipmap-xhdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\mipmap-xhdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 273
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\mipmap-mdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\mipmap-mdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 274
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\mipmap-hdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\mipmap-hdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 275
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\menu", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\menu", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 276
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\layout", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\layout", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 277
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\drawable-xxxhdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxxhdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 278
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\drawable-xxhdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xxhdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 279
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\drawable-xhdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-xhdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 280
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\drawable-v21", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-v21", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 281
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\drawable-mdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-mdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 282
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\drawable-xxxhdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\drawable-xxxhdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 283
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\drawable-xxhdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\drawable-xxhdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 284
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\drawable-xhdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\drawable-xhdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 285
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\drawable-mdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\drawable-mdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 286
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\drawable-hdpi\\drawable-hdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi\\drawable-hdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 287
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\drawable-hdpi", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable-hdpi", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 288
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\drawable", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\drawable", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 289
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\res\\anim", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\res\\anim", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 290
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\plan_downloader", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\plan_downloader", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 291
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\notifications_history", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\notifications_history", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 292
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\notifications", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\notifications", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 293
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\icons", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\icons", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 294
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\gcm", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\gcm", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 295
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\monitors", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\monitors", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 296
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util\\handlers", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 297
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\util", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 298
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\query", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 299
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\dao", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\runtime\\dao", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 300
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database\\gen", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 301
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\database", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 302
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile\\activities", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 303
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\java\\com\\usosmobile\\usosmobile", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java\\com\\usosmobile\\usosmobile", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 304
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main\\java", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main\\java", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 305
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\main", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\main", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 306
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app\\src\\androidTest\\java\\com\\usosmobile\\usosmobile", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app\\src\\androidTest\\java\\com\\usosmobile\\usosmobile", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 307
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": "app", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile\\blob\\master\\app", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 308
+    }, 
+    {
+      "style": "", 
+      "group": "Directories", 
+      "name": ".", 
+      "url": "https:\\\\capturcus@github.com\\capturcus\\UsosMobile", 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "r": 0.0, 
+      "id": 309
+    }
+  ], 
+  "links": [
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 309, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 0, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 308, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 1, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 308, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 2, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 308, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 3, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 308, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 4, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 308, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 5, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 307, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 6, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 7, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 305, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 8, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 304, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 9, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 304, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 10, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 303, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 11, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 303, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 12, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 303, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 13, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 303, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 14, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 303, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 15, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 303, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 16, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 303, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 17, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 303, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 18, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 303, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 19, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 303, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 20, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 303, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 21, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 303, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 22, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 302, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 23, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 301, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 24, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 301, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 25, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 301, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 26, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 301, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 27, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 301, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 28, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 301, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 29, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 301, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 30, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 301, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 31, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 301, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 32, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 301, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 33, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 301, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 34, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 301, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 35, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 301, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 36, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 300, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 37, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 300, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 38, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 300, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 39, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 300, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 40, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 41, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 42, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 43, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 44, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 45, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 46, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 47, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 48, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 49, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 50, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 51, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 52, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 53, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 54, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 55, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 56, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 57, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 58, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 59, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 60, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 61, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 62, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 63, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 64, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 299, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 65, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 298, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 66, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 298, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 67, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 298, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 68, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 298, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 69, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 298, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 70, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 298, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 71, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 298, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 72, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 298, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 73, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 297, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 74, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 297, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 75, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 297, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 76, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 297, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 77, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 297, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 78, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 297, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 79, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 297, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 80, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 297, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 81, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 297, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 82, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 297, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 83, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 297, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 84, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 297, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 85, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 296, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 86, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 296, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 87, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 295, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 88, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 295, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 89, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 294, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 90, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 294, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 91, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 293, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 92, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 293, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 93, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 292, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 94, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 292, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 95, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 292, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 96, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 291, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 97, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 291, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 98, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 290, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 99, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 287, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 100, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 286, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 101, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 285, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 102, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 284, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 103, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 283, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 104, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 105, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 106, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 107, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 108, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 109, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 110, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 111, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 112, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 113, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 114, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 115, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 116, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 117, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 118, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 282, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 119, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 282, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 120, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 282, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 121, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 282, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 122, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 282, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 123, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 282, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 124, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 282, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 125, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 282, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 126, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 282, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 127, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 282, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 128, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 282, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 129, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 282, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 130, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 282, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 131, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 282, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 132, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 281, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 133, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 280, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 134, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 280, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 135, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 280, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 136, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 280, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 137, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 280, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 138, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 280, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 139, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 280, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 140, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 280, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 141, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 280, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 142, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 280, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 143, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 280, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 144, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 280, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 145, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 280, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 146, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 280, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 147, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 279, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 148, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 279, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 149, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 279, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 150, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 279, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 151, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 279, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 152, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 279, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 153, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 279, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 154, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 279, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 155, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 279, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 156, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 279, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 157, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 279, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 158, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 279, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 159, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 279, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 160, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 279, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 161, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 278, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 162, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 278, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 163, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 278, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 164, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 278, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 165, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 278, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 166, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 278, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 167, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 278, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 168, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 278, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 169, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 278, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 170, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 278, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 171, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 278, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 172, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 278, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 173, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 278, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 174, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 278, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 175, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 289, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 176, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 289, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 177, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 289, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 178, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 289, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 179, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 289, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 180, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 289, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 181, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 289, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 182, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 183, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 184, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 185, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 186, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 187, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 188, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 189, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 190, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 191, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 192, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 193, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 194, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 195, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 196, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 197, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 198, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 199, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 200, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 201, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 202, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 203, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 204, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 205, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 206, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 207, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 208, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 277, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 209, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 276, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 210, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 275, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 211, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 274, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 212, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 273, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 213, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 272, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 214, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 271, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 215, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 270, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 216, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 270, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 217, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 270, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 218, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 269, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 219, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 268, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 220, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 267, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 221, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 266, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 222, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 265, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 223, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 263, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 224, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 262, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 225, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 261, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 226, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 264, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 227, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 264, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 228, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 264, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 229, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 264, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 230, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 260, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 231, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 309, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 232, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 309, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 233, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 259, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 234, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 259, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 235, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 258, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 236, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 258, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 237, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 258, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 238, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 258, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 239, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 258, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 240, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 257, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 241, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 257, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 242, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 257, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 243, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 257, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 244, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 257, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 245, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 257, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 246, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 257, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 247, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 257, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 248, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 257, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 249, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 257, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 250, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 257, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 251, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 257, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 252, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 257, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 253, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 257, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 254, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 309, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 255, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 309, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 256, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 258, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 257, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 309, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 258, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 309, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 259, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 308, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 260, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 261, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 262, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 263, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 264, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 265, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 266, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 267, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 268, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 269, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 270, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 271, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 272, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 273, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 274, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 275, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 276, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 277, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 278, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 279, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 280, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 281, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 282, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 283, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 284, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 285, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 286, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 288, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 287, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 288, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 289, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 290, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 304, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 291, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 304, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 292, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 304, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 293, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 304, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 294, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 304, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 295, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 298, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 296, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 298, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 297, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 302, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 298, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 302, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 299, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 302, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 300, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 302, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 301, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 304, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 302, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 304, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 303, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 305, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 304, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 306, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 305, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 308, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 306, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 308, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 307, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 309, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 308, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 309, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 309, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }
+  ]
+}

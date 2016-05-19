@@ -113,14 +113,25 @@ function handleMouseOver(d, i) {
     //fill: "orange",
     r: 10
   });
-  div.transition()
+  // tooltip
+  tip.transition()
      .duration(500)
      .style("opacity", 0.7);
-  div.html("<p>"+d.url+"</p>")
+  tip.html("<p>"+d.url+"</p>");
      //.style("left", (d3.event.pageX) + "px")
      //.style("top", (d3.event.pageY - 28) + "px");
-     .style("left", width-300 + "px")
+  tip.style("left", width-300 + "px")
      .style("top", height-50 + "px");
+  // buttons
+  b01.transition().duration(500).style("opacity", 0.7);
+  b01.html("1");
+  b01.style("left", width-40 + "px").style("top", 10 + "px");
+  b02.transition().duration(500).style("opacity", 0.7);
+  b02.html("2");
+  b02.style("left", width-40 + "px").style("top", 42 + "px");
+  b03.transition().duration(500).style("opacity", 0.7);
+  b03.html("0");
+  b03.style("left", width-40 + "px").style("top", 74 + "px");
   //div.transition()
   //    .duration(500)
   //    .style("opacity", 0);
@@ -152,9 +163,14 @@ function handleMouseOut(d, i) {
     //fill: "black",
     r: 5
   });
-  div.transition()
-     .duration(500)
-     .style("opacity", 0);
+  tip.html(" ");
+  tip.transition().duration(500).style("opacity", 0.1);
+  b01.html(" ");
+  b01.transition().duration(500).style("opacity", 0.1);
+  b02.html(" ");
+  b02.transition().duration(500).style("opacity", 0.1);
+  b03.html(" ");
+  b03.transition().duration(500).style("opacity", 0.1);
   // Select text by id and then remove
   //d3.select("#t" + d.x + "-" + d.y + "-" + i).remove();  // Remove text location
 }
