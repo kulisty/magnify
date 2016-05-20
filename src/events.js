@@ -1,13 +1,3 @@
-function coordinates(point) {
-  var scale = zoom.scale(), translate = zoom.translate();
-  return [(point[0] - translate[0]) / scale, (point[1] - translate[1]) / scale];
-}
-
-function point(coordinates) {
-  var scale = zoom.scale(), translate = zoom.translate();
-  return [coordinates[0] * scale + translate[0], coordinates[1] * scale + translate[1]];
-}
-
 function clickGithub() {
   shell.openExternal("http://github.com");
 }
@@ -18,42 +8,6 @@ function clickSova() {
 
 function clickMagnify() {
   shell.openExternal("http://www.mimuw.edu.pl");
-}
-
-function onZoom() {
-  svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")");
- }
-
-function onZoomAxis() {
-    //svg.select(".x.axis").call(xAxis);
-    //svg.select(".y.axis").call(yAxis);
-    onZoom();
-}
-
-function onZoomBy(factor) {
-  svg.call(zoom.event); // https://github.com/mbostock/d3/issues/2387
-  // Record the coordinates (in data space) of the center (in screen space).
-  var center0 = zoom.center(), translate0 = zoom.translate(), coordinates0 = coordinates(center0);
-  zoom.scale(zoom.scale() * factor);
-  // Translate back to the center.
-  var center1 = point(coordinates0);
-  zoom.translate([translate0[0] + center0[0] - center1[0], translate0[1] + center0[1] - center1[1]]);
-  svg.call(zoom.event);
-}
-
-function clickZoomIn(d) {
-  onZoomBy(1.5);
-}
-
-function clickZoomOut(d) {
-  onZoomBy(0.75);
-}
-
-function clickZoomFit(d) {
-  svg.call(zoom.event); // https://github.com/mbostock/d3/issues/2387
-  zoom.scale(1);
-  zoom.translate([0, 0]);
-  svg.transition().duration(750).call(zoom.event);
 }
 
 function clickFiles() {
@@ -70,6 +24,21 @@ function clickCommits() {
 
 function clickAuthors() {
   shell.openExternal("http://www.mimuw.edu.pl");
+}
+
+function clickZoomIn(d) {
+  onZoomBy(1.5);
+}
+
+function clickZoomOut(d) {
+  onZoomBy(0.75);
+}
+
+function clickZoomFit(d) {
+  svg.call(zoom.event); // https://github.com/mbostock/d3/issues/2387
+  zoom.scale(1);
+  zoom.translate([0, 0]);
+  svg.transition().duration(500).call(zoom.event);
 }
 
 function clickFreeze() {
@@ -93,6 +62,44 @@ function clickReload() {
   );
 }
 
+function onZoom() {
+  svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")");
+ }
+
+function onZoomAxis() {
+    //svg.select(".x.axis").call(xAxis);
+    //svg.select(".y.axis").call(yAxis);
+    onZoom();
+}
+
+function onZoomByMB(factor) {
+  function coordinates(point) {
+    var scale = zoom.scale(), translate = zoom.translate();
+    return [(point[0] - translate[0]) / scale, (point[1] - translate[1]) / scale];
+  }
+  function point(coordinates) {
+    var scale = zoom.scale(), translate = zoom.translate();
+    return [coordinates[0] * scale + translate[0], coordinates[1] * scale + translate[1]];
+  }
+  svg.call(zoom.event); //https://github.com/mbostock/d3/issues/2387
+  // Record the coordinates (in data space) of the center (in screen space).
+  var center0 = zoom.center(), translate0 = zoom.translate(), coordinates0 = coordinates(center0);
+  zoom.scale(zoom.scale() * factor);
+  // Translate back to the center.
+  var center1 = point(coordinates0);
+  zoom.translate([translate0[0] + center0[0] - center1[0], translate0[1] + center0[1] - center1[1]]);
+  svg.transition().duration(500).call(zoom.event);
+}
+
+function onZoomBy(factor) {
+  var newZoom = zoom.scale() * factor;
+  var newX = ((zoom.translate()[0] - (width / 2)) * factor) + width / 2;
+  var newY = ((zoom.translate()[1] - (height / 2)) * factor) + height / 2;
+  zoom.scale(newZoom).translate([newX,newY]);
+  //svg.call(zoom.event);
+  svg.transition().duration(500).call(zoom.event);
+}
+
 function onClicked(d) {
   if (d3.event.defaultPrevented) return; // click suppressed
   //d3.select().classed("fixed", d.fixed = false);
@@ -106,15 +113,17 @@ function onRightclicked(d, i) {
   shell.openExternal(d.url);
 }
 
-function dblclick(d) {
-  //d3.select(this)
-  d3.select().classed("fixed", d.fixed = false);
+function onDoubleclicked(d) {
+  d3.select(this)
+    .style("fill", function(d) { return 'orange'; });
   //d3.event.sourceEvent.stopPropagation();
 }
 
 function onDragstarted(d) {
-  //d3.select(this)
-  d3.select().classed("fixed", d.fixed = true);
+  d3.select()
+    .classed("fixed", d.fixed = true);
+  d3.select(this)
+    .style("fill", function(d) { return 'orange'; });
   d3.event.sourceEvent.stopPropagation();
 }
 
@@ -123,7 +132,8 @@ function onDragged(d) {
 }
 
 function onDragended(d) {
-  //
+  d3.select(this)
+    .style("fill", function(d) { return color(d.group); });
 }
 
 function onResize() {
@@ -149,7 +159,7 @@ function onResize() {
   b02.style("left", width-40 + "px").style("top", 42 + "px");
   //
   b03.transition().duration(500).style("opacity", 0.5);
-  b03.style("background-image", "url('css/images/icon-cross.png')");
+  b03.style("background-image", "url('css/images/icon-focus.png')");
 	b03.style("background-repeat", "no-repeat");
   b03.style("background-position", "center center");
   b03.style("left", width-40 + "px").style("top", 74 + "px");
@@ -166,10 +176,9 @@ function onTick() {
 
 function onMouseOver(d, i) {
   // Use D3 to select element, change color and size
-  d3.select(this).attr({
-    //fill: "orange",
-    r: 10
-  });
+  d3.select(this)
+    //.style("fill", function(d) { return 'orange'; })
+    .attr({r: 10});
   // tooltip
   /*
   tip.transition()
@@ -181,10 +190,9 @@ function onMouseOver(d, i) {
 
 function onMouseOut(d, i) {
   // Use D3 to select element, change color back to normal
-  d3.select(this).attr({
-    //fill: "black",
-    r: 5
-  });
+  d3.select(this)
+    //.style("fill", function(d) { return color(d.group); })
+    .attr({r: 5});
   /*
   tip.html(" ");
   tip.transition().duration(500).style("opacity", 0.1);
