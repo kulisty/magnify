@@ -110,7 +110,15 @@ function onClicked(d) {
 function onRightclicked(d, i) {
   //clipboard.writeText(d.url);
   //window.open(d.url)
-  shell.openExternal(d.url);
+  //shell.openExternal(d.url);
+  tip.html(d.name + '</br>' + d.url);
+  // tooltip
+  /*
+  tip.transition().duration(500).style("opacity", 0.1);
+  tip.transition()
+     .duration(500)
+     .style("opacity", 0.7);
+  */
 }
 
 function onDoubleclicked(d) {
@@ -141,10 +149,8 @@ function onResize() {
   svg.attr("width", width).attr("height", height);
   force.size([width, height]).resume();
   // tool-tip
-  /*
+  tip.transition().duration(500).style("opacity", 0.5);
   tip.style("left", width-500 + "px").style("top", height-50 + "px");
-  tip.style("opacity", 0.1);
-  */
   // buttons
   b01.transition().duration(500).style("opacity", 0.5);
   b01.style("background-image", "url('css/images/icon-plus.png')");
@@ -175,26 +181,13 @@ function onTick() {
 }
 
 function onMouseOver(d, i) {
-  // Use D3 to select element, change color and size
   d3.select(this)
     //.style("fill", function(d) { return 'orange'; })
     .attr({r: 10});
-  // tooltip
-  /*
-  tip.transition()
-     .duration(500)
-     .style("opacity", 0.7);
-  tip.html(d.url);
-  */
 }
 
 function onMouseOut(d, i) {
-  // Use D3 to select element, change color back to normal
   d3.select(this)
     //.style("fill", function(d) { return color(d.group); })
     .attr({r: 5});
-  /*
-  tip.html(" ");
-  tip.transition().duration(500).style("opacity", 0.1);
-  */
 }
