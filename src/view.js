@@ -19,9 +19,12 @@ var shell = require('electron').shell;
 // Global handles
 var svg = null, // containter for nodes, links
     tip = null, // tool-tip
-    b01 = null, // zoom in
-    b02 = null, // zoom out
-    b03 = null, // zoom fit
+    con = null, // context buttons
+    b01 = null, // global buttons: zoom in
+    b02 = null, // global buttons: zoom out
+    b03 = null, // global buttons: zoom fit
+    // subgraph selection
+    sub = null, // ie. one node
     // d3 shortcuts
     force = null,
     zoom  = null,
@@ -29,11 +32,11 @@ var svg = null, // containter for nodes, links
     color = null,
     links = null,
     nodes = null,
+    // axis, if used (not yet)
     x = null,
     y = null,
     xAxis = null,
     yAxis = null;
-
 
 // Viewport
 var margin = {top: 0, right: 0, bottom: 0, left: 0},
@@ -78,6 +81,7 @@ view.menu = function() {
                     view.file = fileNames[0];
                     view.model = JSON.parse(fs.readFileSync(view.file, 'utf8'));
                     //d3.json(view.file, drawThePicture);
+                    clearThePicture();
                     drawThePicture(null, view.model);
                 }
               );

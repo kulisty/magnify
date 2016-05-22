@@ -2,10 +2,6 @@ function drawThePicture(error, graph) {
 
   if (error) throw error;
 
-  // Destroy old, just in case
-  //d3.select('body').select('svg').remove();
-  clearThePicture();
-
   // Window events
   d3.select(window).on("resize", onResize);
 
@@ -14,6 +10,25 @@ function drawThePicture(error, graph) {
     .append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
+  tip.html(path.basename(view.file));
+  // Set default url for the file
+  sub = { url: "http://www.uw.edu.pl" };
+  // Add context buttons
+  con = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+  con.append("i")
+    .attr("class", "fa fa-home fa-fw")
+    .on("click", onHome);
+  /*
+  con.append("i")
+    .attr("class", "fa fa-book fa-fw");
+  con.append("i")
+    .attr("class", "fa fa-pencil fa-fw");
+  con.append("i")
+    .attr("class", "fa fa-cog fa-fw");
+  */
 
   // Add buttons
   b01 = d3.select("body")
@@ -151,5 +166,6 @@ function updateThePicture(error, graph) {
 } // update the picture
 
 function clearThePicture() {
-  d3.select('body').select('svg').remove();
+  d3.select('body').selectAll('svg').remove();
+  d3.select('body').selectAll('div').remove();
 }

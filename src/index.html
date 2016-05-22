@@ -3,56 +3,60 @@
 
 <meta charset="utf-8">
 
-<style type="text/css">
-	html { overflow: hidden; }
-</style>
-
 <head>
 
 	<title>Magnify</title>
 
-	<style>
+	<style type="text/css">
 
-	:link { color: #fff }
-	:visited { color: #fff }
+		html { overflow: hidden; }
 
-	.node {	stroke: #fff; stroke-width: 0.5px; }
-	.link {	stroke: #999; stroke-opacity: 0.6; }
+		:link { color: #fff }
+		:visited { color: #fff }
 
-	div.tooltip {
-    position: absolute;
-    text-align: left;
-    width: 470px;
-    height: 20px;
-    padding: 12px;
-    font: 12px sans-serif;
-		font-weight: bold;
-    background: rgba(0, 0, 0, 0.8);
-		color: #fff;
-    border: 0px;
-    border-radius: 2px;
-		pointer-events: none;
-	}
+		.node {	stroke: #fff; stroke-width: 0.5px; }
+		.link {	stroke: #999; stroke-opacity: 0.6; }
 
-	div.button {
-		position: absolute;
-		width: 30px;
-		height: 30px;
-		background: rgba(0, 0, 0, 0.8);
-		color: #fff;
-		border: 0px;
-		border-radius: 2px;
-	}
+		div.tooltip {
+	    position: absolute;
+	    text-align: left;
+	    width: 470px;
+	    height: 20px;
+	    padding: 12px;
+	    font: 20px sans-serif;
+			font-weight: bold;
+	    background: rgba(0, 0, 0, 0.8);
+			color: #fff;
+	    border: 0px;
+	    border-radius: 2px;
+		}
+
+		div.button {
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			background: rgba(0, 0, 0, 0.8);
+			color: #fff;
+			border: 0px;
+			border-radius: 2px;
+		}
 
 	</style>
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
 
+	<!--
+	<link rel="stylesheet" href="../node-modules/font-awesome/css/font-awesome.min.css">
+	-->
+
 	<script src="http://d3js.org/d3.v3.js"></script>
 
 	<script src="xml2json.js"></script>
+
 	<script src="view.js"></script>
 	<script src="events.js"></script>
 	<script src="model.js"></script>

@@ -27,6 +27,7 @@
   "dependencies": {
     "d3": "^3.5.14",
     "dnode": "^1.2.0",
+    "font-awesome": "^4.6.1",
     "geojson-extent": "^0.3.1",
     "geojson-normalize": "0.0.0",
     "minimist": "^0.2.0"

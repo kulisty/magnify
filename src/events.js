@@ -107,18 +107,25 @@ function onClicked(d) {
   force.resume();
 }
 
+function onIconClicked(icon){
+  console.log(icon + " clicked");
+}
+
 function onRightclicked(d, i) {
   //clipboard.writeText(d.url);
   //window.open(d.url)
   //shell.openExternal(d.url);
-  tip.html(d.name + '</br>' + d.url);
-  // tooltip
-  /*
-  tip.transition().duration(500).style("opacity", 0.1);
-  tip.transition()
-     .duration(500)
-     .style("opacity", 0.7);
-  */
+  //tip.html(d.name.link(d.url));
+  if (d.name.length > 40) {
+    tip.html('... '+d.name.substr(-40));
+  } else {
+    tip.html(d.name);
+  };
+  sub = d;
+}
+
+function onHome(d) {
+  shell.openExternal(sub.url);
 }
 
 function onDoubleclicked(d) {
@@ -151,6 +158,9 @@ function onResize() {
   // tool-tip
   tip.transition().duration(500).style("opacity", 0.5);
   tip.style("left", width-500 + "px").style("top", height-50 + "px");
+  // context buttons
+  con.transition().duration(500).style("opacity", 0.5);
+  con.style("left", width-500 + "px").style("top", height-96 + "px");
   // buttons
   b01.transition().duration(500).style("opacity", 0.5);
   b01.style("background-image", "url('css/images/icon-plus.png')");
