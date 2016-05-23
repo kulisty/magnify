@@ -13,22 +13,21 @@ function drawThePicture(error, graph) {
   tip.html(path.basename(view.file));
   // Set default url for the file
   sub = { url: "http://www.uw.edu.pl" };
+
   // Add context buttons
+  var icons = ["home", "bar-chart", "area-chart", "pie-chart", "database", "cube", "camera-retro", "anchor", "binoculars", "flask", "info-circle", "plug", "git", "medkit", "bug", "history", "qrcode"];
   con = d3.select("body")
     .append("div")
-    .attr("class", "tooltip")
+    .attr("class", "conmenu")
     .style("opacity", 0);
-  con.append("i")
-    .attr("class", "fa fa-home fa-fw")
+  con.selectAll("i")
+    .data(icons)
+    .enter().append("i")
+    .attr("class", function(d){
+      return "icon fa fa-lg fa-fw fa-" + d;
+    })
+    .attr("aria-hidden", "true")
     .on("click", onHome);
-  /*
-  con.append("i")
-    .attr("class", "fa fa-book fa-fw");
-  con.append("i")
-    .attr("class", "fa fa-pencil fa-fw");
-  con.append("i")
-    .attr("class", "fa fa-cog fa-fw");
-  */
 
   // Add buttons
   b01 = d3.select("body")
@@ -166,6 +165,8 @@ function updateThePicture(error, graph) {
 } // update the picture
 
 function clearThePicture() {
+
   d3.select('body').selectAll('svg').remove();
   d3.select('body').selectAll('div').remove();
-}
+
+} // clear elements

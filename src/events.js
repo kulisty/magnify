@@ -72,7 +72,7 @@ function onZoomAxis() {
     onZoom();
 }
 
-function onZoomByMB(factor) {
+function onZoomByMB(factor) { // not used - for reference only
   function coordinates(point) {
     var scale = zoom.scale(), translate = zoom.translate();
     return [(point[0] - translate[0]) / scale, (point[1] - translate[1]) / scale];

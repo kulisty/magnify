@@ -78,8 +78,9 @@ view.menu = function() {
                   [{ name: 'Source code', extensions: ['json','kml', 'xml'] } ]},
                   function (fileNames) {
                     if (fileNames === undefined) return;
-                    view.file = fileNames[0];
+                    view.file  = fileNames[0];
                     view.model = JSON.parse(fs.readFileSync(view.file, 'utf8'));
+                    view.data  = saveFix(view.model);
                     //d3.json(view.file, drawThePicture);
                     clearThePicture();
                     drawThePicture(null, view.model);
@@ -105,8 +106,9 @@ view.menu = function() {
           accelerator: 'CmdOrCtrl+W',
           click: function(item, focusedWindows) {
             clearThePicture();
-            view.file = "";
+            view.file  = "";
             view.model = null;
+            view.data  = null;
           }
         }, // File / Close
         /*
