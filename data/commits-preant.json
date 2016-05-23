@@ -1,4 +1,10 @@
 {
+  "project": {
+    "origin": "https://gitlab.uw.edu.pl/mp347235/preant",
+    "path": "..\\preant\\",
+    "rev_from": "0",
+    "rev_to": "HEAD"
+  },
   "nodes": [
     {
       "style": "",

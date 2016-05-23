@@ -1,0 +1,115 @@
+{
+  "project": {
+    "origin": "https://github.com/kulisty/magnify", 
+    "path": "..\\magnify\\", 
+    "revision": "HEAD~32"
+  }, 
+  "nodes": [
+    {
+      "index": 0, 
+      "style": "", 
+      "fixed": false, 
+      "group": "Files", 
+      "name": ".gitignore", 
+      "url": "https:\\\\github.com\\kulisty\\magnify\\blob\\master\\.gitignore", 
+      "px": 0.0, 
+      "py": 0.0, 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "y": 0.0, 
+      "x": 0.0, 
+      "r": 0.0, 
+      "id": 0
+    }, 
+    {
+      "index": 0, 
+      "style": "", 
+      "fixed": false, 
+      "group": "Files", 
+      "name": "LICENSE", 
+      "url": "https:\\\\github.com\\kulisty\\magnify\\blob\\master\\LICENSE", 
+      "px": 0.0, 
+      "py": 0.0, 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "y": 0.0, 
+      "x": 0.0, 
+      "r": 0.0, 
+      "id": 1
+    }, 
+    {
+      "index": 0, 
+      "style": "", 
+      "fixed": false, 
+      "group": "Files", 
+      "name": "README.md", 
+      "url": "https:\\\\github.com\\kulisty\\magnify\\blob\\master\\README.md", 
+      "px": 0.0, 
+      "py": 0.0, 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "y": 0.0, 
+      "x": 0.0, 
+      "r": 0.0, 
+      "id": 2
+    }, 
+    {
+      "index": 0, 
+      "style": "", 
+      "fixed": false, 
+      "group": "Directories", 
+      "name": ".", 
+      "url": "https:\\\\github.com\\kulisty\\magnify", 
+      "px": 0.0, 
+      "py": 0.0, 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "y": 0.0, 
+      "x": 0.0, 
+      "r": 0.0, 
+      "id": 3
+    }
+  ], 
+  "links": [
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 3, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 0, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 3, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 1, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 3, 
+      "value": 1, 
+      "x2": 0.0, 
+      "source": 2, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }, 
+    {
+      "style": "", 
+      "y2": 0.0, 
+      "target": 3, 
+      "value": 2, 
+      "x2": 0.0, 
+      "source": 3, 
+      "y1": 0.0, 
+      "x1": 0.0
+    }
+  ]
+}

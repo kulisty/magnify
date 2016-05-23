@@ -1,0 +1,26 @@
+{
+  "project": {
+    "origin": "https://github.com/kulisty/magnify", 
+    "path": "..\\magnify\\", 
+    "revision": "HEAD~32"
+  }, 
+  "nodes": [
+    {
+      "index": 0, 
+      "style": "", 
+      "fixed": false, 
+      "group": "Commits", 
+      "name": "38a92d0b6bf19a99972cccb87e30005b969e0e96", 
+      "url": "https:\\\\github.com\\kulisty\\magnify\\commit\\38a92d0b6bf19a99972cccb87e30005b969e0e96", 
+      "px": 0.0, 
+      "py": 0.0, 
+      "cy": 0.0, 
+      "cx": 0.0, 
+      "y": 0.0, 
+      "x": 0.0, 
+      "r": 0.0, 
+      "id": 0
+    }
+  ], 
+  "links": []
+}

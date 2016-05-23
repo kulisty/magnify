@@ -1,4 +1,10 @@
 {
+  "project": {
+    "origin": "https://github.com/capturcus/UsosMobile",
+    "path": "..\\UsosMobile\\",
+    "rev_from": "0",
+    "rev_to": "HEAD"
+  },
   "nodes": [
     {
       "style": "",

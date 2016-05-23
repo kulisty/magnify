@@ -10,9 +10,15 @@ function drawThePicture(error, graph) {
     .append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
-  tip.html(path.basename(view.file));
-  // Set default url for the file
-  sub = { url: "http://www.uw.edu.pl" };
+  try {
+      //tip.html(path.basename(view.file));
+      tip.html(graph.project.path);
+      //sub = { url: "http://www.uw.edu.pl" };
+      sub = { url: graph.project.origin };
+  }
+  catch(err) {
+      console.log("Some problems encountered when processing warehouse:", err.message);
+  }
 
   // Add context buttons
   var icons = ["home", "bar-chart", "area-chart", "pie-chart", "database", "cube", "camera-retro", "anchor", "binoculars", "flask", "info-circle", "plug", "git", "medkit", "bug", "history", "qrcode"];
@@ -107,35 +113,46 @@ function drawThePicture(error, graph) {
     .append("g")
     .attr("transform", "translate(" + 0 + "," + 0 + ")" + " scale(" + 1 + ")");
 
-  link = svg.selectAll(".link")
-    .data(graph.links)
-    .enter()
-    .append("line")
-    .attr("class", "link")
-    .style("stroke-width", function(d) { return Math.sqrt(d.value); });
+  try {
+    link = svg.selectAll(".link")
+      .data(graph.links)
+      .enter()
+      .append("line")
+      .attr("class", "link")
+      .style("stroke-width", function(d) { return Math.sqrt(d.value); });
+  }
+  catch(err) {
+      console.log("Some problems encountered when processing warehouse:", err.message);
+  }
 
-  node = svg.selectAll(".node")
-    .data(graph.nodes)
-    .enter()
-    .append("circle")
-    .attr("class", "node")
-    .attr("r", 5)
-    .style("fill", function(d) { return color(d.group); })
-    //.text(function(d) { return d.name + "\n" + d.url; })
-    .on("mouseover", onMouseOver)
-    .on("mouseout", onMouseOut)
-    .on("contextmenu", onRightclicked)
-    .on("dblclick", onDoubleclicked)
-    .on("click", onClicked)
-    //.call(zoom)
-    .call(drag);
+  try {
+    node = svg.selectAll(".node")
+      .data(graph.nodes)
+      .enter()
+      .append("circle")
+      .attr("class", "node")
+      .attr("r", 5)
+      .style("fill", function(d) { return color(d.group); })
+      //.text(function(d) { return d.name + "\n" + d.url; })
+      .on("mouseover", onMouseOver)
+      .on("mouseout", onMouseOut)
+      .on("contextmenu", onRightclicked)
+      .on("dblclick", onDoubleclicked)
+      .on("click", onClicked)
+      //.call(zoom)
+      .call(drag);
+  }
+  catch(err) {
+      console.log("Some problems encountered when processing warehouse:", err.message);
+  }
 
   // Tool-tips handled by the browser
   svg.selectAll("circle")
     .append("title")
     .text(function(d) { return d.name + "\n" + d.url; });
 
-  force.nodes(graph.nodes)
+  force
+    .nodes(graph.nodes)
     .links(graph.links)
     .start();
 
