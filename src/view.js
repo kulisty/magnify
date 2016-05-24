@@ -7,14 +7,20 @@
  * Magnify is distributed under the MIT Licence
  * ========================================================== */
 
-var remote = require('remote');
-var Menu = remote.require('menu');
-var dialog = remote.require('dialog');
-var d3 = require('d3');
-var fs = require('fs');
-var path = require("path");
-var clipboard = require('clipboard');
+// electron 0.36.7
+//var remote = require('electron');
+//var Menu = remote.require('menu');
+//var dialog = remote.require('dialog');
+//var clipboard = require('clipboard');
+// replaced with electron 1.1.1
+
+const {remote} = require('electron');
+const {Menu, MenuItem, dialog} = remote;
+
 var shell = require('electron').shell;
+var path = require("path");
+var fs = require('fs');
+var d3 = require('d3');
 
 // Global handles
 var svg = null, // containter for nodes, links
