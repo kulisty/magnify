@@ -1,29 +1,29 @@
 function clickGithub() {
-  shell.openExternal("http://github.com");
+  remote.shell.openExternal("http://github.com");
 }
 
 function clickSova() {
-  shell.openExternal("http://www.uw.edu.pl");
+  remote.shell.openExternal("http://www.uw.edu.pl");
 }
 
 function clickMagnify() {
-  shell.openExternal("http://www.mimuw.edu.pl");
+  remote.shell.openExternal("http://www.mimuw.edu.pl");
 }
 
 function clickFiles() {
-  shell.openExternal("http://www.mimuw.edu.pl");
+  remote.shell.openExternal("http://www.mimuw.edu.pl");
 }
 
 function clickClasses() {
-  shell.openExternal("http://www.mimuw.edu.pl");
+  remote.shell.openExternal("http://www.mimuw.edu.pl");
 }
 
 function clickCommits() {
-  shell.openExternal("http://www.mimuw.edu.pl");
+  remote.shell.openExternal("http://www.mimuw.edu.pl");
 }
 
 function clickAuthors() {
-  shell.openExternal("http://www.mimuw.edu.pl");
+  remote.shell.openExternal("http://www.mimuw.edu.pl");
 }
 
 function clickZoomIn(d) {
@@ -125,7 +125,7 @@ function onRightclicked(d, i) {
 }
 
 function onHome(d) {
-  shell.openExternal(sub.url);
+  remote.shell.openExternal(sub.url);
 }
 
 function onDoubleclicked(d) {
