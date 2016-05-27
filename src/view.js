@@ -139,30 +139,6 @@ view.menu = function() {
             clickUnfreeze();
           }
         },
-        /*
-        { // View / Zoom in
-          label: 'Zoom in',
-          accelerator: 'CmdOrCtrl+I',
-          click: function(item, focusedWindow) {
-            clickZoomIn();
-          }
-        },
-        { // View / Zoom out
-          label: 'Zoom out',
-          accelerator: 'CmdOrCtrl+O',
-          click: function(item, focusedWindow) {
-            clickZoomOut();
-          }
-        },
-        { // View / Center
-          label: 'Zoom to fit',
-          accelerator: 'CmdOrCtrl+C',
-          click: function(item, focusedWindow) {
-            clickZoomFit();
-            //window.scrollBy(vbw/4,vbh/4);
-          }
-        },
-        */
         { // View / Reload
           label: 'Shake',
           accelerator: 'F5',

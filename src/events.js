@@ -27,11 +27,11 @@ function clickAuthors() {
 }
 
 function clickZoomIn(d) {
-  onZoomBy(1.5);
+  onZoomBy(1.2);
 }
 
 function clickZoomOut(d) {
-  onZoomBy(0.75);
+  onZoomBy(0.6);
 }
 
 function clickZoomFit(d) {
@@ -96,8 +96,8 @@ function onZoomBy(factor) {
   var newX = ((zoom.translate()[0] - (width / 2)) * factor) + width / 2;
   var newY = ((zoom.translate()[1] - (height / 2)) * factor) + height / 2;
   zoom.scale(newZoom).translate([newX,newY]);
-  //svg.call(zoom.event);
-  svg.transition().duration(500).call(zoom.event);
+  //svg.transition().duration(500).call(zoom.event);
+  svg.call(zoom.event);
 }
 
 function onClicked(d) {
