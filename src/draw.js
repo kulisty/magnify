@@ -132,7 +132,7 @@ function drawThePicture(error, graph) {
       .append("circle")
       .attr("class", "node")
       //.attr("r", 5)
-      .attr("r",  function(d) { return d.complexity })
+      .attr("r",  function(d) { return d.complexity > 0 ? d.complexity : 5 })
       .style("fill", function(d) { return color(d.group); })
       //.text(function(d) { return d.name + "\n" + d.url; })
       .on("mouseover", onMouseOver)

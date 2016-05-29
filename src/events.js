@@ -192,12 +192,12 @@ function onTick() {
 
 function onMouseOver(d, i) {
   d3.select(this)
-    //.style("fill", function(d) { return 'orange'; })
-    .attr({r: 10});
+    .style("fill", function(d) { return 'orange'; });
+    //.attr({r: 10});
 }
 
 function onMouseOut(d, i) {
   d3.select(this)
-    //.style("fill", function(d) { return color(d.group); })
-    .attr({r: 5});
+    .style("fill", function(d) { return color(d.group); });
+    //.attr({r: 5});
 }
