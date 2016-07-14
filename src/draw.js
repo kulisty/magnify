@@ -21,7 +21,7 @@ function drawThePicture(error, graph) {
   }
 
   // Add context buttons
-  var icons = ["home", "bar-chart", "area-chart", "pie-chart", "database", "cube", "camera-retro", "anchor", "binoculars", "flask", "info-circle", "plug", "git", "medkit", "bug", "history", "qrcode"];
+  var icons = ["home", "qrcode", "bar-chart", "area-chart", "pie-chart", "database", "cube", "camera-retro", "anchor", "binoculars", "flask", "info-circle", "plug", "medkit", "history", "bug", "git"];
   con = d3.select("body")
     .append("div")
     .attr("class", "conmenu")
@@ -33,8 +33,12 @@ function drawThePicture(error, graph) {
       return "icon fa fa-lg fa-fw fa-" + d;
     })
     .attr("aria-hidden", "true")
-    .on("click", onHome);
-
+    .on("click", onIcon);
+  // Add pane for context actions
+  pan = d3.select("body")
+    .append("div")
+    .attr("class", "conpane")
+    .style("opacity", 0);
   // Add buttons
   b01 = d3.select("body")
     .append("div")
@@ -119,7 +123,8 @@ function drawThePicture(error, graph) {
       .enter()
       .append("line")
       .attr("class", "link")
-      .style("stroke-width", function(d) { return Math.sqrt(d.value); });
+      //.style("stroke-width", function(d) { return Math.sqrt(d.value); });
+      .style("stroke-width", function(d) { return d.value; });
   }
   catch(err) {
       console.log("Some problems encountered when processing warehouse:", err.message);
@@ -132,7 +137,8 @@ function drawThePicture(error, graph) {
       .append("circle")
       .attr("class", "node")
       //.attr("r", 5)
-      .attr("r",  function(d) { return d.complexity > 0 ? d.complexity : 5 })
+      .attr("r",  function(d) { return d.complexity > 1 ? d.complexity : 5 })
+      //.style("fill", function(d) { return color(d.group); })
       .style("fill", function(d) { return color(d.group); })
       //.text(function(d) { return d.name + "\n" + d.url; })
       .on("mouseover", onMouseOver)
@@ -150,7 +156,7 @@ function drawThePicture(error, graph) {
   // Tool-tips handled by the browser
   svg.selectAll("circle")
     .append("title")
-    .text(function(d) { return d.name + "\n" + d.url; });
+    .text(function(d) { return d.group + ": " + d.name + "\n" + d.url; });
 
   force
     .nodes(graph.nodes)

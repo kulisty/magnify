@@ -13,11 +13,13 @@ const {Menu, MenuItem, dialog} = remote;
 var path = require("path");
 var fs = require('fs');
 var d3 = require('d3');
+var qr = require('qr-image');
 
 // Global handles
 var svg = null, // containter for nodes, links
     tip = null, // tool-tip
     con = null, // context buttons
+    pan = null, // pane for context actions results
     b01 = null, // global buttons: zoom in
     b02 = null, // global buttons: zoom out
     b03 = null, // global buttons: zoom fit

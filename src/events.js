@@ -1,31 +1,3 @@
-function clickGithub() {
-  remote.shell.openExternal("http://github.com");
-}
-
-function clickSova() {
-  remote.shell.openExternal("http://www.uw.edu.pl");
-}
-
-function clickMagnify() {
-  remote.shell.openExternal("http://www.mimuw.edu.pl");
-}
-
-function clickFiles() {
-  remote.shell.openExternal("http://www.mimuw.edu.pl");
-}
-
-function clickClasses() {
-  remote.shell.openExternal("http://www.mimuw.edu.pl");
-}
-
-function clickCommits() {
-  remote.shell.openExternal("http://www.mimuw.edu.pl");
-}
-
-function clickAuthors() {
-  remote.shell.openExternal("http://www.mimuw.edu.pl");
-}
-
 function clickZoomIn(d) {
   onZoomBy(1.2);
 }
@@ -124,8 +96,24 @@ function onRightclicked(d, i) {
   sub = d;
 }
 
-function onHome(d) {
+function onIcon(d) {
+  switch(d) {
+    case 'home'     : onIcon_home(d); break;
+    case 'qrcode'   : onIcon_qrcode(d); break;
+    default         : console.log('Clicked: '+d);
+  };
+}
+
+function onIcon_home(d) {
   remote.shell.openExternal(sub.url);
+  pan.html('');
+}
+
+function onIcon_qrcode(d) {
+  var svg_string = qr.imageSync(sub.url, { type: 'svg' });
+  //var qr_svg = qr.image(sub.url, { type: 'svg' });
+  // qr_svg.pipe(fs.createWriteStream('qrcode.svg'));
+  pan.html(svg_string);
 }
 
 function onDoubleclicked(d) {
@@ -161,6 +149,9 @@ function onResize() {
   // context buttons
   con.transition().duration(500).style("opacity", 0.5);
   con.style("left", width-500 + "px").style("top", height-96 + "px");
+  // pane for context actions
+  pan.transition().duration(500).style("opacity", 0.5);
+  pan.style("left", width-500 + "px").style("top", height-592 + "px");
   // buttons
   b01.transition().duration(500).style("opacity", 0.5);
   b01.style("background-image", "url('css/images/icon-plus.png')");
