@@ -98,13 +98,19 @@ function onRightclicked(d, i) {
 
 function onIcon(d) {
   switch(d) {
-    case 'home'     : onIcon_home(d); break;
-    case 'qrcode'   : onIcon_qrcode(d); break;
-    default         : console.log('Clicked: '+d);
+    case 'home'         : onIcon_home(d); break;
+    case 'git'          : onIcon_git(d); break;
+    case 'qrcode'       : onIcon_qrcode(d); break;
+    case 'camera-retro' : onIcon_camera(d); break;
+    default             : console.log('Clicked: '+d);
   };
 }
 
 function onIcon_home(d) {
+  pan.html('');
+}
+
+function onIcon_git(d) {
   remote.shell.openExternal(sub.url);
   pan.html('');
 }
@@ -113,6 +119,21 @@ function onIcon_qrcode(d) {
   var svg_string = qr.imageSync(sub.url, { type: 'svg' });
   //var qr_svg = qr.image(sub.url, { type: 'svg' });
   // qr_svg.pipe(fs.createWriteStream('qrcode.svg'));
+  pan.html(svg_string);
+}
+
+function onIcon_camera(d) {
+  // d3.selectAll(".graph").node().getBoundingClientRect();
+  // zoom.translate()[1] / zoom.scale()
+  var svg_rect =
+    d3.selectAll(".graph").node().getBBox();
+  var r = Math.max(svg_rect.width, svg_rect.height);
+  var x = svg_rect.x;
+  var y = svg_rect.y;
+  var svg_string =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="'+470+'" height="'+470+'" viewBox="'+ x +' '+ y +' '+ r +' '+ r +'">' +
+    d3.selectAll(".graph").node().innerHTML +
+    '</svg>';
   pan.html(svg_string);
 }
 
@@ -139,9 +160,15 @@ function onDragended(d) {
     .style("fill", function(d) { return color(d.group); });
 }
 
+function onSlider(d) {
+  handle.attr("cx", tscale(tscale.invert(d)));
+  tpanel.text(formatLong(tscale.invert(d)));
+  tpanel.attr("transform", "translate(" + (tscale(tscale.invert(d))-18) + " ," + (-18) + ")")
+}
+
 function onResize() {
   width = window.innerWidth, height = window.innerHeight;
-  svg.attr("width", width).attr("height", height);
+  d3.select('svg').attr("width", width).attr("height", height);
   force.size([width, height]).resume();
   // tool-tip
   tip.transition().duration(500).style("opacity", 0.5);
@@ -150,6 +177,7 @@ function onResize() {
   con.transition().duration(500).style("opacity", 0.5);
   con.style("left", width-500 + "px").style("top", height-96 + "px");
   // pane for context actions
+  pan.html('');
   pan.transition().duration(500).style("opacity", 0.5);
   pan.style("left", width-500 + "px").style("top", height-592 + "px");
   // buttons
@@ -170,6 +198,8 @@ function onResize() {
 	b03.style("background-repeat", "no-repeat");
   b03.style("background-position", "center center");
   b03.style("left", width-40 + "px").style("top", 74 + "px");
+  //
+  slider.attr("transform", "translate(" + (window.innerWidth - 500) + "," + 50 + ")");
 }
 
 function onTick() {

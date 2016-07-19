@@ -47,14 +47,9 @@
 	    position: absolute;
 	    width: 470px;
 	    height: 470px;
-	    background: rgba(255, 255, 255, 0.8);
+	    background: rgba(255, 255, 220, 0.8);
 			padding: 12px;
 	    border-radius: 2px;
-		}
-
-    div.temp {
-			border-style: solid;
-	    border-color: rgba(0, 0, 0, 0.8);
 		}
 
 		div.button {
@@ -67,8 +62,45 @@
 			border-radius: 2px;
 		}
 
+		.tick {
+		  font: 10px sans-serif;
+			text-align: center;
+		}
+
+		.ticks {
+		  font: 10px sans-serif;
+		}
+
+		.track {
+		  stroke: #000;
+		  stroke-opacity: 0.3;
+		  stroke-width: 10px;
+			stroke-linecap: round;
+		}
+
+		.track-inset {
+		  stroke: #ddd;
+		  stroke-width: 8px;
+			stroke-linecap: round;
+		}
+
+		.track-overlay {
+		  pointer-events: stroke;
+		  stroke-width: 50px;
+		  cursor: ew-resize;
+			stroke-linecap: round;
+		}
+
+		.handle {
+		  fill: #fff;
+		  stroke: #000;
+		  stroke-opacity: 0.5;
+		  stroke-width: 1.25px;
+		}
+
 	</style>
 
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 </head>
@@ -76,13 +108,13 @@
 <body>
 
 	<!--
+	<link href="./node_modules/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="../node-modules/font-awesome/css/font-awesome.min.css">
-	-->
-
-  <!--
 	<script src="http://d3js.org/d3.v3.js"></script>
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	<script src="xml2json.js"></script>
+	<script src="sly.min.js"></script>
+  <script src="http://darsa.in/sly/examples/js/vendor/plugins.js"></script>
   -->
 
 	<script src="view.js"></script>

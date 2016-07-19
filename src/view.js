@@ -15,6 +15,9 @@ var fs = require('fs');
 var d3 = require('d3');
 var qr = require('qr-image');
 
+//var jsdom = require("jsdom").jsdom;
+//var $ = require('jquery'); //$('.tag').click(function(){return console.log('clicked');});
+
 // Global handles
 var svg = null, // containter for nodes, links
     tip = null, // tool-tip
@@ -32,6 +35,11 @@ var svg = null, // containter for nodes, links
     color = null,
     links = null,
     nodes = null,
+    // slider
+    slider = null,
+    handle = null,
+    tpanel = null,
+    tscale = null,
     // axis, if used (not yet)
     x = null,
     y = null,
@@ -39,9 +47,9 @@ var svg = null, // containter for nodes, links
     yAxis = null;
 
 // Viewport
-var margin = {top: 0, right: 0, bottom: 0, left: 0},
-    width = window.innerWidth - margin.left - margin.right,
-    height = window.innerHeight - margin.top - margin.bottom;
+// var margin = {top: 0, right: 0, bottom: 0, left: 0};
+var width = window.innerWidth, // - margin.left - margin.right,
+    height = window.innerHeight; // - margin.top - margin.bottom;
 
 // Container for my application view.
 var view = {};

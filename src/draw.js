@@ -21,7 +21,7 @@ function drawThePicture(error, graph) {
   }
 
   // Add context buttons
-  var icons = ["home", "qrcode", "bar-chart", "area-chart", "pie-chart", "database", "cube", "camera-retro", "anchor", "binoculars", "flask", "info-circle", "plug", "medkit", "history", "bug", "git"];
+  var icons = ["home", "git", "qrcode", "camera-retro", "pie-chart", "bar-chart", "area-chart", "database", "cube", "anchor", "binoculars", "flask", "info-circle", "plug", "medkit", "history", "bug"];
   con = d3.select("body")
     .append("div")
     .attr("class", "conmenu")
@@ -57,32 +57,12 @@ function drawThePicture(error, graph) {
     .on("click", clickZoomFit);
 
   // We need to scale integers into colors
+  //color = d3.scaleOrdinal(d3.schemeCategory20);
   color = d3.scale.category20();
-
-  /*
-  x = d3.scale.linear()
-        .domain([-width / 2, width / 2])
-        .range([0, width]);
-
-  y = d3.scale.linear()
-        .domain([-height / 2, height / 2])
-        .range([height, 0]);
-
-  xAxis = d3.svg.axis()
-            .scale(x)
-            .orient("bottom")
-            .tickSize(-height);
-
-  yAxis = d3.svg.axis()
-            .scale(y)
-            .orient("left")
-            .ticks(5)
-            .tickSize(-width);
-  */
 
   // Layout based on forces
   force = d3.layout.force()
-    .size([width, height])
+    .size([window.innerWidth, window.innerHeight])
     .charge(-120)
     .linkDistance(20)
     .gravity(0.05)
@@ -96,8 +76,8 @@ function drawThePicture(error, graph) {
     //.x(x)
     //.y(y)
     //.scaleExtent([1, 10])
-    .center([width / 2, height / 2])
-    .size([width, height])
+    .center([window.innerWidth / 2, window.innerHeight / 2])
+    .size([window.innerWidth, window.innerHeight])
     .on("zoom", onZoom);
 
   //drag = d3.behavior.drag()
@@ -110,11 +90,12 @@ function drawThePicture(error, graph) {
   // Add new canvas
   svg = d3.select("body")
     .append("svg")
-    .attr("width", width)
-    .attr("height", height)
+    .attr("width", window.innerWidth)
+    .attr("height", window.innerHeight)
     .call(zoom)
     //.call(drag)
     .append("g")
+    .attr("class", "graph")
     .attr("transform", "translate(" + 0 + "," + 0 + ")" + " scale(" + 1 + ")");
 
   try {
@@ -158,6 +139,58 @@ function drawThePicture(error, graph) {
     .append("title")
     .text(function(d) { return d.group + ": " + d.name + "\n" + d.url; });
 
+  // Time slider
+  //formatDate = d3.time.format("%y/%m/%d");
+  //formatDate = d3.time.format("%Y-%m-%d");
+  formatDate = d3.time.format("%b %Y");
+  formatLong = d3.time.format("%d-%m-%Y");
+  tscale = d3.time.scale()
+    .domain([new Date('2013-01-01'), new Date('2016-12-30')])
+    .range([0, 400])
+    .clamp(true);
+  //
+  slider = d3.select("body")
+    .select("svg")
+    .append("g")
+    .attr("class", "slider")
+    .attr("transform", "translate(" + (window.innerWidth - 500) + "," + 50 + ")");
+  //
+  slider.append("line")
+    .attr("class", "track")
+    .attr("x1", tscale.range()[0])
+    .attr("x2", tscale.range()[1])
+    .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+    .attr("class", "track-inset")
+    .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+    .attr("class", "track-overlay");
+  //
+  handle = slider.insert("circle", ".track-overlay")
+    .attr("class", "handle")
+    .attr("cx", 400)
+    .attr("r", 9);
+  //
+  tpanel = slider.append('text')
+    .text(formatLong(tscale.domain()[1]))
+    .attr("class", "ticks")
+    .attr("transform", "translate(" + (400-18) + " ," + (-18) + ")");
+  //
+  slider.insert("g", ".track-overlay")
+    .attr("class", "ticks")
+    .attr("transform", "translate(0," + 20 + ")")
+    .selectAll("text")
+    .data(tscale.ticks(6))
+    .enter()
+    .append("text")
+    .attr("x", tscale)
+    .attr("text-anchor", "middle")
+    .text(function(d) { return formatDate(d); });
+  //
+  var tdrag = d3.behavior.drag()
+    .on("dragstart", function() { d3.event.sourceEvent.stopPropagation(); })
+    .on("dragend", function() { d3.event.sourceEvent.stopPropagation(); })
+    .on("drag", function() { onSlider(d3.event.x-window.innerWidth+500); d3.event.sourceEvent.stopPropagation(); });
+  slider.call(tdrag);
+
   force
     .nodes(graph.nodes)
     .links(graph.links)
@@ -166,6 +199,22 @@ function drawThePicture(error, graph) {
   onResize();
 
 } // draw the picture
+
+
+// TODO to be refactored later into another file
+function brushed() {
+  var value = brush.extent()[0];
+  if (d3.event.sourceEvent) { // not a programmatic event
+    value = timeScale.invert(d3.mouse(this)[0]);
+    brush.extent([value, value]);
+  }
+  handle.attr("transform", "translate(" + timeScale(value) + ",0)");
+  handle.select('text').text(formatDate(value));
+}
+function hue(h) {
+  handle.attr("cx", x(h));
+  svg.style("background-color", d3.hsl(h, 0.8, 0.8));
+}
 
 function updateThePicture(error, graph) {
 

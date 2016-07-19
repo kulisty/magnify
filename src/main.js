@@ -23,7 +23,7 @@ var mainWindow = null;
 function createWindow () {
 
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600});
+  mainWindow = new BrowserWindow({width: 1200, height: 800});
   //mainWindow = new BrowserWindow({width: 1000, height: 1000, frame: false, frame: true});
   //mainWindow.setAutoHideMenuBar(true);
   //mainWindow.setMenuBarVisibility(false);
@@ -32,10 +32,10 @@ function createWindow () {
   mainWindow.loadURL('file://' + __dirname + '/index.html');
 
   // Open the DevTools.
-  //mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 
   // Maximize the window.
-  mainWindow.maximize();
+  // mainWindow.maximize();
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {
