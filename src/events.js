@@ -98,20 +98,29 @@ function onRightclicked(d, i) {
 
 function onIcon(d) {
   switch(d) {
-    case 'home'         : onIcon_home(d); break;
     case 'git'          : onIcon_git(d); break;
+    case 'bug'          : onIcon_bug(d); break;
+    case 'desktop'      : onIcon_desktop(d); break;
     case 'qrcode'       : onIcon_qrcode(d); break;
-    case 'camera-retro' : onIcon_camera(d); break;
+    case 'photo'        : onIcon_photo(d); break;
+    case 'file-image-o' : onIcon_fileimage(d); break;
+    case 'file-text-o'  : onIcon_filetext(d); break;
+    case 'info-circle'  : onIcon_info(d); break;
     default             : console.log('Clicked: '+d);
   };
 }
 
-function onIcon_home(d) {
+function onIcon_git(d) {
+  remote.shell.openExternal(sub.url);
   pan.html('');
 }
 
-function onIcon_git(d) {
-  remote.shell.openExternal(sub.url);
+function onIcon_bug(d) {
+  remote.shell.openExternal(sub.url+'/issues');
+  pan.html('');
+}
+
+function onIcon_desktop(d) {
   pan.html('');
 }
 
@@ -122,19 +131,113 @@ function onIcon_qrcode(d) {
   pan.html(svg_string);
 }
 
-function onIcon_camera(d) {
+function onIcon_photo(d) {
   // d3.selectAll(".graph").node().getBoundingClientRect();
   // zoom.translate()[1] / zoom.scale()
   var svg_rect =
-    d3.selectAll(".graph").node().getBBox();
+    d3.selectAll(".graph")
+      .node()
+      .getBBox();
   var r = Math.max(svg_rect.width, svg_rect.height);
   var x = svg_rect.x;
   var y = svg_rect.y;
+  //
+  var svg_html =
+    d3.selectAll(".graph")
+      //.attr("version", 1.1)
+      //.attr("xmlns", "http://www.w3.org/2000/svg")
+      .node()
+      //.parentNode
+      .innerHTML;
+  //
   var svg_string =
     '<svg xmlns="http://www.w3.org/2000/svg" width="'+470+'" height="'+470+'" viewBox="'+ x +' '+ y +' '+ r +' '+ r +'">' +
-    d3.selectAll(".graph").node().innerHTML +
+    svg_html +
     '</svg>';
   pan.html(svg_string);
+}
+
+function onIcon_fileimage(d) {
+  var svg_rect =
+    d3.selectAll(".graph")
+      .node()
+      .getBBox();
+  var r = Math.max(svg_rect.width, svg_rect.height);
+  var x = svg_rect.x;
+  var y = svg_rect.y;
+  var svg_html =
+    d3.selectAll(".graph")
+      .node()
+      .innerHTML;
+  var svg_string =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="'+470+'" height="'+470+'" viewBox="'+ x +' '+ y +' '+ r +' '+ r +'">' +
+    svg_html +
+    '</svg>';
+  var imgsrc = 'data:image/svg+xml;base64,'+ btoa(svg_string);
+  var img = '<img src="'+imgsrc+'">';
+  d3.select('body')
+    .append("canvas")
+    .attr("style", "display:none")
+    .attr("width", 470)
+    .attr("height", 470);
+  var canvas = document.querySelector("canvas"),
+  	  context = canvas.getContext("2d");
+  var image = new Image;
+  image.src = imgsrc;
+  image.onload = function() {
+	  context.drawImage(image, 0, 0);
+	  var canvasdata = canvas.toDataURL("image/png");
+	  var pngimg = '<img src="'+canvasdata+'">';
+    pan.html(pngimg);
+    var a = document.createElement("a");
+	  //a.download = "file.png";
+    a.download = path.basename(view.file, '.json')+'.png';
+	  a.href = canvasdata;
+	  a.click();
+  };
+  d3.select('body').selectAll('canvas').remove();
+}
+
+function onIcon_filetext(d) {
+  var svg_rect =
+    d3.selectAll(".graph")
+      .node()
+      .getBBox();
+  var r = Math.max(svg_rect.width, svg_rect.height);
+  var x = svg_rect.x;
+  var y = svg_rect.y;
+  var svg_html =
+    d3.selectAll(".graph")
+      .node()
+      .innerHTML;
+  var svg_string =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="'+470+'" height="'+470+'" viewBox="'+ x +' '+ y +' '+ r +' '+ r +'">' +
+    svg_html +
+    '</svg>';
+  var imgsrc = 'data:image/svg+xml;base64,'+ btoa(svg_string);
+  var img = '<img src="'+imgsrc+'">';
+  var image = new Image;
+  image.src = imgsrc;
+  image.onload = function() {
+    pan.html(img);
+    var a = document.createElement("a");
+	  //a.download = "file.svg";
+    a.download = path.basename(view.file, '.json')+'.svg';
+	  a.href = imgsrc;
+	  a.click();
+  };
+}
+
+function onIcon_info(d) {
+  pan.html(
+    '<pre>' +
+    'path   : ' + view.model.project.path   + '</br>' +
+    'origin : ' + view.model.project.origin + '</br>' +
+    'commit : ' + view.model.project.commit + '</br>' +
+    'nodes  : ' + view.model.nodes.length   + '</br>' +
+    'links  : ' + view.model.links.length   + '</br>' +
+    '</pre>'
+  );
 }
 
 function onDoubleclicked(d) {
@@ -219,6 +322,7 @@ function onMouseOver(d, i) {
 
 function onMouseOut(d, i) {
   d3.select(this)
-    .style("fill", function(d) { return color(d.group); });
+    .style("fill", function(d) { return 'blue'; });
+    //.style("fill", function(d) { return color(d.group); });
     //.attr({r: 5});
 }

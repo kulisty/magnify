@@ -39,12 +39,7 @@ var svg = null, // containter for nodes, links
     slider = null,
     handle = null,
     tpanel = null,
-    tscale = null,
-    // axis, if used (not yet)
-    x = null,
-    y = null,
-    xAxis = null,
-    yAxis = null;
+    tscale = null;
 
 // Viewport
 // var margin = {top: 0, right: 0, bottom: 0, left: 0};

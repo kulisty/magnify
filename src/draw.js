@@ -21,7 +21,7 @@ function drawThePicture(error, graph) {
   }
 
   // Add context buttons
-  var icons = ["home", "git", "qrcode", "camera-retro", "pie-chart", "bar-chart", "area-chart", "database", "cube", "anchor", "binoculars", "flask", "info-circle", "plug", "medkit", "history", "bug"];
+  var icons = ["git", "bug", "desktop", "qrcode", "photo", "pie-chart", "area-chart", "bar-chart", "database", "history", "plug", "flask", "anchor", "print", "file-image-o", "file-text-o", "info-circle"];
   con = d3.select("body")
     .append("div")
     .attr("class", "conmenu")
@@ -95,6 +95,8 @@ function drawThePicture(error, graph) {
     .call(zoom)
     //.call(drag)
     .append("g")
+    .attr("xmlns", "http://www.w3.org/2000/svg")
+    .attr("version", 1.1)
     .attr("class", "graph")
     .attr("transform", "translate(" + 0 + "," + 0 + ")" + " scale(" + 1 + ")");
 
@@ -105,6 +107,7 @@ function drawThePicture(error, graph) {
       .append("line")
       .attr("class", "link")
       //.style("stroke-width", function(d) { return Math.sqrt(d.value); });
+      .style("stroke", function(d) { return 'red'; })
       .style("stroke-width", function(d) { return d.value; });
   }
   catch(err) {
@@ -120,7 +123,7 @@ function drawThePicture(error, graph) {
       //.attr("r", 5)
       .attr("r",  function(d) { return d.complexity > 1 ? d.complexity : 5 })
       //.style("fill", function(d) { return color(d.group); })
-      .style("fill", function(d) { return color(d.group); })
+      .style("fill", function(d) { return 'blue'; })
       //.text(function(d) { return d.name + "\n" + d.url; })
       .on("mouseover", onMouseOver)
       .on("mouseout", onMouseOut)
@@ -145,7 +148,8 @@ function drawThePicture(error, graph) {
   formatDate = d3.time.format("%b %Y");
   formatLong = d3.time.format("%d-%m-%Y");
   tscale = d3.time.scale()
-    .domain([new Date('2013-01-01'), new Date('2016-12-30')])
+    //.domain([new Date('2013-01-01'), new Date('2016-12-30')])
+    .domain([new Date('2016-12-30'), new Date('2013-01-01')])
     .range([0, 400])
     .clamp(true);
   //
@@ -166,13 +170,16 @@ function drawThePicture(error, graph) {
   //
   handle = slider.insert("circle", ".track-overlay")
     .attr("class", "handle")
-    .attr("cx", 400)
+    //.attr("cx", 400)
+    .attr("cx", 0)
     .attr("r", 9);
   //
   tpanel = slider.append('text')
-    .text(formatLong(tscale.domain()[1]))
+    //.text(formatLong(tscale.domain()[1]))
+    .text(formatLong(tscale.domain()[0]))
     .attr("class", "ticks")
-    .attr("transform", "translate(" + (400-18) + " ," + (-18) + ")");
+    //.attr("transform", "translate(" + (400-18) + " ," + (-18) + ")");
+    .attr("transform", "translate(" + (0-18) + " ," + (-18) + ")");
   //
   slider.insert("g", ".track-overlay")
     .attr("class", "ticks")
@@ -200,22 +207,6 @@ function drawThePicture(error, graph) {
 
 } // draw the picture
 
-
-// TODO to be refactored later into another file
-function brushed() {
-  var value = brush.extent()[0];
-  if (d3.event.sourceEvent) { // not a programmatic event
-    value = timeScale.invert(d3.mouse(this)[0]);
-    brush.extent([value, value]);
-  }
-  handle.attr("transform", "translate(" + timeScale(value) + ",0)");
-  handle.select('text').text(formatDate(value));
-}
-function hue(h) {
-  handle.attr("cx", x(h));
-  svg.style("background-color", d3.hsl(h, 0.8, 0.8));
-}
-
 function updateThePicture(error, graph) {
 
   if (error) throw error;
@@ -241,5 +232,6 @@ function clearThePicture() {
 
   d3.select('body').selectAll('svg').remove();
   d3.select('body').selectAll('div').remove();
+  d3.select('body').selectAll('canvas').remove();
 
 } // clear elements
