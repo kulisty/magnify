@@ -21,7 +21,7 @@ function drawThePicture(error, graph) {
   }
 
   // Add context buttons
-  var icons = ["git", "bug", "desktop", "qrcode", "photo", "pie-chart", "area-chart", "bar-chart", "database", "history", "plug", "flask", "anchor", "print", "file-image-o", "file-text-o", "info-circle"];
+  var icons = ["git", "bug", "desktop", "qrcode", "photo", "pie-chart", "area-chart", "bar-chart", "database", "history", "dashboard", "plug", "anchor", "print", "file-image-o", "file-text-o", "info-circle"];
   con = d3.select("body")
     .append("div")
     .attr("class", "conmenu")
@@ -107,7 +107,7 @@ function drawThePicture(error, graph) {
       .append("line")
       .attr("class", "link")
       //.style("stroke-width", function(d) { return Math.sqrt(d.value); });
-      .style("stroke", function(d) { return 'red'; })
+      .style("stroke", function(d) { return 'orange'; })
       .style("stroke-width", function(d) { return d.value; });
   }
   catch(err) {
@@ -123,7 +123,7 @@ function drawThePicture(error, graph) {
       //.attr("r", 5)
       .attr("r",  function(d) { return d.complexity > 1 ? d.complexity : 5 })
       //.style("fill", function(d) { return color(d.group); })
-      .style("fill", function(d) { return 'blue'; })
+      .style("fill", function(d) { return 'steelblue'; })
       //.text(function(d) { return d.name + "\n" + d.url; })
       .on("mouseover", onMouseOver)
       .on("mouseout", onMouseOut)
