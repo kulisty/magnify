@@ -10,18 +10,9 @@ function drawThePicture(error, graph) {
     .append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
-  try {
-      //tip.html(path.basename(view.file));
-      tip.html(graph.project.path);
-      //sub = { url: "http://www.uw.edu.pl" };
-      sub = { url: graph.project.origin };
-  }
-  catch(err) {
-      console.log("Some problems encountered when processing warehouse:", err.message);
-  }
 
   // Add context buttons
-  var icons = ["git", "bug", "desktop", "qrcode", "photo", "pie-chart", "area-chart", "bar-chart", "database", "history", "dashboard", "plug", "anchor", "print", "file-image-o", "file-text-o", "info-circle"];
+  var icons = ["git", "bug", "archive", "qrcode", "area-chart", "bar-chart", "line-chart", "building", "pie-chart", "dashboard", "history", "photo", "file-image-o", "file-text-o", "print", "info-circle", "desktop"];
   con = d3.select("body")
     .append("div")
     .attr("class", "conmenu")
@@ -34,11 +25,13 @@ function drawThePicture(error, graph) {
     })
     .attr("aria-hidden", "true")
     .on("click", onIcon);
+
   // Add pane for context actions
   pan = d3.select("body")
     .append("div")
     .attr("class", "conpane")
     .style("opacity", 0);
+
   // Add buttons
   b01 = d3.select("body")
     .append("div")
@@ -55,6 +48,11 @@ function drawThePicture(error, graph) {
     .attr("class", "button")
     .style("opacity", 0)
     .on("click", clickZoomFit);
+  b04 = d3.select("body")
+    .append("div")
+    .attr("class", "button")
+    .style("opacity", 0)
+    .on("click", clickSwitch);
 
   // We need to scale integers into colors
   //color = d3.scaleOrdinal(d3.schemeCategory20);
@@ -101,6 +99,16 @@ function drawThePicture(error, graph) {
     .attr("transform", "translate(" + 0 + "," + 0 + ")" + " scale(" + 1 + ")");
 
   try {
+      //tip.html(path.basename(view.file));
+      tip.html(graph.project.path);
+      //sub = { url: "http://www.uw.edu.pl" };
+      sub = { url: graph.project.origin };
+  }
+  catch(err) {
+      console.log("Some problems encountered when processing warehouse:", err.message);
+  }
+
+  try {
     link = svg.selectAll(".link")
       .data(graph.links)
       .enter()
@@ -137,14 +145,19 @@ function drawThePicture(error, graph) {
       console.log("Some problems encountered when processing warehouse:", err.message);
   }
 
-  // Tool-tips handled by the browser
-  svg.selectAll("circle")
-    .append("title")
-    .text(function(d) { return d.group + ": " + d.name + "\n" + d.url; });
+  try {
+    // Tool-tips handled by the browser
+    svg.selectAll("circle")
+      .append("title")
+      .text(function(d) { return d.group + ": " + d.name + "\n" + d.url; });
+  }
+  catch(err) {
+      console.log("Some problems encountered when processing warehouse:", err.message);
+  }
 
-  // Time slider
-  //formatDate = d3.time.format("%y/%m/%d");
-  //formatDate = d3.time.format("%Y-%m-%d");
+  // Add time slider
+  // formatDate = d3.time.format("%y/%m/%d");
+  //  formatDate = d3.time.format("%Y-%m-%d");
   formatDate = d3.time.format("%b %Y");
   formatLong = d3.time.format("%d-%m-%Y");
   tscale = d3.time.scale()

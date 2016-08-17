@@ -13,6 +13,13 @@ function clickZoomFit(d) {
   svg.transition().duration(500).call(zoom.event);
 }
 
+function clickSwitch(d) {
+  svg.call(zoom.event); // https://github.com/mbostock/d3/issues/2387
+  zoom.scale(1);
+  zoom.translate([0, 0]);
+  svg.transition().duration(500).call(zoom.event);
+}
+
 function clickFreeze() {
   force.stop();
   d3.select('body').select('svg').selectAll('.node').classed("fixed", function(d) {d.fixed = true} );
@@ -100,14 +107,15 @@ function onIcon(d) {
   switch(d) {
     case 'git'          : onIcon_git(d); break;
     case 'bug'          : onIcon_bug(d); break;
+    case 'archive'      : onIcon_archive(d); break;
     case 'desktop'      : onIcon_desktop(d); break;
     case 'qrcode'       : onIcon_qrcode(d); break;
     case 'photo'        : onIcon_photo(d); break;
     case 'pie-chart'    : onIcon_piechart(d); break;
     case 'area-chart'   : onIcon_areachart(d); break;
     case 'bar-chart'    : onIcon_barchart(d); break;
-    case 'database'     : onIcon_database(d); break;
-    case 'history'      : onIcon_history(d); break;
+    case 'line-chart'   : onIcon_linechart(d); break;
+    case 'building'     : onIcon_building(d); break;
     case 'dashboard'    : onIcon_dashboard(d); break;
     case 'file-image-o' : onIcon_fileimage(d); break;
     case 'file-text-o'  : onIcon_filetext(d); break;
@@ -124,6 +132,11 @@ function onIcon_git(d) {
 function onIcon_bug(d) {
   pan.html('');
   remote.shell.openExternal(sub.url+'/issues');
+}
+
+function onIcon_archive(d) {
+  pan.html('');
+  remote.shell.openExternal('https://github.com/kulisty/sova');
 }
 
 function onIcon_desktop(d) {
@@ -261,7 +274,40 @@ function onIcon_barchart(d) {
   }, 1000);
 }
 
-function onIcon_database(d){
+function onIcon_linechart(d){
+  pan.html('');
+  pan.append("div")
+     .attr("id", "chart");
+  var chart = c3.generate({
+     data: {
+         x: 'x',
+  //        xFormat: '%Y%m%d', // 'xFormat' can be used as custom format of 'x'
+         columns: [
+             ['x', '2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04', '2013-01-05', '2013-01-06'],
+  //            ['x', '20130101', '20130102', '20130103', '20130104', '20130105', '20130106'],
+             ['data1', 30, 200, 100, 400, 150, 250],
+             ['data2', 130, 340, 200, 500, 250, 350]
+         ]
+     },
+     axis: {
+         x: {
+             type: 'timeseries',
+             tick: {
+                 format: '%Y-%m-%d'
+             }
+         }
+     }
+  });
+  setTimeout(function () {
+     chart.load({
+         columns: [
+             ['data3', 400, 500, 450, 700, 600, 500]
+         ]
+     });
+  }, 1000);
+}
+
+function onIcon_building(d){
   pan.html('');
   pan.append("div")
      .attr("id", "chart");
@@ -317,41 +363,9 @@ function onIcon_database(d){
    }, 3000);
 }
 
-function onIcon_history(d){
-  pan.html('');
-  pan.append("div")
-     .attr("id", "chart");
-  var chart = c3.generate({
-     data: {
-         x: 'x',
-  //        xFormat: '%Y%m%d', // 'xFormat' can be used as custom format of 'x'
-         columns: [
-             ['x', '2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04', '2013-01-05', '2013-01-06'],
-  //            ['x', '20130101', '20130102', '20130103', '20130104', '20130105', '20130106'],
-             ['data1', 30, 200, 100, 400, 150, 250],
-             ['data2', 130, 340, 200, 500, 250, 350]
-         ]
-     },
-     axis: {
-         x: {
-             type: 'timeseries',
-             tick: {
-                 format: '%Y-%m-%d'
-             }
-         }
-     }
-  });
-  setTimeout(function () {
-     chart.load({
-         columns: [
-             ['data3', 400, 500, 450, 700, 600, 500]
-         ]
-     });
-  }, 1000);
-}
-
 function onIcon_dashboard(d) {
   pan.html('');
+  // CHART1
   pan.append("div")
      .attr("id", "chart");
   var chart = c3.generate({
@@ -388,31 +402,26 @@ function onIcon_dashboard(d) {
           height: 180
       }
   });
-
   setTimeout(function () {
       chart.load({
           columns: [['data', 10]]
       });
   }, 1000);
-
   setTimeout(function () {
       chart.load({
           columns: [['data', 50]]
       });
   }, 2000);
-
   setTimeout(function () {
       chart.load({
           columns: [['data', 70]]
       });
   }, 3000);
-
   setTimeout(function () {
       chart.load({
           columns: [['data', 0]]
       });
   }, 4000);
-
   setTimeout(function () {
       chart.load({
           columns: [['data', 100]]
@@ -496,9 +505,10 @@ function onIcon_filetext(d) {
 function onIcon_info(d) {
   pan.html(
     '<pre>' +
-    'path   : ' + view.model.project.path   + '</br>' +
     'origin : ' + view.model.project.origin + '</br>' +
     'commit : ' + view.model.project.commit + '</br>' +
+    'owner  : ' + view.model.project.owner  + '</br>' +
+    'name   : ' + view.model.project.name   + '</br>' +
     'nodes  : ' + view.model.nodes.length   + '</br>' +
     'links  : ' + view.model.links.length   + '</br>' +
     '</pre>'
@@ -567,7 +577,15 @@ function onResize() {
   b03.style("background-position", "center center");
   b03.style("left", width-40 + "px").style("top", 74 + "px");
   //
-  slider.attr("transform", "translate(" + (window.innerWidth - 500) + "," + 50 + ")");
+  b04.transition().duration(500).style("opacity", 0.5);
+  b04.style("background-image", "url('css/images/icon-layers.png')");
+	b04.style("background-repeat", "no-repeat");
+  b04.style("background-position", "center center");
+  //b04.style("left", width-72 + "px").style("top", 74 + "px");
+  b04.style("left", width-40 + "px").style("top", 106 + "px");
+  //
+  //slider.attr("transform", "translate(" + (window.innerWidth - 500) + "," + 70 + ")");
+  slider.attr("transform", "translate(" + (window.innerWidth - 500) + "," + 32 + ")");
 }
 
 function onTick() {

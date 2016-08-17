@@ -18,7 +18,7 @@ var qr = require('qr-image');
 //var jsdom = require("jsdom").jsdom;
 //var $ = require('jquery'); //$('.tag').click(function(){return console.log('clicked');});
 
-// Global handles
+// Global handles for visual controls
 var svg = null, // containter for nodes, links
     tip = null, // tool-tip
     con = null, // context buttons
@@ -26,6 +26,8 @@ var svg = null, // containter for nodes, links
     b01 = null, // global buttons: zoom in
     b02 = null, // global buttons: zoom out
     b03 = null, // global buttons: zoom fit
+    b04 = null, // global buttons: layers
+    b05 = null, // global buttons: network    
     // subgraph selection
     sub = null, // ie. one node
     // d3 shortcuts
