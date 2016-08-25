@@ -27,9 +27,12 @@ var svg = null, // containter for nodes, links
     b02 = null, // global buttons: zoom out
     b03 = null, // global buttons: zoom fit
     b04 = null, // global buttons: layers
-    b05 = null, // global buttons: network    
+    b05 = null, // global buttons: network
     // subgraph selection
     sub = null, // ie. one node
+    // layer selection
+    lay = 0, // ie. commits, files, functions
+    lmx = 0, // number of layers in total
     // d3 shortcuts
     force = null,
     zoom  = null,
@@ -53,6 +56,7 @@ var view = {};
 view.file = ''; // default file
 view.model = null; // graph model
 view.data = null; // and copy of its data
+view.lays = []; // empty list of layers
 
 // Handle window events
 /*
@@ -86,9 +90,12 @@ view.menu = function() {
                     view.file  = fileNames[0];
                     view.model = JSON.parse(fs.readFileSync(view.file, 'utf8'));
                     view.data  = saveFix(view.model);
+                    view.lays  = [view.model.commits, view.model.files, view.model.functions];
+                    lay = 1;
+                    lmx = 3;
                     //d3.json(view.file, drawThePicture);
                     clearThePicture();
-                    drawThePicture(null, view.model);
+                    drawThePicture();
                 }
               );
             }
@@ -115,16 +122,7 @@ view.menu = function() {
             view.model = null;
             view.data  = null;
           }
-        }, // File / Close
-        /*
-        { // File / Load
-          label: 'Load fix',
-          accelerator: 'CmdOrCtrl+L',
-          click: function(item, focusedWindows) {
-            updateThePicture(null, JSON.parse(fs.readFileSync(view.file, 'utf8')));
-          } // click for load
-        },
-        */
+        } // File / Close
       ]
     }, // file
 

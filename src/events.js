@@ -1,25 +1,3 @@
-function clickZoomIn(d) {
-  onZoomBy(1.2);
-}
-
-function clickZoomOut(d) {
-  onZoomBy(0.6);
-}
-
-function clickZoomFit(d) {
-  svg.call(zoom.event); // https://github.com/mbostock/d3/issues/2387
-  zoom.scale(1);
-  zoom.translate([0, 0]);
-  svg.transition().duration(500).call(zoom.event);
-}
-
-function clickSwitch(d) {
-  svg.call(zoom.event); // https://github.com/mbostock/d3/issues/2387
-  zoom.scale(1);
-  zoom.translate([0, 0]);
-  svg.transition().duration(500).call(zoom.event);
-}
-
 function clickFreeze() {
   force.stop();
   d3.select('body').select('svg').selectAll('.node').classed("fixed", function(d) {d.fixed = true} );
@@ -43,7 +21,99 @@ function clickReload() {
 
 function onZoom() {
   svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")");
- }
+  // levels:
+  // (a) nodes: none,  links: main
+  // (b) nodes: main,  links: main
+  // (c) nodes: main,  links: all
+  // (d) nodes: small, links: all
+  // none  = [0,1)
+  // main  = [1, 2)
+  // small = [2, 3)
+  // all   = [0, 3)
+  //
+  // level d
+  if (zoom.scale() >= 2.00) {
+    onFilter(2, 3, 0, 3);
+  // level c
+  } else
+  if (zoom.scale() >= 1.25) {
+    onFilter(1, 2, 0, 3);
+  } else
+  // level b
+  if (zoom.scale() >= 0.75) {
+    onFilter(1, 2, 1, 2);
+  } else
+  // level a
+  if (zoom.scale() >= 0.00) {
+    onFilter(0, 1, 1, 2);
+  };
+}
+
+function onFilter(nFrom, nTo, lFrom, lTo) {
+  function selectNodes(aNode) {
+    return ((aNode.visibility >= nFrom) && (aNode.visibility < nTo));
+  }
+  function selectLinks(aLink) {
+    return ((aLink.visibility >= lFrom) && (aLink.visibility < lTo));
+  }
+  var g = view.lays[lay].nodes.slice();
+  var h = view.lays[lay].links.slice();
+  g = g.filter(selectNodes);
+  h = h.filter(selectLinks);
+  // link
+  link = svg.selectAll(".link")
+    .data(h);
+    //.data(g, function(d) { return d.id; });
+  link.exit()
+    .remove();
+  link.enter()
+    .append("line")
+    .attr("class", "link")
+    //.style("stroke-width", function(d) { return Math.sqrt(d.value); });
+    .style("stroke", function(d) { return 'orange'; })
+    .style("stroke-width", function(d) { return d.value; });
+  // node
+  node = svg.selectAll(".node")
+    //.data(g);
+    .data(g, function(d) { return d.id; });
+  node.exit()
+    .remove();
+  node.enter()
+    .append("circle")
+    .attr("class", "node")
+    .attr("r",  function(d) { return d.complexity > 1 ? d.complexity : 5 })
+    .style("fill", function(d) { return 'steelblue'; })
+    .on("mouseover", onMouseOver)
+    .on("mouseout", onMouseOut)
+    .on("contextmenu", onRightclicked)
+    //.on("dblclick", onDoubleclicked)
+    .on("click", onClicked)
+    //.call(zoom)
+    .call(drag);
+  // resume
+  force.resume();
+}
+
+function clickZoomIn(d) {
+  onZoomBy(1.2);
+}
+
+function clickZoomOut(d) {
+  onZoomBy(0.6);
+}
+
+function clickSwitch(d) {
+  lay = (lay + 1) % 3;
+  clearThePicture();
+  drawThePicture(null, [view.model.commits, view.model.files, view.model.functions]);
+}
+
+function clickZoomFit(d) {
+  svg.call(zoom.event); // https://github.com/mbostock/d3/issues/2387
+  zoom.scale(1);
+  zoom.translate([0, 0]);
+  svg.transition().duration(500).call(zoom.event);
+}
 
 function onZoomAxis() {
     //svg.select(".x.axis").call(xAxis);
@@ -80,17 +150,22 @@ function onZoomBy(factor) {
 }
 
 function onClicked(d) {
-  if (d3.event.defaultPrevented) return; // click suppressed
-  //d3.select().classed("fixed", d.fixed = false);
+  console.log("Click");
+  // click suppressed, ie. if d3.event.preventDefault(); executed earlier
+  if (d3.event.defaultPrevented) return;
   d3.select().classed("fixed", d.fixed = false);
   force.resume();
 }
 
-function onIconClicked(icon){
-  console.log(icon + " clicked");
+function onDoubleclicked(d) {
+  //console.log("Double click");
+  d3.select(this)
+    .style("fill", function(d) { return 'orange'; });
+  //d3.event.sourceEvent.stopPropagation();
 }
 
 function onRightclicked(d, i) {
+  //console.log("Right click");
   //clipboard.writeText(d.url);
   //window.open(d.url)
   //shell.openExternal(d.url);
@@ -101,6 +176,29 @@ function onRightclicked(d, i) {
     tip.html(d.name);
   };
   sub = d;
+}
+
+function onDragstarted(d) {
+  //console.log("Drag started");
+  d3.select(this).style("fill", function(d) { return 'orange'; });
+  // distinguish left (0) or right (2) mouse button
+  if (d3.event.sourceEvent.button == 0) {
+    d3.select().classed("fixed", d.fixed = true);
+  }
+  d3.event.sourceEvent.stopPropagation();
+}
+
+function onDragged(d) {
+  //console.log("Dragged");
+}
+
+function onDragended(d) {
+  //console.log("Drag ended");
+  d3.select(this).style("fill", function(d) { return color(d.group); });
+}
+
+function onIconClicked(icon){
+  console.log(icon + " clicked");
 }
 
 function onIcon(d) {
@@ -505,37 +603,28 @@ function onIcon_filetext(d) {
 function onIcon_info(d) {
   pan.html(
     '<pre>' +
+    'PROJECT' + '</br>' +
     'origin : ' + view.model.project.origin + '</br>' +
     'commit : ' + view.model.project.commit + '</br>' +
     'owner  : ' + view.model.project.owner  + '</br>' +
     'name   : ' + view.model.project.name   + '</br>' +
-    'nodes  : ' + view.model.nodes.length   + '</br>' +
-    'links  : ' + view.model.links.length   + '</br>' +
+    '</pre>' +
+    '<pre>' +
+    'COMMITS' + '</br>' +
+    'nodes  : ' + view.model.commits.nodes.length   + '</br>' +
+    'links  : ' + view.model.commits.links.length   + '</br>' +
+    '</pre>' +
+    '<pre>' +
+    'FILES' + '</br>' +
+    'nodes  : ' + view.model.files.nodes.length   + '</br>' +
+    'links  : ' + view.model.files.links.length   + '</br>' +
+    '</pre>' +
+    '<pre>' +
+    'FUNCTIONS' + '</br>' +
+    'nodes  : ' + view.model.functions.nodes.length   + '</br>' +
+    'links  : ' + view.model.functions.links.length   + '</br>' +
     '</pre>'
   );
-}
-
-function onDoubleclicked(d) {
-  d3.select(this)
-    .style("fill", function(d) { return 'orange'; });
-  //d3.event.sourceEvent.stopPropagation();
-}
-
-function onDragstarted(d) {
-  d3.select()
-    .classed("fixed", d.fixed = true);
-  d3.select(this)
-    .style("fill", function(d) { return 'orange'; });
-  d3.event.sourceEvent.stopPropagation();
-}
-
-function onDragged(d) {
-  //
-}
-
-function onDragended(d) {
-  d3.select(this)
-    .style("fill", function(d) { return color(d.group); });
 }
 
 function onSlider(d) {
@@ -584,8 +673,11 @@ function onResize() {
   //b04.style("left", width-72 + "px").style("top", 74 + "px");
   b04.style("left", width-40 + "px").style("top", 106 + "px");
   //
+  /*
   //slider.attr("transform", "translate(" + (window.innerWidth - 500) + "," + 70 + ")");
+  slider.transition().duration(500).style("opacity", 1.0);
   slider.attr("transform", "translate(" + (window.innerWidth - 500) + "," + 32 + ")");
+  */
 }
 
 function onTick() {
