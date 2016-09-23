@@ -23,6 +23,7 @@ var svg = null, // containter for nodes, links
     tip = null, // tool-tip
     con = null, // context buttons
     pan = null, // pane for context actions results
+    str = null, // pane for structure selection
     b01 = null, // global buttons: zoom in
     b02 = null, // global buttons: zoom out
     b03 = null, // global buttons: zoom fit

@@ -30,6 +30,12 @@ function drawThePicture() {
     .attr("class", "conpane")
     .style("opacity", 0.5); //0.0
 
+  // Add pane for structure selection
+  str = d3.select("body")
+    .append("div")
+    .attr("class", "strpane")
+    .style("opacity", 0.5); //0.0
+
   // Add buttons
   b01 = d3.select("body")
     .append("div")
@@ -163,7 +169,6 @@ function drawThePicture() {
   }
   */
 
-  /*
   // Add time slider
   // formatDate = d3.time.format("%y/%m/%d");
   //  formatDate = d3.time.format("%Y-%m-%d");
@@ -219,7 +224,6 @@ function drawThePicture() {
     .on("dragend", function() { d3.event.sourceEvent.stopPropagation(); })
     .on("drag", function() { onSlider(d3.event.x-window.innerWidth+500); d3.event.sourceEvent.stopPropagation(); });
   slider.call(tdrag);
-  */
 
   onResize();
 

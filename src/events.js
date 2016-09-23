@@ -215,6 +215,7 @@ function onIcon(d) {
     case 'line-chart'   : onIcon_linechart(d); break;
     case 'building'     : onIcon_building(d); break;
     case 'dashboard'    : onIcon_dashboard(d); break;
+    case 'history'      : onIcon_history(d); break;
     case 'file-image-o' : onIcon_fileimage(d); break;
     case 'file-text-o'  : onIcon_filetext(d); break;
     case 'info-circle'  : onIcon_info(d); break;
@@ -247,6 +248,10 @@ function onIcon_qrcode(d) {
   //var qr_svg = qr.image(sub.url, { type: 'svg' });
   // qr_svg.pipe(fs.createWriteStream('qrcode.svg'));
   pan.html(svg_string);
+  pan.select("svg")
+    //.attr("viewBox", "0 0 50 50")
+    .attr("width", 470)
+    .attr("height", 320);
 }
 
 function onIcon_photo(d) {
@@ -270,7 +275,7 @@ function onIcon_photo(d) {
       .innerHTML;
   //
   var svg_string =
-    '<svg xmlns="http://www.w3.org/2000/svg" width="'+470+'" height="'+470+'" viewBox="'+ x +' '+ y +' '+ r +' '+ r +'">' +
+    '<svg xmlns="http://www.w3.org/2000/svg" width="'+470+'" height="'+320+'" viewBox="'+ x +' '+ y +' '+ r +' '+ r +'">' +
     svg_html +
     '</svg>';
   pan.html(svg_string);
@@ -527,6 +532,68 @@ function onIcon_dashboard(d) {
   }, 5000);
 }
 
+function onIcon_history(d) {
+  str.html('');
+
+  var width = 470,
+      height = 320,
+      radius = (Math.min(width, height) / 2) - 10;
+
+  var formatNumber = d3.format(",d");
+
+  var x = d3.scale.linear()
+      .range([0, 2 * Math.PI]);
+
+  var y = d3.scale.sqrt()
+      .range([0, radius]);
+
+  var color = d3.scale.category20c();
+
+  var partition = d3.layout.partition()
+      .value(function(d) { return d.size; });
+
+  var arc = d3.svg.arc()
+      .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
+      .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
+      .innerRadius(function(d) { return Math.max(0, y(d.y)); })
+      .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); });
+
+  var svg2 = str.append("svg")
+      .attr("width", width)
+      .attr("height", height)
+      .append("g")
+      .attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");
+
+  d3.json("http://bl.ocks.org/mbostock/raw/4063550/flare.json", function(error, root) {
+    if (error) throw error;
+
+    svg2.selectAll("path")
+        .data(partition.nodes(root))
+      .enter().append("path")
+        .attr("d", arc)
+        .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
+        .on("click", click)
+      .append("title")
+        .text(function(d) { return d.name + "\n" + formatNumber(d.value); });
+  });
+
+  function click(d) {
+    svg2.transition()
+        .duration(750)
+        .tween("scale", function() {
+          var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
+              yd = d3.interpolate(y.domain(), [d.y, 1]),
+              yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
+          return function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
+        })
+      .selectAll("path")
+        .attrTween("d", function(d) { return function() { return arc(d); }; });
+  }
+
+  d3.select(self.frameElement).style("height", height + "px");
+}
+
+
 function onIcon_fileimage(d) {
   pan.html('');
   var svg_rect =
@@ -541,7 +608,7 @@ function onIcon_fileimage(d) {
       .node()
       .innerHTML;
   var svg_string =
-    '<svg xmlns="http://www.w3.org/2000/svg" width="'+470+'" height="'+470+'" viewBox="'+ x +' '+ y +' '+ r +' '+ r +'">' +
+    '<svg xmlns="http://www.w3.org/2000/svg" width="'+470+'" height="'+320+'" viewBox="'+ x +' '+ y +' '+ r +' '+ r +'">' +
     svg_html +
     '</svg>';
   var imgsrc = 'data:image/svg+xml;base64,'+ btoa(svg_string);
@@ -550,7 +617,7 @@ function onIcon_fileimage(d) {
     .append("canvas")
     .attr("style", "display:none")
     .attr("width", 470)
-    .attr("height", 470);
+    .attr("height", 320);
   var canvas = document.querySelector("canvas"),
   	  context = canvas.getContext("2d");
   var image = new Image;
@@ -583,7 +650,7 @@ function onIcon_filetext(d) {
       .node()
       .innerHTML;
   var svg_string =
-    '<svg xmlns="http://www.w3.org/2000/svg" width="'+470+'" height="'+470+'" viewBox="'+ x +' '+ y +' '+ r +' '+ r +'">' +
+    '<svg xmlns="http://www.w3.org/2000/svg" width="'+470+'" height="'+320+'" viewBox="'+ x +' '+ y +' '+ r +' '+ r +'">' +
     svg_html +
     '</svg>';
   var imgsrc = 'data:image/svg+xml;base64,'+ btoa(svg_string);
@@ -646,7 +713,11 @@ function onResize() {
   // pane for context actions
   pan.html('');
   pan.transition().duration(500).style("opacity", 0.5);
-  pan.style("left", width-500 + "px").style("top", height-592 + "px");
+  pan.style("left", width-500 + "px").style("top", height-592+150 + "px");
+  // pane for structure selection
+  str.html('');
+  str.transition().duration(500).style("opacity", 0.5);
+  str.style("left", width-500 + "px").style("top", height-592+150-320-28 + "px");
   // buttons
   b01.transition().duration(500).style("opacity", 0.5);
   b01.style("background-image", "url('css/images/icon-plus.png')");
@@ -673,11 +744,9 @@ function onResize() {
   //b04.style("left", width-72 + "px").style("top", 74 + "px");
   b04.style("left", width-40 + "px").style("top", 106 + "px");
   //
-  /*
   //slider.attr("transform", "translate(" + (window.innerWidth - 500) + "," + 70 + ")");
   slider.transition().duration(500).style("opacity", 1.0);
   slider.attr("transform", "translate(" + (window.innerWidth - 500) + "," + 32 + ")");
-  */
 }
 
 function onTick() {
