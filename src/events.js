@@ -235,7 +235,69 @@ function onIcon_bug(d) {
 
 function onIcon_archive(d) {
   pan.html('');
-  remote.shell.openExternal('https://github.com/kulisty/sova');
+  // remote.shell.openExternal('https://github.com/kulisty/sova');
+
+  // Add time slider
+  // formatDate = d3.time.format("%y/%m/%d");
+  //  formatDate = d3.time.format("%Y-%m-%d");
+  formatDate = d3.time.format("%b %Y");
+  formatLong = d3.time.format("%d-%m-%Y");
+  tscale = d3.time.scale()
+    //.domain([new Date('2013-01-01'), new Date('2016-12-30')])
+    .domain([new Date('2016-12-30'), new Date('2013-01-01')])
+    .range([0, 400])
+    .clamp(true);
+  //
+  slider = sld.append("svg")
+    .attr("width", 450)
+    .attr("height", 30)
+    .append("g")
+    .attr("class", "slider")
+    .attr("transform", "translate(" + 10 + "," + 10 + ")");
+  //
+  slider.append("line")
+    .attr("class", "track")
+    .attr("x1", tscale.range()[0])
+    .attr("x2", tscale.range()[1])
+    .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+    .attr("class", "track-inset")
+    .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+    .attr("class", "track-overlay");
+  //
+  handle = slider.insert("circle", ".track-overlay")
+    .attr("class", "handle")
+    //.attr("cx", 400)
+    .attr("cx", 0)
+    .attr("r", 9);
+  //
+  tpanel = slider.append('text')
+    //.text(formatLong(tscale.domain()[1]))
+    .text(formatLong(tscale.domain()[0]))
+    .attr("class", "ticks")
+    //.attr("transform", "translate(" + (400-18) + " ," + (-18) + ")");
+    .attr("transform", "translate(" + (0) + " ," + (0) + ")");
+  //
+  slider.insert("g", ".track-overlay")
+    .attr("class", "ticks")
+    .attr("transform", "translate(0," + 20 + ")")
+    .selectAll("text")
+    .data(tscale.ticks(6))
+    .enter()
+    .append("text")
+    .attr("x", tscale)
+    .attr("text-anchor", "middle")
+    .text(function(d) { return formatDate(d); });
+  //
+  var tdrag = d3.behavior.drag()
+    .on("dragstart", function() { d3.event.sourceEvent.stopPropagation(); })
+    .on("dragend", function() { d3.event.sourceEvent.stopPropagation(); })
+    .on("drag", function() { onSlider(d3.event.x); d3.event.sourceEvent.stopPropagation(); });
+  slider.call(tdrag);
+  //
+  //slider.attr("transform", "translate(" + (window.innerWidth - 500) + "," + 70 + ")");
+  slider.transition().duration(500).style("opacity", 1.0);
+  slider.attr("transform", "translate(" + 10 + "," + 10 + ")");
+
 }
 
 function onIcon_desktop(d) {
@@ -704,20 +766,40 @@ function onResize() {
   width = window.innerWidth, height = window.innerHeight;
   d3.select('svg').attr("width", width).attr("height", height);
   force.size([width, height]).resume();
-  // tool-tip
-  tip.transition().duration(500).style("opacity", 0.5);
-  tip.style("left", width-500 + "px").style("top", height-50 + "px");
   // context buttons
   con.transition().duration(500).style("opacity", 0.5);
-  con.style("left", width-500 + "px").style("top", height-96 + "px");
-  // pane for context actions
-  pan.html('');
-  pan.transition().duration(500).style("opacity", 0.5);
-  pan.style("left", width-500 + "px").style("top", height-592+150 + "px");
+  con.style("left", width-490 + "px").style("top", height-40 + "px");
+  // tool-tip
+  tip.transition().duration(500).style("opacity", 0.5);
+  tip.style("left", width-490 + "px").style("top", height-72 + "px");
+  // pane for search selection
+  srh.html('');
+  srh.transition().duration(500).style("opacity", 0.5);
+  srh.style("left", 10 + "px")
+     .style("top", 10 + "px")
+     .style("width", 480 + "px")
+     .style("height", 80 + "px");
+  // pane for time selection
+  sld.html('');
+  sld.transition().duration(500).style("opacity", 0.5);
+  sld.style("left", 10 + "px")
+     .style("top", 92 + "px")
+     .style("width", 480 + "px")
+     .style("height", 80 + "px");
   // pane for structure selection
   str.html('');
   str.transition().duration(500).style("opacity", 0.5);
-  str.style("left", width-500 + "px").style("top", height-592+150-320-28 + "px");
+  str.style("left", 10 + "px")
+     .style("top", 174 + "px")
+     .style("width", 480 + "px")
+     .style("height", 320 + "px");
+  // pane for context actions
+  pan.html('');
+  pan.transition().duration(500).style("opacity", 0.5);
+  pan.style("left", 10 + "px")
+     .style("top", 496 + "px")
+     .style("width", 480 + "px")
+     .style("height", 320 + "px");
   // buttons
   b01.transition().duration(500).style("opacity", 0.5);
   b01.style("background-image", "url('css/images/icon-plus.png')");
@@ -743,10 +825,6 @@ function onResize() {
   b04.style("background-position", "center center");
   //b04.style("left", width-72 + "px").style("top", 74 + "px");
   b04.style("left", width-40 + "px").style("top", 106 + "px");
-  //
-  //slider.attr("transform", "translate(" + (window.innerWidth - 500) + "," + 70 + ")");
-  slider.transition().duration(500).style("opacity", 1.0);
-  slider.attr("transform", "translate(" + (window.innerWidth - 500) + "," + 32 + ")");
 }
 
 function onTick() {

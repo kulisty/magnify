@@ -36,6 +36,18 @@ function drawThePicture() {
     .attr("class", "strpane")
     .style("opacity", 0.5); //0.0
 
+  // Add pane for structure selection
+  sld = d3.select("body")
+    .append("div")
+    .attr("class", "sldpane")
+    .style("opacity", 0.5); //0.0
+
+  // Add pane for structure selection
+  srh = d3.select("body")
+    .append("div")
+    .attr("class", "srhpane")
+    .style("opacity", 0.5); //0.0
+
   // Add buttons
   b01 = d3.select("body")
     .append("div")
@@ -168,62 +180,6 @@ function drawThePicture() {
       console.log("Some problems encountered when processing warehouse:", err.message);
   }
   */
-
-  // Add time slider
-  // formatDate = d3.time.format("%y/%m/%d");
-  //  formatDate = d3.time.format("%Y-%m-%d");
-  formatDate = d3.time.format("%b %Y");
-  formatLong = d3.time.format("%d-%m-%Y");
-  tscale = d3.time.scale()
-    //.domain([new Date('2013-01-01'), new Date('2016-12-30')])
-    .domain([new Date('2016-12-30'), new Date('2013-01-01')])
-    .range([0, 400])
-    .clamp(true);
-  //
-  slider = d3.select("body")
-    .select("svg")
-    .append("g")
-    .attr("class", "slider")
-    .attr("transform", "translate(" + (window.innerWidth - 500) + "," + 50 + ")");
-  //
-  slider.append("line")
-    .attr("class", "track")
-    .attr("x1", tscale.range()[0])
-    .attr("x2", tscale.range()[1])
-    .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
-    .attr("class", "track-inset")
-    .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
-    .attr("class", "track-overlay");
-  //
-  handle = slider.insert("circle", ".track-overlay")
-    .attr("class", "handle")
-    //.attr("cx", 400)
-    .attr("cx", 0)
-    .attr("r", 9);
-  //
-  tpanel = slider.append('text')
-    //.text(formatLong(tscale.domain()[1]))
-    .text(formatLong(tscale.domain()[0]))
-    .attr("class", "ticks")
-    //.attr("transform", "translate(" + (400-18) + " ," + (-18) + ")");
-    .attr("transform", "translate(" + (0-18) + " ," + (-18) + ")");
-  //
-  slider.insert("g", ".track-overlay")
-    .attr("class", "ticks")
-    .attr("transform", "translate(0," + 20 + ")")
-    .selectAll("text")
-    .data(tscale.ticks(6))
-    .enter()
-    .append("text")
-    .attr("x", tscale)
-    .attr("text-anchor", "middle")
-    .text(function(d) { return formatDate(d); });
-  //
-  var tdrag = d3.behavior.drag()
-    .on("dragstart", function() { d3.event.sourceEvent.stopPropagation(); })
-    .on("dragend", function() { d3.event.sourceEvent.stopPropagation(); })
-    .on("drag", function() { onSlider(d3.event.x-window.innerWidth+500); d3.event.sourceEvent.stopPropagation(); });
-  slider.call(tdrag);
 
   onResize();
 
