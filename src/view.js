@@ -15,64 +15,19 @@ var fs = require('fs');
 var d3 = require('d3');
 var qr = require('qr-image');
 
-//var jsdom = require("jsdom").jsdom;
-//var $ = require('jquery'); //$('.tag').click(function(){return console.log('clicked');});
-
-// Global handles for visual controls
-var svg = null, // containter for nodes, links
-    tip = null, // tool-tip
-    con = null, // context buttons
-    pan = null, // pane for context actions results
-    str = null, // pane for structure selection
-    sld = null, // pane for time slider
-    srh = null, // pane for search field
-    b01 = null, // global buttons: zoom in
-    b02 = null, // global buttons: zoom out
-    b03 = null, // global buttons: zoom fit
-    b04 = null, // global buttons: layers
-    b05 = null, // global buttons: network
-    // subgraph selection
-    sub = null, // ie. one node
-    // layer selection
-    lay = 0, // ie. commits, files, functions
-    lmx = 0, // number of layers in total
-    // d3 shortcuts
-    force = null,
-    zoom  = null,
-    drag  = null,
-    color = null,
-    links = null,
-    nodes = null,
-    // slider
-    slider = null,
-    handle = null,
-    tpanel = null,
-    tscale = null;
-
 // Viewport
-// var margin = {top: 0, right: 0, bottom: 0, left: 0};
-var width = window.innerWidth, // - margin.left - margin.right,
-    height = window.innerHeight; // - margin.top - margin.bottom;
+// var width = window.innerWidth,
+//     height = window.innerHeight;
 
-// Container for my application view.
-var view = {};
-view.file = ''; // default file
-view.model = null; // graph model
-view.data = null; // and copy of its data
-view.lays = []; // empty list of layers
+// Container for my application model
+var file = { name:'', data: null, copy: null};
 
-// Handle window events
-/*
-window.onresize = function () {
-  //console.log("Resize new");
-  d3.select('body').select('svg')
-    .attr("width", window.innerWidth)
-    .attr("height", window.innerHeight);
-};
-*/
+var simu = null;
 
-// New menu overloading the default one.
-view.menu = function() {
+var temp = null;
+
+// New menu overloading the default one
+var menu = function() {
 
   var template = [
 
@@ -80,6 +35,7 @@ view.menu = function() {
     {
       label: 'File',
       submenu: [
+
         { // File / Open
           label: 'Open',
           accelerator: 'CmdOrCtrl+O',
@@ -90,12 +46,9 @@ view.menu = function() {
                   [{ name: 'Source code', extensions: ['json','kml', 'xml'] } ]},
                   function (fileNames) {
                     if (fileNames === undefined) return;
-                    view.file  = fileNames[0];
-                    view.model = JSON.parse(fs.readFileSync(view.file, 'utf8'));
-                    view.data  = saveFix(view.model);
-                    view.lays  = [view.model.commits, view.model.files, view.model.functions];
-                    lay = 1;
-                    lmx = 3;
+                    file.name = fileNames[0];
+                    file.data = JSON.parse(fs.readFileSync(file.name, 'utf8'));
+                    file.copy = saveFix(file.data);
                     //d3.json(view.file, drawThePicture);
                     clearThePicture();
                     drawThePicture();
@@ -104,28 +57,28 @@ view.menu = function() {
             }
           }
         }, // File / Open
+
         { // File / Save
           label: 'Save',
           accelerator: 'CmdOrCtrl+S',
           click: function(item, focusedWindows) {
-            view.data = saveFix(view.model);
+            file.copy = saveFix(file.data);
             fs.writeFile(
               //path.basename(view.file, '.json')+'_fix'+path.extname(view.file),
-              view.file,
-              JSON.stringify(view.data, null, 2)
+              file.name, JSON.stringify(file.copy, null, 2)
             );
           }
         }, // File / Save
+
         { // File / Close
           label: 'Close',
           accelerator: 'CmdOrCtrl+W',
           click: function(item, focusedWindows) {
+            file = { name:'', data: null, copy: null};
             clearThePicture();
-            view.file  = "";
-            view.model = null;
-            view.data  = null;
           }
         } // File / Close
+
       ]
     }, // file
 
@@ -133,20 +86,23 @@ view.menu = function() {
     {
       label: 'View',
       submenu: [
+
         { // View / Freeze
           label: 'Freeze',
           accelerator: 'CmdOrCtrl+F',
           click: function(item, focusedWindow) {
             clickFreeze();
           }
-        },
-        { // View / Freeze
+        }, // View / Freeze
+
+        { // View / Unfreeze
           label: 'Unfreeze',
           accelerator: 'CmdOrCtrl+U',
           click: function(item, focusedWindow) {
             clickUnfreeze();
           }
-        },
+        }, // View / Unfreeze
+
         { // View / Reload
           label: 'Shake',
           accelerator: 'F5',
@@ -154,7 +110,8 @@ view.menu = function() {
             clickReload();
             //window.reload();
           }
-        },
+        }, // View / Reload
+
         { // View / Toggle full screen
           label: 'Toggle Full Screen',
           accelerator: (function() {
@@ -167,7 +124,8 @@ view.menu = function() {
             if (focusedWindow)
               focusedWindow.setFullScreen(!focusedWindow.isFullScreen());
           }
-        },
+        }, // View / Toggle full screen
+
         { // View / Toggle developer tools
           label: 'Toggle Developer Tools',
           accelerator: (function() {
@@ -180,7 +138,8 @@ view.menu = function() {
             if (focusedWindow)
               focusedWindow.toggleDevTools();
           }
-        },
+        }, // View / Toggle developer tools
+
       ]
     }, // view
 
@@ -214,4 +173,4 @@ view.menu = function() {
 }();
 
 // Build the menu so it is visible.
-view.menu.init();
+menu.init();

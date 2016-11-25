@@ -1,187 +1,153 @@
 function drawThePicture() {
 
-  // Window events
-  d3.select(window).on("resize", onResize);
+  addButtons();
 
-  // Add tooltip
-  tip = d3.select("body")
-    .append("div")
-    .attr("class", "tooltip")
-    .style("opacity", 0.5); //0.0
+  d3.select(window).on("resize", resized);
 
-  // Add context buttons
-  var icons = ["git", "bug", "archive", "qrcode", "area-chart", "bar-chart", "line-chart", "building", "pie-chart", "dashboard", "history", "photo", "file-image-o", "file-text-o", "print", "info-circle", "desktop"];
-  con = d3.select("body")
-    .append("div")
-    .attr("class", "conmenu")
-    .style("opacity", 0.5); //0.0
-  con.selectAll("i")
-    .data(icons)
-    .enter().append("i")
-    .attr("class", function(d){
-      return "icon fa fa-lg fa-fw fa-" + d;
-    })
-    .attr("aria-hidden", "true")
-    .on("click", onIcon);
+  var drag = d3.drag()
+      .on("start", dragstarted)
+      .on("drag", dragged)
+      .on("end", dragended);
 
-  // Add pane for context actions
-  pan = d3.select("body")
-    .append("div")
-    .attr("class", "conpane")
-    .style("opacity", 0.5); //0.0
+  var zoom = d3.zoom()
+      .scaleExtent([0, 10])
+      .translateExtent([[-10000, -10000], [10000, 10000]])
+      .on("zoom", zoomed);
 
-  // Add pane for structure selection
-  str = d3.select("body")
-    .append("div")
-    .attr("class", "strpane")
-    .style("opacity", 0.5); //0.0
+  var svg = d3.select("body")
+      .append("svg")
+      .attr("width", window.innerWidth)
+      .attr("height", window.innerHeight);
 
-  // Add pane for structure selection
-  sld = d3.select("body")
-    .append("div")
-    .attr("class", "sldpane")
-    .style("opacity", 0.5); //0.0
+  var graph = file.data.graph;
 
-  // Add pane for structure selection
-  srh = d3.select("body")
-    .append("div")
-    .attr("class", "srhpane")
-    .style("opacity", 0.5); //0.0
+  var width = +svg.attr("width"),
+      height = +svg.attr("height");
 
-  // Add buttons
-  b01 = d3.select("body")
-    .append("div")
-    .attr("class", "button")
-    .style("opacity", 0.5) //0.0
-    .on("click", clickZoomIn);
-  b02 = d3.select("body")
-    .append("div")
-    .attr("class", "button")
-    .style("opacity", 0.5) //0.0
-    .on("click", clickZoomOut);
-  b03 = d3.select("body")
-    .append("div")
-    .attr("class", "button")
-    .style("opacity", 0.5) //0.0
-    .on("click", clickZoomFit);
-  b04 = d3.select("body")
-    .append("div")
-    .attr("class", "button")
-    .style("opacity", 0.5) //0.0
-    .on("click", clickSwitch);
+  var r = svg.append("rect")
+      .attr("class", "view")
+      .attr("width", width)
+      .attr("height", height)
+      .style("fill", "none")
+      .style("pointer-events", "all");
 
-  // We need to scale integers into colors
-  //color = d3.scaleOrdinal(d3.schemeCategory20);
-  color = d3.scale.category20();
+  var g = svg.append("g");
 
-  // Layout based on forces
-  force = d3.layout.force()
-    .size([window.innerWidth, window.innerHeight])
-    .charge(-120)
-    .gravity(0.05)
-    .linkDistance(20)
-    .linkStrength(1)
-    //.friction(0.9)
-    //.theta(0.8)
-    //.alpha(0.1)
-    .on("tick", onTick);
+  var color = d3.scaleOrdinal(d3.schemeCategory20);
 
-  zoom = d3.behavior.zoom()
-    //.x(x)
-    //.y(y)
-    //.scaleExtent([1, 10])
-    .center([window.innerWidth / 2, window.innerHeight / 2])
-    .size([window.innerWidth, window.innerHeight])
-    .on("zoom", onZoom);
+  var simulation = d3.forceSimulation()
+      .force("link", d3.forceLink().id(function(d) { return d.id; }))
+      //.force("charge", d3.forceManyBody())
+      .force("charge", d3.forceManyBody().strength(-30))
+      //.force("link", d3.forceLink(links).strength(1).distance(20).iterations(10))
+      .force("center", d3.forceCenter(width / 2, height / 2));
 
-  //drag = d3.behavior.drag()
-  drag = force.drag()
-    .origin(function(d) { return d; })
-    .on("dragstart", onDragstarted)
-    .on("drag", onDragged)
-    .on("dragend", onDragended);
+  var link = g.append("g").attr("class", "links")
+      .selectAll("line")
+      .data(graph.links)
+      .enter().append("line")
+      .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
 
-  // Add new canvas
-  svg = d3.select("body")
-    .append("svg")
-    .attr("width", window.innerWidth)
-    .attr("height", window.innerHeight)
-    .call(zoom)
-    //.call(drag)
-    .append("g")
-    .attr("xmlns", "http://www.w3.org/2000/svg")
-    .attr("version", 1.1)
-    .attr("class", "graph")
-    .attr("transform", "translate(" + 0 + "," + 0 + ")" + " scale(" + 1 + ")");
-
-  /*
-  try {
-      //tip.html(path.basename(view.file));
-      //tip.html(graph.project.path);
-      tip.html(project.origin);
-      sub = { url: project.origin };
-  }
-  catch(err) {
-      console.log("Some problems encountered when processing warehouse:", err.message);
-  }
-  */
-
-  force
-    .nodes(view.lays[lay].nodes)
-    .links(view.lays[lay].links)
-    .start();
-
-  onFilter(0, 2, 1, 2);
-
-  /*
-  try {
-    link = svg.selectAll(".link")
-      .data(graphs[lay].links)
-      .enter()
-      .append("line")
-      .attr("class", "link")
-      //.style("stroke-width", function(d) { return Math.sqrt(d.value); });
-      .style("stroke", function(d) { return 'orange'; })
-      .style("stroke-width", function(d) { return d.value; });
-  }
-  catch(err) {
-      console.log("Some problems encountered when processing warehouse:", err.message);
-  }
-
-  try {
-    node = svg.selectAll(".node")
-      .data(graphs[lay].nodes)
-      .enter()
-      .append("circle")
-      .attr("class", "node")
-      .attr("r",  function(d) { return d.complexity > 1 ? d.complexity : 5 })
-      .style("fill", function(d) { return 'steelblue'; })
-      .on("mouseover", onMouseOver)
-      .on("mouseout", onMouseOut)
-      .on("contextmenu", onRightclicked)
-      //.on("dblclick", onDoubleclicked)
-      .on("click", onClicked)
-      //.call(zoom)
+  var node = g.append("g").attr("class", "nodes")
+      .selectAll("circle")
+      .data(graph.nodes)
+      .enter().append("circle")
+      .attr("r", 5)
+      .attr("fill", function(d) { return color(d.group); })
+      .on("click", clickedLeft)
+      .on("contextmenu", clickedRight)
       .call(drag);
-  }
-  catch(err) {
-      console.log("Some problems encountered when processing warehouse:", err.message);
-  }
-  */
 
-  /*
-  try {
-    // Tool-tips handled by the browser
-    svg.selectAll("circle")
+  node
       .append("title")
-      .text(function(d) { return d.group + ": " + d.name + "\n" + d.url; });
-  }
-  catch(err) {
-      console.log("Some problems encountered when processing warehouse:", err.message);
-  }
-  */
+      .text(function(d) { return d.id; });
 
-  onResize();
+  simulation
+      .nodes(graph.nodes)
+      .on("tick", ticked);
+
+  simulation
+      .force("link")
+      .links(graph.links);
+
+  // global; to be refactored later
+  simu = simulation;
+
+  d3.select(".button1").on("click", zoomedIn);
+  d3.select(".button2").on("click", zoomedOut);
+  d3.select(".button3").on("click", resetted);
+
+  svg.call(zoom);
+
+  addPanels();
+  addIcons();
+
+  function ticked() {
+    link
+      .attr("x1", function(d) { return d.source.x; })
+      .attr("y1", function(d) { return d.source.y; })
+      .attr("x2", function(d) { return d.target.x; })
+      .attr("y2", function(d) { return d.target.y; });
+    node
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; });
+  }
+
+  function dragstarted(d) {
+    if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+    d.fx = d.x;
+    d.fy = d.y;
+  }
+
+  function dragged(d) {
+    d.fx = d3.event.x;
+    d.fy = d3.event.y;
+  }
+
+  function dragended(d) {
+    if (!d3.event.active) simulation.alphaTarget(0);
+    //uncomment for instant realese; for now they remain fixed
+    //d.fx = null;
+    //d.fy = null;
+  }
+
+  function zoomed() {
+    g.attr("transform", d3.event.transform);
+  }
+
+  function zoomedIn() {
+    svg.transition().duration(750).call(zoom.scaleBy, 1.50);
+  }
+
+  function zoomedOut() {
+    svg.transition().duration(750).call(zoom.scaleBy, 0.75);
+  }
+
+  function resetted() {
+    svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity);
+  }
+
+  function resized() {
+    var width = window.innerWidth,
+        height = window.innerHeight;
+    d3.select('svg').attr("width", width).attr("height", height);
+    simulation
+      .force("center", d3.forceCenter(width / 2, height / 2))
+      .alphaTarget(1).restart();
+    resizePanels();
+    resizeButtons();
+    resizeIcons();
+  }
+
+  function clickedLeft(d) {
+    d.fx = null;
+    d.fy = null;
+    simulation.alphaTarget(1).restart();
+  }
+
+  function clickedRight(d) {
+    console.log(d);
+  }
 
 } // draw the picture
 
@@ -191,4 +157,4 @@ function clearThePicture() {
   d3.select('body').selectAll('div').remove();
   d3.select('body').selectAll('canvas').remove();
 
-} // clear elements
+} // clear the picture

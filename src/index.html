@@ -14,136 +14,53 @@
 		:link { color: #fff }
 		:visited { color: #fff }
 
-		.node {	stroke: #fff; stroke-width: 0.5px; }
-		.link {	stroke: #999; stroke-opacity: 0.6; }
+		.links line { stroke: #999; stroke-opacity: 0.6; }
+		.nodes circle { stroke: #fff; stroke-width: 1.5px; }
 
-	  div.tooltip {
-	    position: absolute;
-	    width: 470px;
-	    height: 20px;
-			text-align: left;
-			padding: 5px;
-	    font: 16px sans-serif;
-	    background: rgba(0, 0, 0, 0.8);
-			color: #fff;
-	    border: 0px;
-	    border-radius: 2px;
-		}
-
-		div.conmenu {
-	    position: absolute;
-	    width: 470px;
-	    height: 20px;
-			padding: 5px;
-			text-align: left;
-			font: 16px font-awesome;
-	    background: rgba(0, 0, 0, 0.8);
-			color: #fff;
-	    border: 0px;
-	    border-radius: 2px;
-		}
-
-		div.conpane {
-	    position: absolute;
-	    background: #f0f0f0;
-			padding: 0px;
-	    border-radius: 2px;
-		}
-
-		div.strpane {
-	    position: absolute;
-	    background: #fd7037;
-			padding: 0px;
-	    border-radius: 2px;
-		}
-
-		div.sldpane {
-			position: absolute;
-	    background: #00a9e8;
-			padding: 0px;
-	    border-radius: 2px;
-			font: 10px sans-serif;
-		}
-
-		div.srhpane {
-			position: absolute;
-	    background: #52be7f;
-			padding: 0px;
-	    border-radius: 2px;
-			font: 10px sans-serif;
-		}
-
-		div.button {
-			position: absolute;
-			width: 30px;
-			height: 30px;
-			background: rgba(0, 0, 0, 0.8);
-			color: #fff;
-			border: 0px;
-			border-radius: 2px;
-		}
-
-		.tick {
-		  font: 10px sans-serif;
+		table thead th {
+  		border-bottom: solid 2px #fff;
+			border-left: solid 2px #fff;
 			text-align: center;
 		}
 
-		.ticks {
-		  font: 10px sans-serif;
+		table thead td {
+  		border-bottom: solid 2px #fff;
+			border-left: solid 2px #fff;
+			text-align: center;
 		}
 
-		.track {
-		  stroke: #000;
-		  stroke-opacity: 0.3;
-		  stroke-width: 10px;
-			stroke-linecap: round;
+		table tbody th {
+  		border-left: solid 2px #fff;
+			text-align: left;
 		}
 
-		.track-inset {
-		  stroke: #ddd;
-		  stroke-width: 8px;
-			stroke-linecap: round;
-		}
-
-		.track-overlay {
-		  pointer-events: stroke;
-		  stroke-width: 50px;
-		  cursor: ew-resize;
-			stroke-linecap: round;
-		}
-
-		.handle {
-		  fill: #fff;
-		  stroke: #000;
-		  stroke-opacity: 0.5;
-		  stroke-width: 1.25px;
+		table tbody td {
+  		border-left: solid 2px #fff;
+			text-align: right;
 		}
 
 	</style>
 
 	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="../node_modules/c3/c3.css" rel="stylesheet" type="text/css">
+	<link href="Grid.css" rel="stylesheet" type="text/css">
 
 </head>
 
 <body>
 
-	<!--
-	<link href="./node_modules/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="../node-modules/font-awesome/css/font-awesome.min.css">
-	<script src="http://d3js.org/d3.v3.js"></script>
-	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-	<script src="xml2json.js"></script>
-	<script src="sly.min.js"></script>
-  <script src="http://darsa.in/sly/examples/js/vendor/plugins.js"></script>
-  -->
-
+	<script src="../node_modules/d3/build/d3.min.js"></script>
 	<script src="../node_modules/c3/c3.min.js"></script>
+	<script src="Grid.js"></script>
 
 	<script src="view.js"></script>
 	<script src="events.js"></script>
 	<script src="model.js"></script>
+	<script src="gauge.js"></script>
+	<script src="panels.js"></script>
+	<script src="buttons.js"></script>
+	<script src="icons.js"></script>
 	<script src="draw.js"></script>
 
 </body>
