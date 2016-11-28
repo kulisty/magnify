@@ -11,40 +11,19 @@
 
 		html { overflow: hidden; }
 
-		:link { color: #fff }
-		:visited { color: #fff }
-
 		.links line { stroke: #999; stroke-opacity: 0.6; }
 		.nodes circle { stroke: #fff; stroke-width: 1.5px; }
 
-		table thead th {
-  		border-bottom: solid 2px #fff;
-			border-left: solid 2px #fff;
-			text-align: center;
-		}
-
-		table thead td {
-  		border-bottom: solid 2px #fff;
-			border-left: solid 2px #fff;
-			text-align: center;
-		}
-
-		table tbody th {
-  		border-left: solid 2px #fff;
-			text-align: left;
-		}
-
-		table tbody td {
-  		border-left: solid 2px #fff;
-			text-align: left;
-		}
+		table thead th { border-bottom: solid 2px #fff; border-left: solid 2px #fff; text-align: center; }
+		table thead td { border-bottom: solid 2px #fff; border-left: solid 2px #fff; text-align: center; }
+		table tbody th { border-left: solid 2px #fff; text-align: left; }
+		table tbody td { border-left: solid 2px #fff; text-align: left; }
 
 	</style>
 
-	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css -->
+	<link href="../node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" type='text/css'>
 	<link href="../node_modules/c3/c3.css" rel="stylesheet" type="text/css">
-	<link href="Grid.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -52,7 +31,6 @@
 
 	<script src="../node_modules/d3/build/d3.min.js"></script>
 	<script src="../node_modules/c3/c3.min.js"></script>
-	<script src="Grid.js"></script>
 
 	<script src="view.js"></script>
 	<script src="events.js"></script>
@@ -60,6 +38,7 @@
 	<script src="gauge.js"></script>
 	<script src="panels.js"></script>
 	<script src="buttons.js"></script>
+	<script src="tooltips.js"></script>
 	<script src="icons.js"></script>
 	<script src="draw.js"></script>
 
