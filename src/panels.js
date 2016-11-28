@@ -131,7 +131,7 @@ function panelFilter() { // at panel no 3
     d3.select("tbody").selectAll("tr")
       .attr("id", this.value)
       .style("display", function(d){
-          if (d.id.toString().toUpperCase().indexOf(val) > -1) {
+          if (d.name.toString().toUpperCase().indexOf(val) > -1) {
             return "";
           }
           else {
@@ -293,10 +293,10 @@ function panelGrid() { // at panel no 4
     .style("height", "100%");
 
   var listData = {
-    Head : [["Name", "ID", "W", "Q", "C", "V", "X", "Y"]],
+    Head : [["Name", "Index", "W", "Q", "C", "V", "X", "Y"]],
     Body : file.data.graph.nodes.reduce(function(a,b,c,d){return a.concat([[
       b.name,
-      b.id,//.toFixed(0),
+      b.index,//.toFixed(0),
       b.weight,//.toFixed(2),
       b.quality,//.toFixed(2),
       b.complexity,//.toFixed(2),
@@ -324,7 +324,7 @@ function panelGrid2() { // at panel no 4
 
   var t = d3.select(".panel4").append("table");
 
-  var v = ["x", "y"];
+  var v = ["name", "visibility", "complexity", "quality"];
   var k = d3.keys(v);
 
   /*
@@ -340,9 +340,9 @@ function panelGrid2() { // at panel no 4
    .data(file.data.graph.nodes).enter()
    .append("tr");
 
-  r.append("th").text(function(d){return d.id;});
+  //r.append("th").text(function(d){return d.name;});
   r.selectAll("td")
-   .data(function(d){ return v.map(function(k){ return k.toString().substr(0,2) + ":" + d[k].toFixed(2).toString(); }); }).enter()
+   .data(function(d){ return v.map(function(k){ return /*k.toString().substr(0,2) + ":" +*/ d[k].toString(); }); }).enter()
    .append("td")
    .text(function(d){ return d; });
 

@@ -1,16 +1,16 @@
 function clickFreeze() {
-  force.stop();
-  d3.select('body').select('svg').selectAll('.node').classed("fixed", function(d) {d.fixed = true} );
+  simu.stop();
+  //d3.select('body').select('svg').selectAll('.node').classed("fixed", function(d) {d.fixed = true} );
 }
 
 function clickUnfreeze() {
-  d3.select('body').select('svg').selectAll('.node').classed("fixed", function(d) {d.fixed = false} );
-  force.resume();
+  //d3.select('body').select('svg').selectAll('.node').classed("fixed", function(d) {d.fixed = false} );
+  simu.restart();
 }
 
 function clickReload() {
-  //z.stop();
-  //z.resume();
+  //simu.stop();
+  //simu.restart();
   simu.nodes().forEach(
     function(o, i) {
       o.x += (Math.random() - .5) * 40;

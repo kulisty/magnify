@@ -11,7 +11,7 @@ function drawThePicture() {
 
   var zoom = d3.zoom()
       .scaleExtent([0, 10])
-      .translateExtent([[-10000, -10000], [10000, 10000]])
+      //.translateExtent([[-10000, -10000], [10000, 10000]])
       .on("zoom", zoomed);
 
   var svg = d3.select("body")
@@ -35,12 +35,55 @@ function drawThePicture() {
 
   var color = d3.scaleOrdinal(d3.schemeCategory20);
 
+  /*OK
   var simulation = d3.forceSimulation()
-      .force("link", d3.forceLink().id(function(d) { return d.id; }))
-      //.force("charge", d3.forceManyBody())
-      .force("charge", d3.forceManyBody().strength(-30))
-      //.force("link", d3.forceLink(links).strength(1).distance(20).iterations(10))
+      .force("charge", d3.forceManyBody())
+      .force("link", d3.forceLink())
       .force("center", d3.forceCenter(width / 2, height / 2));
+  */
+  /*OK
+  var simulation = d3.forceSimulation()
+      .force("link", d3.forceLink().id(function(d) { return d.index; }))
+      .force("charge", d3.forceManyBody().strength(-10))
+      .force("center", d3.forceCenter(width / 2, height / 2));
+  */
+  /*OK
+  var simulation = d3.forceSimulation()
+      .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(8).strength(0.45))
+      .force("charge", d3.forceManyBody().strength(-30).distanceMax(250))
+      .force("center", d3.forceCenter(width / 2, height / 2));
+  */
+
+  /*
+  var simulation = d3.forceSimulation(graph.nodes)
+      .force("charge", d3.forceManyBody().strength(-30))
+      .force("link", d3.forceLink(graph.links).strength(1).distance(10));
+      //.force("link", d3.forceLink(links).strength(1).distance(20).iterations(10))
+      //.force("x", d3.forceX())
+      //.force("y", d3.forceY());
+  */
+
+  /*
+  var simulation = d3.forceSimulation()
+      .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(8).strength(0.45))
+      .force("charge", d3.forceManyBody().strength(-2).distanceMax(250))
+      .force("center", d3.forceCenter(width / 2, height / 2));
+  */
+
+  /*
+  var simulation = d3.forceSimulation()
+      .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(8).strength(0.45))
+      .force("charge", d3.forceManyBody().strength(-30).distanceMax(250))
+      .force("center", d3.forceCenter(width / 2, height / 2));
+  */
+
+  var simulation = d3.forceSimulation()
+      .force("link", d3.forceLink())
+      .force("charge", d3.forceManyBody().strength(-15).theta(0.75).distanceMin(10).distanceMax(300)) //.strength(-10)
+      .force("center", d3.forceCenter(width / 2, height / 2))
+      .force("colision", d3.forceCollide(1))
+      .force("vertical", d3.forceY().strength(0.018))
+      .force("horizontal", d3.forceX().strength(0.006));
 
   var link = g.append("g").attr("class", "links")
       .selectAll("line")
@@ -60,7 +103,7 @@ function drawThePicture() {
 
   node
       .append("title")
-      .text(function(d) { return d.id; });
+      .text(function(d) { return d.name; });
 
   simulation
       .nodes(graph.nodes)
