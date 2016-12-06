@@ -720,89 +720,89 @@
     "children": [
       {
         "name": "package.json", 
-        "size": 1024
+        "size": "2615"
       }, 
       {
         "name": "d3.sublime-project", 
-        "size": 1024
+        "size": "185"
       }, 
       {
         "name": "LICENSE", 
-        "size": 1024
+        "size": "1475"
       }, 
       {
         "name": "API.md", 
-        "size": 1024
+        "size": "121816"
       }, 
       {
         "name": "rollup.node.js", 
-        "size": 1024
+        "size": "674"
       }, 
       {
         "name": "img", 
         "children": [
           {
             "name": "axis-v3.png", 
-            "size": 1024
+            "size": "4949"
           }, 
           {
             "name": "stratify.png", 
-            "size": 1024
+            "size": "9581"
           }, 
           {
             "name": "pack-v4.png", 
-            "size": 1024
+            "size": "167134"
           }, 
           {
             "name": "axis-v4.png", 
-            "size": 1024
+            "size": "5530"
           }, 
           {
             "name": "pack-v3.png", 
-            "size": 1024
+            "size": "119302"
           }
         ]
       }, 
       {
         "name": "rollup.config.js", 
-        "size": 1024
+        "size": "138"
       }, 
       {
         "name": ".gitignore", 
-        "size": 1024
+        "size": "64"
       }, 
       {
         "name": ".npmignore", 
-        "size": 1024
+        "size": "30"
       }, 
       {
         "name": "README.md", 
-        "size": 1024
+        "size": "2291"
       }, 
       {
         "name": "test", 
         "children": [
           {
             "name": "test-exports.js", 
-            "size": 1024
+            "size": "378"
           }, 
           {
             "name": "d3-test.js", 
-            "size": 1024
+            "size": "329"
           }
         ]
       }, 
       {
         "name": "ISSUE_TEMPLATE.md", 
-        "size": 1024
+        "size": "656"
       }, 
       {
         "name": "CHANGES.md", 
-        "size": 1024
+        "size": "125639"
       }, 
       {
         "name": "index.js", 
-        "size": 1024
+        "size": "6799"
       }
     ]
   }

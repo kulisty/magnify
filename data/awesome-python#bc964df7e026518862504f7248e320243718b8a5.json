@@ -464,57 +464,57 @@
     "children": [
       {
         "name": "CONTRIBUTING.md", 
-        "size": 1024
+        "size": "627"
       }, 
       {
         "name": "LICENSE", 
-        "size": 1024
+        "size": "112"
       }, 
       {
         "name": ".github", 
         "children": [
           {
             "name": "PULL_REQUEST_TEMPLATE.md", 
-            "size": 1024
+            "size": "303"
           }
         ]
       }, 
       {
         "name": "mkdocs.yml", 
-        "size": 1024
+        "size": "335"
       }, 
       {
         "name": "Makefile", 
-        "size": 1024
+        "size": "213"
       }, 
       {
         "name": ".gitignore", 
-        "size": 1024
+        "size": "41"
       }, 
       {
         "name": "docs", 
         "children": [
           {
             "name": "CNAME", 
-            "size": 1024
+            "size": "18"
           }, 
           {
             "name": "extra.css", 
-            "size": 1024
+            "size": "679"
           }
         ]
       }, 
       {
         "name": ".travis.yml", 
-        "size": 1024
+        "size": "157"
       }, 
       {
         "name": "sort.py", 
-        "size": 1024
+        "size": "1825"
       }, 
       {
         "name": "README.md", 
-        "size": 1024
+        "size": "82816"
       }
     ]
   }

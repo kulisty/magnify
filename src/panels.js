@@ -188,16 +188,31 @@ function panelSunburst() { // at panel no 2
   //});
 
   function click(d) {
+    path = "";
+    curr = d;
+    while (curr) {
+      path = "\\" + curr.data.name + path;
+      curr = curr.parent;
+    }
+    //path = path.replace(/\\\w+\\/, "");
+    //path = path.replace(new RegExp("\\\\"+file.data.tree.name+"\\\\", ""), "");
+    //s = file.data.tree.name.length+2;
+    path = path.slice(1);
+    console.log(path);
+    el = document.getElementById("myInput");
+    el.value = path;
+    // document.getElementById("myInput").setAttribute('value',path);
+    el.dispatchEvent(new Event('input'));
     svg.transition()
-        .duration(750)
-        .tween("scale", function() {
+       .duration(750)
+       .tween("scale", function() {
           var xd = d3.interpolate(x.domain(), [d.x0, d.x1]),
               yd = d3.interpolate(y.domain(), [d.y0, 1]),
               yr = d3.interpolate(y.range(), [d.y0 ? 20 : 0, radius]);
           return function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
         })
-      .selectAll("path")
-        .attrTween("d", function(d) { return function() { return arc(d); }; });
+       .selectAll("path")
+       .attrTween("d", function(d) { return function() { return arc(d); }; });
   }
 
   d3.select(self.frameElement).style("height", height + "px");

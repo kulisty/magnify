@@ -12,7 +12,7 @@
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": ".gitignore",
+        "name": ".\\.gitignore",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\.gitignore",
         "px": 0,
         "py": 0,
@@ -20,20 +20,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 483.3664142575554,
-        "x": 976.8741852281626,
+        "y": 473.8843174286855,
+        "x": 1004.5976068316181,
         "r": 0,
         "quality": 1,
         "id": 0,
-        "vy": -0.20815694696178555,
-        "vx": -0.13233756621274131
+        "vy": -13.679984843704672,
+        "vx": -8.825973805990186
       },
       {
         "index": 1,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "antplaybook.yml",
+        "name": ".\\antplaybook.yml",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\antplaybook.yml",
         "px": 0,
         "py": 0,
@@ -41,20 +41,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 522.924080194746,
-        "x": 1030.3445348577793,
+        "y": 494.9434628838024,
+        "x": 986.8622373329675,
         "r": 0,
         "quality": 1,
         "id": 1,
-        "vy": -0.20854747380510194,
-        "vx": -0.1325812680578377
+        "vy": -13.63746489344962,
+        "vx": -8.831426110693098
       },
       {
         "index": 2,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "antworker",
+        "name": ".\\antworker",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\antworker",
         "px": 0,
         "py": 0,
@@ -62,20 +62,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 495.4543018543082,
-        "x": 972.9660268107335,
+        "y": 497.8971895266786,
+        "x": 964.9973645760542,
         "r": 0,
         "quality": 1,
         "id": 2,
-        "vy": -0.20702785902470003,
-        "vx": -0.13187974749417958
+        "vy": -13.618240819366175,
+        "vx": -8.840976324004076
       },
       {
         "index": 3,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "celery_pdf.py",
+        "name": ".\\celery_pdf.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\celery_pdf.py",
         "px": 0,
         "py": 0,
@@ -83,20 +83,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 528.7811380163564,
-        "x": 1021.7104950685936,
+        "y": 465.0079980736097,
+        "x": 1006.5925985826624,
         "r": 0,
         "quality": 1,
         "id": 3,
-        "vy": -0.20912470815261777,
-        "vx": -0.1321017166185559
+        "vy": -13.655043283255202,
+        "vx": -8.862013894692033
       },
       {
         "index": 4,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "compare.py",
+        "name": ".\\compare.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\compare.py",
         "px": 0,
         "py": 0,
@@ -104,20 +104,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 471.86293210852534,
-        "x": 985.6369786271663,
+        "y": 455.2142508780999,
+        "x": 1005.1792641580013,
         "r": 0,
         "quality": 1,
         "id": 4,
-        "vy": -0.20883406289310705,
-        "vx": -0.13231057899099455
+        "vy": -13.645307442704501,
+        "vx": -8.861767148389859
       },
       {
         "index": 5,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "config\\mysql\\conf.d\\.keepme",
+        "name": ".\\config\\mysql\\conf.d\\.keepme",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\config\\mysql\\conf.d\\.keepme",
         "px": 0,
         "py": 0,
@@ -125,20 +125,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 452.17769093083143,
-        "x": 812.8161250083003,
+        "y": 321.3940678785747,
+        "x": 882.7716094333903,
         "r": 0,
         "quality": 1,
         "id": 5,
-        "vy": -0.2119905434097018,
-        "vx": -0.1304968627097136
+        "vy": -13.49999267427847,
+        "vx": -8.985516165239153
       },
       {
         "index": 6,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "config\\mysql\\conf.d\\mysqld_safe_syslog.cnf",
+        "name": ".\\config\\mysql\\conf.d\\mysqld_safe_syslog.cnf",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\config\\mysql\\conf.d\\mysqld_safe_syslog.cnf",
         "px": 0,
         "py": 0,
@@ -146,20 +146,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 438.3020779077048,
-        "x": 817.2777602039199,
+        "y": 312.20699919058114,
+        "x": 904.6745025888605,
         "r": 0,
         "quality": 1,
         "id": 6,
-        "vy": -0.21207611681610253,
-        "vx": -0.1287725335094461
+        "vy": -13.536517376242104,
+        "vx": -9.044616549744253
       },
       {
         "index": 7,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "config\\mysql\\debian-start",
+        "name": ".\\config\\mysql\\debian-start",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\config\\mysql\\debian-start",
         "px": 0,
         "py": 0,
@@ -167,20 +167,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 456.16577873122947,
-        "x": 888.0545277707513,
+        "y": 369.7733758286868,
+        "x": 910.8603330223907,
         "r": 0,
         "quality": 1,
         "id": 7,
-        "vy": -0.20884534863131343,
-        "vx": -0.13202035362802653
+        "vy": -13.581210144936938,
+        "vx": -8.903206242631343
       },
       {
         "index": 8,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "config\\mysql\\debian.cnf",
+        "name": ".\\config\\mysql\\debian.cnf",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\config\\mysql\\debian.cnf",
         "px": 0,
         "py": 0,
@@ -188,20 +188,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 483.2052838337941,
-        "x": 881.4957109646965,
+        "y": 381.56819312135013,
+        "x": 899.1979135698322,
         "r": 0,
         "quality": 1,
         "id": 8,
-        "vy": -0.2076047313708623,
-        "vx": -0.131044697301731
+        "vy": -13.591715017559347,
+        "vx": -8.894804193111819
       },
       {
         "index": 9,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "config\\mysql\\my.cnf",
+        "name": ".\\config\\mysql\\my.cnf",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\config\\mysql\\my.cnf",
         "px": 0,
         "py": 0,
@@ -209,20 +209,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 468.81852769493423,
-        "x": 881.7687958782561,
+        "y": 361.9637604090184,
+        "x": 928.2312883475611,
         "r": 0,
         "quality": 1,
         "id": 9,
-        "vy": -0.20801720565939677,
-        "vx": -0.1312551623994431
+        "vy": -13.599990959705604,
+        "vx": -8.926547453664297
       },
       {
         "index": 10,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "config\\sites-enabled\\guiserver.conf",
+        "name": ".\\config\\sites-enabled\\guiserver.conf",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\config\\sites-enabled\\guiserver.conf",
         "px": 0,
         "py": 0,
@@ -230,20 +230,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 437.7556447578344,
-        "x": 1089.0585304395822,
+        "y": 374.3949801953618,
+        "x": 975.4413071000118,
         "r": 0,
         "quality": 1,
         "id": 10,
-        "vy": -0.2144624118318573,
-        "vx": -0.134520108096635
+        "vy": -13.639339986938431,
+        "vx": -8.928311434662438
       },
       {
         "index": 11,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "config\\sites-enabled\\indexserver.conf",
+        "name": ".\\config\\sites-enabled\\indexserver.conf",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\config\\sites-enabled\\indexserver.conf",
         "px": 0,
         "py": 0,
@@ -251,20 +251,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 449.3033671911343,
-        "x": 1096.52052002825,
+        "y": 374.46202626684044,
+        "x": 990.5544440273983,
         "r": 0,
         "quality": 1,
         "id": 11,
-        "vy": -0.2140969454442794,
-        "vx": -0.1350895876436816
+        "vy": -13.654527874962993,
+        "vx": -8.93123524004914
       },
       {
         "index": 12,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "config\\uwsgi\\apps-available\\README",
+        "name": ".\\config\\uwsgi\\apps-available\\README",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\config\\uwsgi\\apps-available\\README",
         "px": 0,
         "py": 0,
@@ -272,20 +272,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 478.55241473846087,
-        "x": 1094.00131516453,
+        "y": 446.4347566117288,
+        "x": 892.5044214277004,
         "r": 0,
         "quality": 1,
         "id": 12,
-        "vy": -0.21614968292597564,
-        "vx": -0.13236629586456633
+        "vy": -13.578695393772795,
+        "vx": -8.85743898085033
       },
       {
         "index": 13,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "config\\uwsgi\\apps-enabled\\guiserver.ini",
+        "name": ".\\config\\uwsgi\\apps-enabled\\guiserver.ini",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\config\\uwsgi\\apps-enabled\\guiserver.ini",
         "px": 0,
         "py": 0,
@@ -293,20 +293,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 441.5666396498044,
-        "x": 940.511829997286,
+        "y": 553.0861078375389,
+        "x": 943.1710877469826,
         "r": 0,
         "quality": 1,
         "id": 13,
-        "vy": -0.20843851253738277,
-        "vx": -0.13159157987723943
+        "vy": -13.602126881672497,
+        "vx": -8.790690056212066
       },
       {
         "index": 14,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "config\\uwsgi\\apps-enabled\\indexserver.ini",
+        "name": ".\\config\\uwsgi\\apps-enabled\\indexserver.ini",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\config\\uwsgi\\apps-enabled\\indexserver.ini",
         "px": 0,
         "py": 0,
@@ -314,20 +314,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 454.64040775483454,
-        "x": 930.8512287636476,
+        "y": 558.568338910736,
+        "x": 957.8689759695469,
         "r": 0,
         "quality": 1,
         "id": 14,
-        "vy": -0.20751144994064846,
-        "vx": -0.1313593928826691
+        "vy": -13.618662586349524,
+        "vx": -8.78511447072673
       },
       {
         "index": 15,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "copytest.sh",
+        "name": ".\\copytest.sh",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\copytest.sh",
         "px": 0,
         "py": 0,
@@ -335,20 +335,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 493.99087832946446,
-        "x": 1040.5223871501378,
+        "y": 445.70174766581675,
+        "x": 1000.5178464295633,
         "r": 0,
         "quality": 1,
         "id": 15,
-        "vy": -0.20791157986479486,
-        "vx": -0.131486309432738
+        "vy": -13.628875742795177,
+        "vx": -8.881697991944241
       },
       {
         "index": 16,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "docx2txt\\__init__.py",
+        "name": ".\\docx2txt\\__init__.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\docx2txt\\__init__.py",
         "px": 0,
         "py": 0,
@@ -356,20 +356,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 550.5910744654345,
-        "x": 1090.4619499400692,
+        "y": 395.87055116518485,
+        "x": 1031.9353514633058,
         "r": 0,
         "quality": 1,
         "id": 16,
-        "vy": -0.21103710444808982,
-        "vx": -0.12921948184388213
+        "vy": -13.690892675278867,
+        "vx": -8.917291063106468
       },
       {
         "index": 17,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "docx2txt\\docx2txt.py",
+        "name": ".\\docx2txt\\docx2txt.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\docx2txt\\docx2txt.py",
         "px": 0,
         "py": 0,
@@ -377,20 +377,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 538.2966391118604,
-        "x": 1097.1449223795933,
+        "y": 386.37369307185406,
+        "x": 1020.3843085237702,
         "r": 0,
         "quality": 1,
         "id": 17,
-        "vy": -0.2118466995145518,
-        "vx": -0.13052134295261145
+        "vy": -13.678791612562987,
+        "vx": -8.924068454037048
       },
       {
         "index": 18,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index\\compare_all.py",
+        "name": ".\\index\\compare_all.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\compare_all.py",
         "px": 0,
         "py": 0,
@@ -398,20 +398,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 398.56007116650875,
-        "x": 1020.6843355163552,
+        "y": 530.7919794059402,
+        "x": 1062.922840255346,
         "r": 0,
         "quality": 1,
         "id": 18,
-        "vy": -0.21161335305332332,
-        "vx": -0.1351434707561012
+        "vy": -13.70742854303772,
+        "vx": -8.819974004075075
       },
       {
         "index": 19,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index\\cpp_engine\\baseindex.h",
+        "name": ".\\index\\cpp_engine\\baseindex.h",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\cpp_engine\\baseindex.h",
         "px": 0,
         "py": 0,
@@ -419,20 +419,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 369.1857755115613,
-        "x": 932.2003050583099,
+        "y": 519.8633925072633,
+        "x": 1165.5489513168097,
         "r": 0,
         "quality": 1,
         "id": 19,
-        "vy": -0.20739770331090648,
-        "vx": -0.1384516982746101
+        "vy": -13.744283749284124,
+        "vx": -8.936321565856224
       },
       {
         "index": 20,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index\\cpp_engine\\bow.h",
+        "name": ".\\index\\cpp_engine\\bow.h",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\cpp_engine\\bow.h",
         "px": 0,
         "py": 0,
@@ -440,20 +440,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 358.8716760926296,
-        "x": 990.3700701504196,
+        "y": 541.3704020240068,
+        "x": 1161.730018814924,
         "r": 0,
         "quality": 1,
         "id": 20,
-        "vy": -0.20551733338211195,
-        "vx": -0.1402356975529204
+        "vy": -13.76538315012246,
+        "vx": -8.826162084027631
       },
       {
         "index": 21,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index\\cpp_engine\\closeindex.cpp",
+        "name": ".\\index\\cpp_engine\\closeindex.cpp",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\cpp_engine\\closeindex.cpp",
         "px": 0,
         "py": 0,
@@ -461,20 +461,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 315.7895275071476,
-        "x": 954.2301301781625,
+        "y": 553.0970861376366,
+        "x": 1153.2079850004197,
         "r": 0,
         "quality": 1,
         "id": 21,
-        "vy": -0.2086650585087448,
-        "vx": -0.14193981804539363
+        "vy": -13.728101974786487,
+        "vx": -8.851014607190596
       },
       {
         "index": 22,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index\\cpp_engine\\closeindex.h",
+        "name": ".\\index\\cpp_engine\\closeindex.h",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\cpp_engine\\closeindex.h",
         "px": 0,
         "py": 0,
@@ -482,20 +482,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 347.62085562191345,
-        "x": 992.7689462194791,
+        "y": 527.3249934172643,
+        "x": 1167.3872766558309,
         "r": 0,
         "quality": 1,
         "id": 22,
-        "vy": -0.20686409639254943,
-        "vx": -0.14027181722279666
+        "vy": -13.642397765084866,
+        "vx": -8.86908585564269
       },
       {
         "index": 23,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index\\cpp_engine\\debug_mode.py",
+        "name": ".\\index\\cpp_engine\\debug_mode.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\cpp_engine\\debug_mode.py",
         "px": 0,
         "py": 0,
@@ -503,20 +503,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 329.4378114445605,
-        "x": 986.9319399439281,
+        "y": 511.989328359998,
+        "x": 1164.9720650583506,
         "r": 0,
         "quality": 1,
         "id": 23,
-        "vy": -0.210345444701581,
-        "vx": -0.14092017264048792
+        "vy": -13.75203669212421,
+        "vx": -8.896634018112453
       },
       {
         "index": 24,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index\\cpp_engine\\document.cpp",
+        "name": ".\\index\\cpp_engine\\document.cpp",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\cpp_engine\\document.cpp",
         "px": 0,
         "py": 0,
@@ -524,20 +524,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 337.3314027015797,
-        "x": 991.0587828189589,
+        "y": 499.1439605317231,
+        "x": 1153.4479694495421,
         "r": 0,
         "quality": 1,
         "id": 24,
-        "vy": -0.20993473568822502,
-        "vx": -0.13978118934906011
+        "vy": -13.741383186961771,
+        "vx": -8.823396043439368
       },
       {
         "index": 25,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index\\cpp_engine\\document.h",
+        "name": ".\\index\\cpp_engine\\document.h",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\cpp_engine\\document.h",
         "px": 0,
         "py": 0,
@@ -545,20 +545,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 349.9480388560855,
-        "x": 924.0773101699085,
+        "y": 494.52319031250414,
+        "x": 1145.6653369172047,
         "r": 0,
         "quality": 1,
         "id": 25,
-        "vy": -0.20618572785888217,
-        "vx": -0.13971343629465238
+        "vy": -13.876986911252073,
+        "vx": -9.253389236657444
       },
       {
         "index": 26,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index\\cpp_engine\\enumtxt.py",
+        "name": ".\\index\\cpp_engine\\enumtxt.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\cpp_engine\\enumtxt.py",
         "px": 0,
         "py": 0,
@@ -566,20 +566,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 358.6533162792694,
-        "x": 925.6684266210849,
+        "y": 560.2872526584889,
+        "x": 1132.5064389194733,
         "r": 0,
         "quality": 1,
         "id": 26,
-        "vy": -0.20785696690609415,
-        "vx": -0.1390913614016516
+        "vy": -13.685971230362748,
+        "vx": -8.858995641629614
       },
       {
         "index": 27,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index\\cpp_engine\\index.cpp",
+        "name": ".\\index\\cpp_engine\\index.cpp",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\cpp_engine\\index.cpp",
         "px": 0,
         "py": 0,
@@ -587,20 +587,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 326.46567143381384,
-        "x": 932.4213762061437,
+        "y": 552.7413071475025,
+        "x": 1112.999425156824,
         "r": 0,
         "quality": 1,
         "id": 27,
-        "vy": -0.2074056527976243,
-        "vx": -0.14111821256882442
+        "vy": -13.723841821520871,
+        "vx": -8.859593459977779
       },
       {
         "index": 28,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index\\cpp_engine\\index.h",
+        "name": ".\\index\\cpp_engine\\index.h",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\cpp_engine\\index.h",
         "px": 0,
         "py": 0,
@@ -608,20 +608,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 341.1535449852789,
-        "x": 924.7971939639154,
+        "y": 559.5992689025303,
+        "x": 1122.7010479928545,
         "r": 0,
         "quality": 1,
         "id": 28,
-        "vy": -0.20684581900070867,
-        "vx": -0.13950654577685326
+        "vy": -13.719752634376714,
+        "vx": -8.857803325725198
       },
       {
         "index": 29,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index\\cpp_engine\\index_wrapper.py",
+        "name": ".\\index\\cpp_engine\\index_wrapper.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\cpp_engine\\index_wrapper.py",
         "px": 0,
         "py": 0,
@@ -629,20 +629,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 322.44732534574507,
-        "x": 980.0592669066532,
+        "y": 548.7613826960758,
+        "x": 1162.6202444142925,
         "r": 0,
         "quality": 1,
         "id": 29,
-        "vy": -0.21007091739363784,
-        "vx": -0.1417421899158433
+        "vy": -13.776423186129241,
+        "vx": -8.946003366104286
       },
       {
         "index": 30,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index\\cpp_engine\\interface.cpp",
+        "name": ".\\index\\cpp_engine\\interface.cpp",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\cpp_engine\\interface.cpp",
         "px": 0,
         "py": 0,
@@ -650,20 +650,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 317.9881421572415,
-        "x": 972.2140884076047,
+        "y": 559.2304058965847,
+        "x": 1149.8862980771173,
         "r": 0,
         "quality": 1,
         "id": 30,
-        "vy": -0.20931836561529849,
-        "vx": -0.14223232082446105
+        "vy": -13.70463834389548,
+        "vx": -8.923946275913368
       },
       {
         "index": 31,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index\\cpp_engine\\interface.h",
+        "name": ".\\index\\cpp_engine\\interface.h",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\cpp_engine\\interface.h",
         "px": 0,
         "py": 0,
@@ -671,20 +671,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 333.4546164809239,
-        "x": 927.5847860356862,
+        "y": 535.6836591827857,
+        "x": 1169.9409766975932,
         "r": 0,
         "quality": 1,
         "id": 31,
-        "vy": -0.2060519567397043,
-        "vx": -0.13982171867186358
+        "vy": -13.795998561230277,
+        "vx": -8.87791977062539
       },
       {
         "index": 32,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index\\cpp_engine\\result.cpp",
+        "name": ".\\index\\cpp_engine\\result.cpp",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\cpp_engine\\result.cpp",
         "px": 0,
         "py": 0,
@@ -692,20 +692,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 317.9259496198907,
-        "x": 945.4523427884759,
+        "y": 504.8912824941972,
+        "x": 1161.6734676303797,
         "r": 0,
         "quality": 1,
         "id": 32,
-        "vy": -0.2069356303294872,
-        "vx": -0.14134316876800287
+        "vy": -13.81765812784463,
+        "vx": -8.823229336702564
       },
       {
         "index": 33,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index\\cpp_engine\\result.h",
+        "name": ".\\index\\cpp_engine\\result.h",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\cpp_engine\\result.h",
         "px": 0,
         "py": 0,
@@ -713,20 +713,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 315.48391976872097,
-        "x": 962.9560031931477,
+        "y": 562.7927495873397,
+        "x": 1140.05538068464,
         "r": 0,
         "quality": 1,
         "id": 33,
-        "vy": -0.20771727469022172,
-        "vx": -0.14213249260579996
+        "vy": -13.645127939498835,
+        "vx": -8.78087954892246
       },
       {
         "index": 34,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index\\cpp_engine\\setup.py",
+        "name": ".\\index\\cpp_engine\\setup.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\cpp_engine\\setup.py",
         "px": 0,
         "py": 0,
@@ -734,20 +734,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 322.0676207328407,
-        "x": 938.1288499549165,
+        "y": 495.153220767021,
+        "x": 1133.9327182882587,
         "r": 0,
         "quality": 1,
         "id": 34,
-        "vy": -0.20601409815322,
-        "vx": -0.140332403752538
+        "vy": -13.743399885328264,
+        "vx": -8.847447898546237
       },
       {
         "index": 35,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index\\inv_index.py",
+        "name": ".\\index\\inv_index.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\inv_index.py",
         "px": 0,
         "py": 0,
@@ -755,20 +755,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 388.549674435249,
-        "x": 1010.731600569977,
+        "y": 514.6623800277429,
+        "x": 1080.449233555058,
         "r": 0,
         "quality": 1,
         "id": 35,
-        "vy": -0.21108783781074789,
-        "vx": -0.13576023262631565
+        "vy": -13.81771510061934,
+        "vx": -8.790015601468234
       },
       {
         "index": 36,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index_server\\fill_index.py",
+        "name": ".\\index_server\\fill_index.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index_server\\fill_index.py",
         "px": 0,
         "py": 0,
@@ -776,20 +776,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 515.1815323557464,
-        "x": 1125.5574936688051,
+        "y": 433.6405690556092,
+        "x": 1068.600614146483,
         "r": 0,
         "quality": 1,
         "id": 36,
-        "vy": -0.213726474712475,
-        "vx": -0.13070901827062487
+        "vy": -13.721584806322058,
+        "vx": -8.875969273604273
       },
       {
         "index": 37,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index_server\\server.py",
+        "name": ".\\index_server\\server.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index_server\\server.py",
         "px": 0,
         "py": 0,
@@ -797,20 +797,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 496.9262409973565,
-        "x": 1126.166379454735,
+        "y": 414.60569956748515,
+        "x": 1061.2264740376324,
         "r": 0,
         "quality": 1,
         "id": 37,
-        "vy": -0.21280192283805732,
-        "vx": -0.13258580028437653
+        "vy": -13.718888639908934,
+        "vx": -8.900048840892866
       },
       {
         "index": 38,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "index_server\\templates\\index.html",
+        "name": ".\\index_server\\templates\\index.html",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index_server\\templates\\index.html",
         "px": 0,
         "py": 0,
@@ -818,20 +818,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 514.6256056196843,
-        "x": 1178.614689179904,
+        "y": 393.1187685573767,
+        "x": 1109.8473722182694,
         "r": 0,
         "quality": 1,
         "id": 38,
-        "vy": -0.2131905440426363,
-        "vx": -0.1321154412485332
+        "vy": -13.708738309887787,
+        "vx": -8.884856562737893
       },
       {
         "index": 39,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "install.sh",
+        "name": ".\\install.sh",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\install.sh",
         "px": 0,
         "py": 0,
@@ -839,20 +839,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 532.2343109908755,
-        "x": 1002.4354718051926,
+        "y": 490.17242383543595,
+        "x": 995.6165756081217,
         "r": 0,
         "quality": 1,
         "id": 39,
-        "vy": -0.20948524114751133,
-        "vx": -0.13086571432157615
+        "vy": -13.647897262094569,
+        "vx": -8.851670424057525
       },
       {
         "index": 40,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "mailconfig.py",
+        "name": ".\\mailconfig.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\mailconfig.py",
         "px": 0,
         "py": 0,
@@ -860,20 +860,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 504.8624500730905,
-        "x": 1040.5924957664197,
+        "y": 482.83056996396186,
+        "x": 1002.4283226289626,
         "r": 0,
         "quality": 1,
         "id": 40,
-        "vy": -0.20869908671986273,
-        "vx": -0.13184456992384347
+        "vy": -13.630724030966489,
+        "vx": -8.858256982319508
       },
       {
         "index": 41,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "ocrtest.py",
+        "name": ".\\ocrtest.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\ocrtest.py",
         "px": 0,
         "py": 0,
@@ -881,20 +881,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 514.6979448118608,
-        "x": 1036.7891674261411,
+        "y": 488.4251916433875,
+        "x": 946.7601333621134,
         "r": 0,
         "quality": 1,
         "id": 41,
-        "vy": -0.2081370552729681,
-        "vx": -0.13343946571758603
+        "vy": -13.614172955149106,
+        "vx": -8.851591932334573
       },
       {
         "index": 42,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "odm.txt",
+        "name": ".\\odm.txt",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\odm.txt",
         "px": 0,
         "py": 0,
@@ -902,20 +902,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 529.5533691656649,
-        "x": 993.0387155331025,
+        "y": 433.1938721208151,
+        "x": 958.4034238801974,
         "r": 0,
         "quality": 1,
         "id": 42,
-        "vy": -0.20882300686983096,
-        "vx": -0.12963836293382283
+        "vy": -13.630551453149629,
+        "vx": -8.841402147568484
       },
       {
         "index": 43,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "pdf_2_txt.py",
+        "name": ".\\pdf_2_txt.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\pdf_2_txt.py",
         "px": 0,
         "py": 0,
@@ -923,20 +923,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 516.3966179293684,
-        "x": 977.9128553638395,
+        "y": 432.0070078367126,
+        "x": 981.0699172417234,
         "r": 0,
         "quality": 1,
         "id": 43,
-        "vy": -0.20733248805792517,
-        "vx": -0.13031760887661584
+        "vy": -13.624336115219128,
+        "vx": -8.837364761056064
       },
       {
         "index": 44,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "pdfminertest.py",
+        "name": ".\\pdfminertest.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\pdfminertest.py",
         "px": 0,
         "py": 0,
@@ -944,20 +944,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 524.1920780295626,
-        "x": 984.5852749548006,
+        "y": 437.2524647326516,
+        "x": 992.3067718523113,
         "r": 0,
         "quality": 1,
         "id": 44,
-        "vy": -0.2079723682756402,
-        "vx": -0.1300627554527018
+        "vy": -13.63171277802824,
+        "vx": -8.883749259145032
       },
       {
         "index": 45,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "pdfs_to_txt.py",
+        "name": ".\\pdfs_to_txt.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\pdfs_to_txt.py",
         "px": 0,
         "py": 0,
@@ -965,20 +965,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 464.30825982617426,
-        "x": 1017.2212878779503,
+        "y": 480.2997139811548,
+        "x": 941.5584939947008,
         "r": 0,
         "quality": 1,
         "id": 45,
-        "vy": -0.21031557508903836,
-        "vx": -0.1328216350968841
+        "vy": -13.621777993083752,
+        "vx": -8.853049224206005
       },
       {
         "index": 46,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "redis-tools\\loadodm.py",
+        "name": ".\\redis-tools\\loadodm.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\redis-tools\\loadodm.py",
         "px": 0,
         "py": 0,
@@ -986,20 +986,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 583.2727146813106,
-        "x": 1051.3196297241388,
+        "y": 555.355012713753,
+        "x": 992.1807114581461,
         "r": 0,
         "quality": 1,
         "id": 46,
-        "vy": -0.20898370183189557,
-        "vx": -0.1276694125208874
+        "vy": -13.642687125700313,
+        "vx": -8.757831231600868
       },
       {
         "index": 47,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "redis-tools\\test.txt",
+        "name": ".\\redis-tools\\test.txt",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\redis-tools\\test.txt",
         "px": 0,
         "py": 0,
@@ -1007,20 +1007,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 574.8664348290278,
-        "x": 1064.6440133212188,
+        "y": 552.3630617808452,
+        "x": 1006.961329116161,
         "r": 0,
         "quality": 1,
         "id": 47,
-        "vy": -0.2098641004672804,
-        "vx": -0.12811997568842382
+        "vy": -13.664649181687977,
+        "vx": -8.759569678226116
       },
       {
         "index": 48,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "requirements.txt",
+        "name": ".\\requirements.txt",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\requirements.txt",
         "px": 0,
         "py": 0,
@@ -1028,20 +1028,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 474.26654615164534,
-        "x": 1032.7332772819939,
+        "y": 438.28697336877923,
+        "x": 949.2594363364141,
         "r": 0,
         "quality": 1,
         "id": 48,
-        "vy": -0.20902011308917803,
-        "vx": -0.13136954863585762
+        "vy": -13.638191705231625,
+        "vx": -8.841693406430435
       },
       {
         "index": 49,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "restart.sh",
+        "name": ".\\restart.sh",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\restart.sh",
         "px": 0,
         "py": 0,
@@ -1049,20 +1049,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 532.1248484114495,
-        "x": 1012.0931511323906,
+        "y": 446.1684720587233,
+        "x": 942.672236560369,
         "r": 0,
         "quality": 1,
         "id": 49,
-        "vy": -0.20954770668385309,
-        "vx": -0.1317422654981
+        "vy": -13.650169244027062,
+        "vx": -8.845364078061973
       },
       {
         "index": 50,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "runcelery.sh",
+        "name": ".\\runcelery.sh",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\runcelery.sh",
         "px": 0,
         "py": 0,
@@ -1070,20 +1070,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 482.89309168351576,
-        "x": 1037.9386260967049,
+        "y": 457.3769376504028,
+        "x": 939.3919180750703,
         "r": 0,
         "quality": 1,
         "id": 50,
-        "vy": -0.208024283331753,
-        "vx": -0.13145608306138287
+        "vy": -13.680708102448417,
+        "vx": -8.849507939052307
       },
       {
         "index": 51,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\bs4sp.py",
+        "name": ".\\server\\bs4sp.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\bs4sp.py",
         "px": 0,
         "py": 0,
@@ -1091,20 +1091,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 592.3357286239547,
-        "x": 917.7802882066425,
+        "y": 484.7155003800686,
+        "x": 822.8193360165766,
         "r": 0,
         "quality": 1,
         "id": 51,
-        "vy": -0.21145429989533668,
-        "vx": -0.14993604769236224
+        "vy": -13.639344388984279,
+        "vx": -8.83943980582844
       },
       {
         "index": 52,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\bs4sp.sh",
+        "name": ".\\server\\bs4sp.sh",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\bs4sp.sh",
         "px": 0,
         "py": 0,
@@ -1112,20 +1112,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 564.303048541525,
-        "x": 862.6388078651505,
+        "y": 514.9943728440516,
+        "x": 813.6662866721048,
         "r": 0,
         "quality": 1,
         "id": 52,
-        "vy": -0.2197064535216324,
-        "vx": -0.14399424933130942
+        "vy": -13.624481993827837,
+        "vx": -8.833146990777404
       },
       {
         "index": 53,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\ddl.sql",
+        "name": ".\\server\\ddl.sql",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\ddl.sql",
         "px": 0,
         "py": 0,
@@ -1133,20 +1133,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 550.0267853159338,
-        "x": 868.9528729299225,
+        "y": 540.053718966949,
+        "x": 838.4639319092328,
         "r": 0,
         "quality": 1,
         "id": 53,
-        "vy": -0.21867347671872286,
-        "vx": -0.1430148032179092
+        "vy": -13.62453238308509,
+        "vx": -8.806971982051332
       },
       {
         "index": 54,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\flusheverything.sh",
+        "name": ".\\server\\flusheverything.sh",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\flusheverything.sh",
         "px": 0,
         "py": 0,
@@ -1154,20 +1154,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 600.4586407928936,
-        "x": 883.865701555521,
+        "y": 477.2154407677018,
+        "x": 836.8901147806367,
         "r": 0,
         "quality": 1,
         "id": 54,
-        "vy": -0.21949875564000096,
-        "vx": -0.1513769057176838
+        "vy": -13.636031159451457,
+        "vx": -8.83505733158597
       },
       {
         "index": 55,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\server.py",
+        "name": ".\\server\\server.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\server.py",
         "px": 0,
         "py": 0,
@@ -1175,20 +1175,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 579.475295360228,
-        "x": 863.8611151764121,
+        "y": 539.850812319534,
+        "x": 852.4677119956325,
         "r": 0,
         "quality": 1,
         "id": 55,
-        "vy": -0.22010878257855196,
-        "vx": -0.14523948373579293
+        "vy": -13.64286338763866,
+        "vx": -8.803409375066938
       },
       {
         "index": 56,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\static\\css\\app.css",
+        "name": ".\\server\\static\\css\\app.css",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\static\\css\\app.css",
         "px": 0,
         "py": 0,
@@ -1196,20 +1196,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 638.9900569865681,
-        "x": 827.3273650929245,
+        "y": 604.0884744403064,
+        "x": 824.4942525901546,
         "r": 0,
         "quality": 1,
         "id": 56,
-        "vy": -0.2219510810190328,
-        "vx": -0.15232733333474827
+        "vy": -13.640052780779927,
+        "vx": -8.825925899899774
       },
       {
         "index": 57,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\static\\css\\foundation.css",
+        "name": ".\\server\\static\\css\\foundation.css",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\static\\css\\foundation.css",
         "px": 0,
         "py": 0,
@@ -1217,20 +1217,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 606.105927822392,
-        "x": 805.0840113029193,
+        "y": 606.0076435366567,
+        "x": 837.6930835676834,
         "r": 0,
         "quality": 1,
         "id": 57,
-        "vy": -0.22049679109536427,
-        "vx": -0.1497210267151664
+        "vy": -13.645704268728869,
+        "vx": -8.820560506409931
       },
       {
         "index": 58,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\static\\css\\foundation.min.css",
+        "name": ".\\server\\static\\css\\foundation.min.css",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\static\\css\\foundation.min.css",
         "px": 0,
         "py": 0,
@@ -1238,20 +1238,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 630.5791473177636,
-        "x": 813.8845144932541,
+        "y": 602.7530153845995,
+        "x": 849.4090991502933,
         "r": 0,
         "quality": 1,
         "id": 58,
-        "vy": -0.22243682385593785,
-        "vx": -0.1514061547345589
+        "vy": -13.679786499029955,
+        "vx": -8.891846821635708
       },
       {
         "index": 59,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\static\\css\\normalize.css",
+        "name": ".\\server\\static\\css\\normalize.css",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\static\\css\\normalize.css",
         "px": 0,
         "py": 0,
@@ -1259,20 +1259,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 618.767856697229,
-        "x": 806.7005719979717,
+        "y": 598.9718945364749,
+        "x": 811.3320261103112,
         "r": 0,
         "quality": 1,
         "id": 59,
-        "vy": -0.22126509966016433,
-        "vx": -0.14992573536299264
+        "vy": -13.637819855731701,
+        "vx": -8.828573046574773
       },
       {
         "index": 60,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\static\\js\\app.js",
+        "name": ".\\server\\static\\js\\app.js",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\static\\js\\app.js",
         "px": 0,
         "py": 0,
@@ -1280,20 +1280,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 650.0816646635133,
-        "x": 947.6562154390917,
+        "y": 465.9418257161153,
+        "x": 743.1749707044382,
         "r": 0,
         "quality": 1,
         "id": 60,
-        "vy": -0.20602034650015932,
-        "vx": -0.1517444430317689
+        "vy": -13.629014184354928,
+        "vx": -8.838775520240999
       },
       {
         "index": 61,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\static\\js\\custom-file-input.js",
+        "name": ".\\server\\static\\js\\custom-file-input.js",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\static\\js\\custom-file-input.js",
         "px": 0,
         "py": 0,
@@ -1301,20 +1301,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 665.5727044878097,
-        "x": 923.8881988158354,
+        "y": 486.4330540389691,
+        "x": 738.5909127775499,
         "r": 0,
         "quality": 1,
         "id": 61,
-        "vy": -0.2162372806810628,
-        "vx": -0.15681435261688004
+        "vy": -13.630065629628175,
+        "vx": -8.838506462158115
       },
       {
         "index": 62,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\static\\js\\levenshtein.js",
+        "name": ".\\server\\static\\js\\levenshtein.js",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\static\\js\\levenshtein.js",
         "px": 0,
         "py": 0,
@@ -1322,20 +1322,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 660.2558206992081,
-        "x": 900.8159344888837,
+        "y": 452.062824555923,
+        "x": 756.2683328294156,
         "r": 0,
         "quality": 1,
         "id": 62,
-        "vy": -0.22040888712440618,
-        "vx": -0.149095387971732
+        "vy": -13.624364456459455,
+        "vx": -8.841570589382124
       },
       {
         "index": 63,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\static\\js\\vendor\\foundation.js",
+        "name": ".\\server\\static\\js\\vendor\\foundation.js",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\static\\js\\vendor\\foundation.js",
         "px": 0,
         "py": 0,
@@ -1343,20 +1343,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 680.6865299048,
-        "x": 992.4963435915934,
+        "y": 463.63902792049555,
+        "x": 675.3086557404475,
         "r": 0,
         "quality": 1,
         "id": 63,
-        "vy": -0.22170963469751695,
-        "vx": -0.14398548134653064
+        "vy": -13.611714175835344,
+        "vx": -8.837404220789042
       },
       {
         "index": 64,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\static\\js\\vendor\\foundation.min.js",
+        "name": ".\\server\\static\\js\\vendor\\foundation.min.js",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\static\\js\\vendor\\foundation.min.js",
         "px": 0,
         "py": 0,
@@ -1364,20 +1364,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 706.8835387392882,
-        "x": 946.3474779537056,
+        "y": 434.01748687434474,
+        "x": 700.5627219772939,
         "r": 0,
         "quality": 1,
         "id": 64,
-        "vy": -0.2165867274771101,
-        "vx": -0.13726662075099896
+        "vy": -13.433633403977483,
+        "vx": -8.875181438188577
       },
       {
         "index": 65,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\static\\js\\vendor\\jquery.js",
+        "name": ".\\server\\static\\js\\vendor\\jquery.js",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\static\\js\\vendor\\jquery.js",
         "px": 0,
         "py": 0,
@@ -1385,20 +1385,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 708.4001900694964,
-        "x": 969.7952505997076,
+        "y": 484.147178261491,
+        "x": 680.9404468546585,
         "r": 0,
         "quality": 1,
         "id": 65,
-        "vy": -0.22172159466535238,
-        "vx": -0.1387667064295464
+        "vy": -13.621444989075732,
+        "vx": -8.841950572769763
       },
       {
         "index": 66,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\static\\js\\vendor\\what-input.js",
+        "name": ".\\server\\static\\js\\vendor\\what-input.js",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\static\\js\\vendor\\what-input.js",
         "px": 0,
         "py": 0,
@@ -1406,20 +1406,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 697.2899897842808,
-        "x": 986.0839808292463,
+        "y": 443.820173943758,
+        "x": 682.9049306590412,
         "r": 0,
         "quality": 1,
         "id": 66,
-        "vy": -0.2228232171956069,
-        "vx": -0.14247185317092154
+        "vy": -13.626572471870897,
+        "vx": -8.866748849385106
       },
       {
         "index": 67,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\stopwords.txt",
+        "name": ".\\server\\stopwords.txt",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\stopwords.txt",
         "px": 0,
         "py": 0,
@@ -1427,20 +1427,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 601.8839546519022,
-        "x": 899.378140977427,
+        "y": 531.4793349842282,
+        "x": 822.3527987886712,
         "r": 0,
         "quality": 1,
         "id": 67,
-        "vy": -0.21558290233941738,
-        "vx": -0.1542665979318178
+        "vy": -13.613284520272227,
+        "vx": -8.814786952028577
       },
       {
         "index": 68,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\templates\\index.html",
+        "name": ".\\server\\templates\\index.html",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\templates\\index.html",
         "px": 0,
         "py": 0,
@@ -1448,20 +1448,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 544.4856334290752,
-        "x": 777.4357979720867,
+        "y": 546.5727547369264,
+        "x": 749.2436440894911,
         "r": 0,
         "quality": 1,
         "id": 68,
-        "vy": -0.22420643808121776,
-        "vx": -0.1302968735847733
+        "vy": -13.655529510245136,
+        "vx": -8.828411031732033
       },
       {
         "index": 69,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\templates\\index_.html",
+        "name": ".\\server\\templates\\index_.html",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\templates\\index_.html",
         "px": 0,
         "py": 0,
@@ -1469,20 +1469,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 576.9189966464768,
-        "x": 781.7996436637795,
+        "y": 567.1372022691197,
+        "x": 759.8840488723949,
         "r": 0,
         "quality": 1,
         "id": 69,
-        "vy": -0.22245308022745663,
-        "vx": -0.14684127679984102
+        "vy": -13.653550641889009,
+        "vx": -8.828976916564223
       },
       {
         "index": 70,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\templates\\running.html",
+        "name": ".\\server\\templates\\running.html",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\templates\\running.html",
         "px": 0,
         "py": 0,
@@ -1490,20 +1490,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 534.904828460974,
-        "x": 784.4318709273683,
+        "y": 574.019512112833,
+        "x": 771.5221341410053,
         "r": 0,
         "quality": 1,
         "id": 70,
-        "vy": -0.22160791136947383,
-        "vx": -0.14546216008447663
+        "vy": -13.652576532801953,
+        "vx": -8.827164989900067
       },
       {
         "index": 71,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\templates\\search.html",
+        "name": ".\\server\\templates\\search.html",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\templates\\search.html",
         "px": 0,
         "py": 0,
@@ -1511,20 +1511,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 565.8236453138984,
-        "x": 776.2816627250235,
+        "y": 533.5837836237856,
+        "x": 748.8251284121552,
         "r": 0,
         "quality": 1,
         "id": 71,
-        "vy": -0.22205107872457974,
-        "vx": -0.1458911966199385
+        "vy": -13.655084272912347,
+        "vx": -8.82724236363032
       },
       {
         "index": 72,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\templates\\task.html",
+        "name": ".\\server\\templates\\task.html",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\templates\\task.html",
         "px": 0,
         "py": 0,
@@ -1532,20 +1532,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 554.7792931039565,
-        "x": 775.5360956832739,
+        "y": 559.0772436023943,
+        "x": 750.2058729624756,
         "r": 0,
         "quality": 1,
         "id": 72,
-        "vy": -0.221705345538166,
-        "vx": -0.14479248348468926
+        "vy": -13.655099341256781,
+        "vx": -8.82879520974839
       },
       {
         "index": 73,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "server\\uwsgi.sh",
+        "name": ".\\server\\uwsgi.sh",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\uwsgi.sh",
         "px": 0,
         "py": 0,
@@ -1553,20 +1553,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 592.3060266954857,
-        "x": 871.5596842289204,
+        "y": 498.08436306039766,
+        "x": 813.9532118117614,
         "r": 0,
         "quality": 1,
         "id": 73,
-        "vy": -0.22157035024392496,
-        "vx": -0.14835278832379717
+        "vy": -13.635480482731882,
+        "vx": -8.837875464534669
       },
       {
         "index": 74,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "stemmer.py",
+        "name": ".\\stemmer.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\stemmer.py",
         "px": 0,
         "py": 0,
@@ -1574,20 +1574,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 468.0835749266105,
-        "x": 1025.789605172691,
+        "y": 494.26161460102736,
+        "x": 954.820098190704,
         "r": 0,
         "quality": 1,
         "id": 74,
-        "vy": -0.2099819743565277,
-        "vx": -0.13224907645034925
+        "vy": -13.612751696640041,
+        "vx": -8.83732255794658
       },
       {
         "index": 75,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "stopwords.txt",
+        "name": ".\\stopwords.txt",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\stopwords.txt",
         "px": 0,
         "py": 0,
@@ -1595,20 +1595,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 465.44085914883226,
-        "x": 996.2745038644823,
+        "y": 498.17226567747446,
+        "x": 976.2983399150938,
         "r": 0,
         "quality": 1,
         "id": 75,
-        "vy": -0.20936690019824902,
-        "vx": -0.13205332816205087
+        "vy": -13.625950069541064,
+        "vx": -8.834371696605526
       },
       {
         "index": 76,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "txts_to_stem.py",
+        "name": ".\\txts_to_stem.py",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\txts_to_stem.py",
         "px": 0,
         "py": 0,
@@ -1616,20 +1616,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 506.72637668614146,
-        "x": 973.7299138459965,
+        "y": 470.7002545097569,
+        "x": 937.8488334137048,
         "r": 0,
         "quality": 1,
         "id": 76,
-        "vy": -0.20689176933089065,
-        "vx": -0.13101120224021076
+        "vy": -13.635972390302815,
+        "vx": -8.84700956048876
       },
       {
         "index": 77,
         "style": "",
         "fixed": false,
         "group": "File",
-        "name": "update.sh",
+        "name": ".\\update.sh",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\update.sh",
         "px": 0,
         "py": 0,
@@ -1637,20 +1637,20 @@
         "visibility": 2,
         "complexity": 1,
         "cx": 0,
-        "y": 463.16686311560403,
-        "x": 1007.0533064784709,
+        "y": 430.5353626299909,
+        "x": 968.8634642704343,
         "r": 0,
         "quality": 1,
         "id": 77,
-        "vy": -0.20970287031881532,
-        "vx": -0.1325981576504328
+        "vy": -13.62571921054772,
+        "vx": -8.84218693041075
       },
       {
         "index": 78,
         "style": "",
         "fixed": false,
         "group": "Directory",
-        "name": "server\\templates",
+        "name": ".\\server\\templates",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\templates",
         "px": 0,
         "py": 0,
@@ -1658,20 +1658,20 @@
         "visibility": 1,
         "complexity": 1,
         "cx": 0,
-        "y": 558.3028272076043,
-        "x": 810.6709977530162,
+        "y": 540.9508984287006,
+        "x": 783.0184994242613,
         "r": 0,
         "quality": 1,
         "id": 78,
-        "vy": -0.22119094056064642,
-        "vx": -0.1461445289166788
+        "vy": -13.651580003940909,
+        "vx": -8.829421733051326
       },
       {
         "index": 79,
         "style": "",
         "fixed": false,
         "group": "Directory",
-        "name": "server\\static\\js\\vendor",
+        "name": ".\\server\\static\\js\\vendor",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\static\\js\\vendor",
         "px": 0,
         "py": 0,
@@ -1679,20 +1679,20 @@
         "visibility": 1,
         "complexity": 1,
         "cx": 0,
-        "y": 677.2932601555053,
-        "x": 959.294376997866,
+        "y": 465.8640604121139,
+        "x": 707.6944643017312,
         "r": 0,
         "quality": 1,
         "id": 79,
-        "vy": -0.21977992467216215,
-        "vx": -0.14427061363967283
+        "vy": -13.64437613281151,
+        "vx": -8.851584149502031
       },
       {
         "index": 80,
         "style": "",
         "fixed": false,
         "group": "Directory",
-        "name": "server\\static\\js",
+        "name": ".\\server\\static\\js",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\static\\js",
         "px": 0,
         "py": 0,
@@ -1700,20 +1700,20 @@
         "visibility": 1,
         "complexity": 1,
         "cx": 0,
-        "y": 633.6314238532282,
-        "x": 920.1504931770623,
+        "y": 482.2559642951051,
+        "x": 772.1624560742154,
         "r": 0,
         "quality": 1,
         "id": 80,
-        "vy": -0.2178524461111632,
-        "vx": -0.14549771386728944
+        "vy": -13.631135840952519,
+        "vx": -8.842098817258412
       },
       {
         "index": 81,
         "style": "",
         "fixed": false,
         "group": "Directory",
-        "name": "server\\static\\css",
+        "name": ".\\server\\static\\css",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server\\static\\css",
         "px": 0,
         "py": 0,
@@ -1721,20 +1721,20 @@
         "visibility": 1,
         "complexity": 1,
         "cx": 0,
-        "y": 607.7036380824031,
-        "x": 839.4433095167468,
+        "y": 571.0987844046292,
+        "x": 833.5754842055081,
         "r": 0,
         "quality": 1,
         "id": 81,
-        "vy": -0.22120414755608633,
-        "vx": -0.15043851088491383
+        "vy": -13.621294169784075,
+        "vx": -8.813003619131289
       },
       {
         "index": 82,
         "style": "",
         "fixed": false,
         "group": "Directory",
-        "name": "server",
+        "name": ".\\server",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\server",
         "px": 0,
         "py": 0,
@@ -1742,20 +1742,20 @@
         "visibility": 1,
         "complexity": 1,
         "cx": 0,
-        "y": 569.4136406227419,
-        "x": 895.7747554688965,
+        "y": 508.43545036098527,
+        "x": 845.6189183643553,
         "r": 0,
         "quality": 1,
         "id": 82,
-        "vy": -0.21696662776425782,
-        "vx": -0.14417575276323075
+        "vy": -13.635702359964577,
+        "vx": -8.83976228154822
       },
       {
         "index": 83,
         "style": "",
         "fixed": false,
         "group": "Directory",
-        "name": "redis-tools",
+        "name": ".\\redis-tools",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\redis-tools",
         "px": 0,
         "py": 0,
@@ -1763,20 +1763,20 @@
         "visibility": 1,
         "complexity": 1,
         "cx": 0,
-        "y": 549.2373640448659,
-        "x": 1037.3808541626356,
+        "y": 518.5080338570259,
+        "x": 988.5524289537824,
         "r": 0,
         "quality": 1,
         "id": 83,
-        "vy": -0.2092662768258616,
-        "vx": -0.12840389043524922
+        "vy": -13.649503598019926,
+        "vx": -8.827102530650372
       },
       {
         "index": 84,
         "style": "",
         "fixed": false,
         "group": "Directory",
-        "name": "index_server\\templates",
+        "name": ".\\index_server\\templates",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index_server\\templates",
         "px": 0,
         "py": 0,
@@ -1784,20 +1784,20 @@
         "visibility": 1,
         "complexity": 1,
         "cx": 0,
-        "y": 510.91532749009497,
-        "x": 1142.5506257782522,
+        "y": 412.02269660068026,
+        "x": 1078.6046649990396,
         "r": 0,
         "quality": 1,
         "id": 84,
-        "vy": -0.21302004976137234,
-        "vx": -0.13181805872915928
+        "vy": -13.699670509406833,
+        "vx": -8.88073233370292
       },
       {
         "index": 85,
         "style": "",
         "fixed": false,
         "group": "Directory",
-        "name": "index_server",
+        "name": ".\\index_server",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index_server",
         "px": 0,
         "py": 0,
@@ -1805,20 +1805,20 @@
         "visibility": 1,
         "complexity": 1,
         "cx": 0,
-        "y": 504.67968731342364,
-        "x": 1090.3209295191507,
+        "y": 437.91284259317536,
+        "x": 1033.6371290934371,
         "r": 0,
         "quality": 1,
         "id": 85,
-        "vy": -0.21206835558966924,
-        "vx": -0.1311045623812715
+        "vy": -13.660401987451927,
+        "vx": -8.883741373823911
       },
       {
         "index": 86,
         "style": "",
         "fixed": false,
         "group": "Directory",
-        "name": "index\\cpp_engine",
+        "name": ".\\index\\cpp_engine",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index\\cpp_engine",
         "px": 0,
         "py": 0,
@@ -1826,20 +1826,20 @@
         "visibility": 1,
         "complexity": 1,
         "cx": 0,
-        "y": 350.317357264424,
-        "x": 959.1419481942246,
+        "y": 526.6601455069757,
+        "x": 1131.4400301728485,
         "r": 0,
         "quality": 1,
         "id": 86,
-        "vy": -0.2084224616808102,
-        "vx": -0.13925546930415278
+        "vy": -13.727484310151576,
+        "vx": -8.845835660863933
       },
       {
         "index": 87,
         "style": "",
         "fixed": false,
         "group": "Directory",
-        "name": "index",
+        "name": ".\\index",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\index",
         "px": 0,
         "py": 0,
@@ -1847,20 +1847,20 @@
         "visibility": 1,
         "complexity": 1,
         "cx": 0,
-        "y": 416.1359625887363,
-        "x": 990.2271701918212,
+        "y": 498.85835812757114,
+        "x": 1051.0919347249403,
         "r": 0,
         "quality": 1,
         "id": 87,
-        "vy": -0.21083724611939678,
-        "vx": -0.1348088346408033
+        "vy": -13.678656580812913,
+        "vx": -8.880482714459683
       },
       {
         "index": 88,
         "style": "",
         "fixed": false,
         "group": "Directory",
-        "name": "docx2txt",
+        "name": ".\\docx2txt",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\docx2txt",
         "px": 0,
         "py": 0,
@@ -1868,20 +1868,20 @@
         "visibility": 1,
         "complexity": 1,
         "cx": 0,
-        "y": 526.7845482706406,
-        "x": 1061.0915894824202,
+        "y": 422.19373858938707,
+        "x": 1006.4846454334244,
         "r": 0,
         "quality": 1,
         "id": 88,
-        "vy": -0.20988596614564559,
-        "vx": -0.13029409985114787
+        "vy": -13.667235985616948,
+        "vx": -8.909225638676693
       },
       {
         "index": 89,
         "style": "",
         "fixed": false,
         "group": "Directory",
-        "name": "config\\uwsgi\\apps-enabled",
+        "name": ".\\config\\uwsgi\\apps-enabled",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\config\\uwsgi\\apps-enabled",
         "px": 0,
         "py": 0,
@@ -1889,20 +1889,20 @@
         "visibility": 1,
         "complexity": 1,
         "cx": 0,
-        "y": 468.5151401527321,
-        "x": 963.3015735643646,
+        "y": 519.9715464635236,
+        "x": 958.4837289572203,
         "r": 0,
         "quality": 1,
         "id": 89,
-        "vy": -0.20882396571525863,
-        "vx": -0.13172568055131334
+        "vy": -13.618948447009068,
+        "vx": -8.821636742470021
       },
       {
         "index": 90,
         "style": "",
         "fixed": false,
         "group": "Directory",
-        "name": "config\\uwsgi\\apps-available",
+        "name": ".\\config\\uwsgi\\apps-available",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\config\\uwsgi\\apps-available",
         "px": 0,
         "py": 0,
@@ -1910,20 +1910,22 @@
         "visibility": 1,
         "complexity": 1,
         "cx": 0,
-        "y": 488.39881790558184,
-        "x": 1056.242228503361,
+        "y": 458.10909354197776,
+        "x": 927.3263125763887,
         "r": 0,
         "quality": 1,
         "id": 90,
-        "vy": -0.21330567174375467,
-        "vx": -0.1316413231253401
+        "vy": -13.569852115906349,
+        "vx": -8.85514309241091,
+        "fx": null,
+        "fy": null
       },
       {
         "index": 91,
         "style": "",
         "fixed": false,
         "group": "Directory",
-        "name": "config\\sites-enabled",
+        "name": ".\\config\\sites-enabled",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\config\\sites-enabled",
         "px": 0,
         "py": 0,
@@ -1931,20 +1933,20 @@
         "visibility": 1,
         "complexity": 1,
         "cx": 0,
-        "y": 462.49789146303107,
-        "x": 1060.2454861160238,
+        "y": 410.8697330513758,
+        "x": 977.6111986190704,
         "r": 0,
         "quality": 1,
         "id": 91,
-        "vy": -0.21287567800870585,
-        "vx": -0.13377540911109126
+        "vy": -13.639236705933873,
+        "vx": -8.895607876871876
       },
       {
         "index": 92,
         "style": "",
         "fixed": false,
         "group": "Directory",
-        "name": "config\\mysql\\conf.d",
+        "name": ".\\config\\mysql\\conf.d",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\config\\mysql\\conf.d",
         "px": 0,
         "py": 0,
@@ -1952,20 +1954,20 @@
         "visibility": 1,
         "complexity": 1,
         "cx": 0,
-        "y": 456.2098164132533,
-        "x": 849.6756995326788,
+        "y": 346.4749526397112,
+        "x": 905.1448172557616,
         "r": 0,
         "quality": 1,
         "id": 92,
-        "vy": -0.2103347911339619,
-        "vx": -0.1306811935987858
+        "vy": -13.628880441786967,
+        "vx": -8.981587299661374
       },
       {
         "index": 93,
         "style": "",
         "fixed": false,
         "group": "Directory",
-        "name": "config\\mysql",
+        "name": ".\\config\\mysql",
         "url": "https:\\\\gitlab.uw.edu.pl\\mp347235\\preant\\blob\\master\\config\\mysql",
         "px": 0,
         "py": 0,
@@ -1973,13 +1975,13 @@
         "visibility": 1,
         "complexity": 1,
         "cx": 0,
-        "y": 477.87708911814775,
-        "x": 916.1747974317194,
+        "y": 397.73624848266195,
+        "x": 931.1608351918185,
         "r": 0,
         "quality": 1,
         "id": 93,
-        "vy": -0.20936512085653966,
-        "vx": -0.13191664036918924
+        "vy": -13.610054797429832,
+        "vx": -8.874437133235048
       },
       {
         "index": 94,
@@ -1994,13 +1996,13 @@
         "visibility": 1,
         "complexity": 1,
         "cx": 0,
-        "y": 497.57653933695315,
-        "x": 1006.7942495672426,
+        "y": 464.21609142977803,
+        "x": 971.5183815783173,
         "r": 0,
         "quality": 1,
         "id": 94,
-        "vy": -0.20956293739815102,
-        "vx": -0.13182739353960204
+        "vy": -13.620289650905873,
+        "vx": -8.858765291978319
       }
     ],
     "links": [
@@ -3337,19 +3339,19 @@
     ]
   },
   "tree": {
-    "name": "preant",
+    "name": ".",
     "children": [
       {
         "name": "txts_to_stem.py",
-        "size": 1024
+        "size": "960"
       },
       {
         "name": "compare.py",
-        "size": 1024
+        "size": "540"
       },
       {
         "name": "copytest.sh",
-        "size": 1024
+        "size": "166"
       },
       {
         "name": "index_server",
@@ -3359,105 +3361,105 @@
             "children": [
               {
                 "name": "index.html",
-                "size": 1024
+                "size": "222"
               }
             ]
           },
           {
             "name": "fill_index.py",
-            "size": 1024
+            "size": "670"
           },
           {
             "name": "server.py",
-            "size": 1024
+            "size": "2525"
           }
         ]
       },
       {
         "name": "mailconfig.py",
-        "size": 1024
+        "size": "217"
       },
       {
         "name": "pdf_2_txt.py",
-        "size": 1024
+        "size": "4372"
       },
       {
         "name": "index",
         "children": [
           {
             "name": "compare_all.py",
-            "size": 1024
+            "size": "2370"
           },
           {
             "name": "inv_index.py",
-            "size": 1024
+            "size": "1417"
           },
           {
             "name": "cpp_engine",
             "children": [
               {
                 "name": "index.cpp",
-                "size": 1024
+                "size": "3695"
               },
               {
                 "name": "result.h",
-                "size": 1024
+                "size": "516"
               },
               {
                 "name": "document.h",
-                "size": 1024
+                "size": "269"
               },
               {
                 "name": "debug_mode.py",
-                "size": 1024
+                "size": "2517"
               },
               {
                 "name": "index_wrapper.py",
-                "size": 1024
+                "size": "732"
               },
               {
                 "name": "baseindex.h",
-                "size": 1024
+                "size": "507"
               },
               {
                 "name": "closeindex.h",
-                "size": 1024
+                "size": "1117"
               },
               {
                 "name": "enumtxt.py",
-                "size": 1024
+                "size": "235"
               },
               {
                 "name": "bow.h",
-                "size": 1024
+                "size": "190"
               },
               {
                 "name": "interface.h",
-                "size": 1024
+                "size": "1071"
               },
               {
                 "name": "index.h",
-                "size": 1024
+                "size": "723"
               },
               {
                 "name": "interface.cpp",
-                "size": 1024
+                "size": "5924"
               },
               {
                 "name": "document.cpp",
-                "size": 1024
+                "size": "90"
               },
               {
                 "name": "result.cpp",
-                "size": 1024
+                "size": "1208"
               },
               {
                 "name": "setup.py",
-                "size": 1024
+                "size": "658"
               },
               {
                 "name": "closeindex.cpp",
-                "size": 1024
+                "size": "5452"
               }
             ]
           }
@@ -3465,31 +3467,31 @@
       },
       {
         "name": "antplaybook.yml",
-        "size": 1024
+        "size": "1588"
       },
       {
         "name": "requirements.txt",
-        "size": 1024
+        "size": "377"
       },
       {
         "name": ".gitignore",
-        "size": 1024
+        "size": "85"
       },
       {
         "name": "celery_pdf.py",
-        "size": 1024
+        "size": "5083"
       },
       {
         "name": "stopwords.txt",
-        "size": 1024
+        "size": "3004"
       },
       {
         "name": "restart.sh",
-        "size": 1024
+        "size": "610"
       },
       {
         "name": "update.sh",
-        "size": 1024
+        "size": "56"
       },
       {
         "name": "config",
@@ -3499,11 +3501,11 @@
             "children": [
               {
                 "name": "guiserver.conf",
-                "size": 1024
+                "size": "195"
               },
               {
                 "name": "indexserver.conf",
-                "size": 1024
+                "size": "170"
               }
             ]
           },
@@ -3515,11 +3517,11 @@
                 "children": [
                   {
                     "name": "guiserver.ini",
-                    "size": 1024
+                    "size": "220"
                   },
                   {
                     "name": "indexserver.ini",
-                    "size": 1024
+                    "size": "240"
                   }
                 ]
               },
@@ -3528,7 +3530,7 @@
                 "children": [
                   {
                     "name": "README",
-                    "size": 1024
+                    "size": "210"
                   }
                 ]
               }
@@ -3539,28 +3541,28 @@
             "children": [
               {
                 "name": "debian.cnf",
-                "size": 1024
+                "size": "333"
               },
               {
                 "name": "my.cnf",
-                "size": 1024
+                "size": "3531"
               },
               {
                 "name": "conf.d",
                 "children": [
                   {
                     "name": "mysqld_safe_syslog.cnf",
-                    "size": 1024
+                    "size": "21"
                   },
                   {
                     "name": ".keepme",
-                    "size": 1024
+                    "size": "0"
                   }
                 ]
               },
               {
                 "name": "debian-start",
-                "size": 1024
+                "size": "1220"
               }
             ]
           }
@@ -3568,44 +3570,44 @@
       },
       {
         "name": "odm.txt",
-        "size": 1024
+        "size": "56579329"
       },
       {
         "name": "pdfs_to_txt.py",
-        "size": 1024
+        "size": "923"
       },
       {
         "name": "pdfminertest.py",
-        "size": 1024
+        "size": "878"
       },
       {
         "name": "ocrtest.py",
-        "size": 1024
+        "size": "389"
       },
       {
         "name": "redis-tools",
         "children": [
           {
             "name": "loadodm.py",
-            "size": 1024
+            "size": "297"
           },
           {
             "name": "test.txt",
-            "size": 1024
+            "size": "27"
           }
         ]
       },
       {
         "name": "stemmer.py",
-        "size": 1024
+        "size": "3235"
       },
       {
         "name": "antworker",
-        "size": 1024
+        "size": "1163"
       },
       {
         "name": "install.sh",
-        "size": 1024
+        "size": "863"
       },
       {
         "name": "server",
@@ -3615,45 +3617,45 @@
             "children": [
               {
                 "name": "search.html",
-                "size": 1024
+                "size": "1032"
               },
               {
                 "name": "index.html",
-                "size": 1024
+                "size": "2922"
               },
               {
                 "name": "index_.html",
-                "size": 1024
+                "size": "502"
               },
               {
                 "name": "task.html",
-                "size": 1024
+                "size": "3346"
               },
               {
                 "name": "running.html",
-                "size": 1024
+                "size": "235"
               }
             ]
           },
           {
             "name": "uwsgi.sh",
-            "size": 1024
+            "size": "78"
           },
           {
             "name": "flusheverything.sh",
-            "size": 1024
+            "size": "79"
           },
           {
             "name": "bs4sp.py",
-            "size": 1024
+            "size": "1512"
           },
           {
             "name": "stopwords.txt",
-            "size": 1024
+            "size": "3004"
           },
           {
             "name": "ddl.sql",
-            "size": 1024
+            "size": "916"
           },
           {
             "name": "static",
@@ -3663,19 +3665,19 @@
                 "children": [
                   {
                     "name": "foundation.min.css",
-                    "size": 1024
+                    "size": "39667"
                   },
                   {
                     "name": "app.css",
-                    "size": 1024
+                    "size": "5805"
                   },
                   {
                     "name": "normalize.css",
-                    "size": 1024
+                    "size": "1825"
                   },
                   {
                     "name": "foundation.css",
-                    "size": 1024
+                    "size": "56596"
                   }
                 ]
               },
@@ -3684,36 +3686,36 @@
                 "children": [
                   {
                     "name": "app.js",
-                    "size": 1024
+                    "size": "25"
                   },
                   {
                     "name": "vendor",
                     "children": [
                       {
                         "name": "jquery.js",
-                        "size": 1024
+                        "size": "258648"
                       },
                       {
                         "name": "foundation.min.js",
-                        "size": 1024
+                        "size": "19335"
                       },
                       {
                         "name": "foundation.js",
-                        "size": 1024
+                        "size": "54304"
                       },
                       {
                         "name": "what-input.js",
-                        "size": 1024
+                        "size": "7076"
                       }
                     ]
                   },
                   {
                     "name": "custom-file-input.js",
-                    "size": 1024
+                    "size": "977"
                   },
                   {
                     "name": "levenshtein.js",
-                    "size": 1024
+                    "size": "5668"
                   }
                 ]
               }
@@ -3721,11 +3723,11 @@
           },
           {
             "name": "bs4sp.sh",
-            "size": 1024
+            "size": "88"
           },
           {
             "name": "server.py",
-            "size": 1024
+            "size": "7062"
           }
         ]
       },
@@ -3734,17 +3736,17 @@
         "children": [
           {
             "name": "docx2txt.py",
-            "size": 1024
+            "size": "2180"
           },
           {
             "name": "__init__.py",
-            "size": 1024
+            "size": "50"
           }
         ]
       },
       {
         "name": "runcelery.sh",
-        "size": 1024
+        "size": "159"
       }
     ]
   }
