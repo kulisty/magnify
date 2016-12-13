@@ -1,7 +1,7 @@
 function resizePanels() {
 
-  var w = [330, 330, 330, 330],
-      h = [110, 330,  25, 330],
+  var w = [440, 440, 440, 440],
+      h = [110, 440,  25, 330],
       l = 3,
       t = 3,
       m = 3;
@@ -34,8 +34,8 @@ function resizePanels() {
 
 function addPanels() {
 
-  var w = [330, 330, 330, 330],
-      h = [110, 330,  25, 330],
+  var w = [440, 440, 440, 440],
+      h = [110, 440,  25, 330],
       l = 3,
       t = 3,
       m = 3;
@@ -112,17 +112,19 @@ function addPanels() {
 
 function panelFilter() { // at panel no 3
 
+  var s = "436px";
+
   var svg = d3.select(".panel3")
     .append("input")
     .attr("type", "text")
     .attr("id", "myInput")
-    .attr("placeholder", "Search for names..")
+    .attr("placeholder", "Type to search ...")
     .style("position", "absolute")
     .style("left", 2 + "px")
     .style("top", 2 + "px")
     .style("border", "1px")
     .style("border-radius", "2px")
-    .style("width", "326px")
+    .style("width", s)
     .style("font", "16px sans-serif")
     .on("input", filter);
 
@@ -144,8 +146,8 @@ function panelFilter() { // at panel no 3
 
 function panelSunburst() { // at panel no 2
 
-  var width = 330,
-      height = 330,
+  var width = 440,
+      height = 440,
       radius = (Math.min(width, height) / 2) - 10;
 
   var formatNumber = d3.format(",d");
@@ -221,24 +223,25 @@ function panelSunburst() { // at panel no 2
 
 function panelGauge() { // at panel no 1
 
-  var width = 330,
+  var width = 440,
       height = 110;
 
-  var memoryGaugeContainer = d3.select(".panel1").append("span")
+  var sizeGaugeContainer = d3.select(".panel1").append("span")
+    .attr("id", "sizeGaugeContainer");
+
+  var weightGaugeContainer = d3.select(".panel1").append("span")
     .attr("id", "weightGaugeContainer");
 
-  var cpuGaugeContainer = d3.select(".panel1").append("span")
+  var qualityGaugeContainer = d3.select(".panel1").append("span")
     .attr("id", "qualityGaugeContainer");
 
-  var networkGaugeContainer = d3.select(".panel1").append("span")
+  var complexityGaugeContainer = d3.select(".panel1").append("span")
     .attr("id", "complexityGaugeContainer");
 
   var gauges = [];
 
-  function createGauge(name, label, min, max)
-  {
-    var config =
-    {
+  function createGauge(name, label, min, max) {
+    var config = {
       size: 120,
       label: label,
       min: undefined != min ? min : 0,
@@ -257,31 +260,27 @@ function panelGauge() { // at panel no 1
     gauges[name].render();
   }
 
-  function createGauges()
-  {
+  function createGauges() {
+    createGauge("size", "Size");
     createGauge("weight", "Weight");
     createGauge("quality", "Quality");
     createGauge("complexity", "Complexity");
     //createGauge("test", "Test", -50, 50 );
   }
 
-  function updateGauges()
-  {
-    for (var key in gauges)
-    {
+  function updateGauges() {
+    for (var key in gauges) {
       var value = getRandomValue(gauges[key])
       gauges[key].redraw(value);
     }
   }
 
-  function getRandomValue(gauge)
-  {
+  function getRandomValue(gauge) {
     var overflow = 0; //10;
     return gauge.config.min - overflow + (gauge.config.max - gauge.config.min + overflow*2) *  Math.random();
   }
 
-  function initialize()
-  {
+  function initialize() {
     createGauges();
     //setInterval(updateGauges, 5000);
     updateGauges();
@@ -339,25 +338,37 @@ function panelGrid2() { // at panel no 4
 
   var t = d3.select(".panel4").append("table");
 
-  var v = ["name", "visibility", "complexity", "quality"];
+  var v = ["visibility", "complexity", "quality", "name"];
+  var s = ["30px", "30px", "30px", "350px"];
   var k = d3.keys(v);
+
+  var c = t.append("colgroup");
+  c.selectAll("col")
+   .data(s)
+   .enter()
+   .append("col")
+   .style("width", function(d) { return d; });
 
   /*
   var h = t.append("thead").append("tr");
-  h.append("th").text("Id");
   h.selectAll("td") //td
-   .data(v).enter()
-   .append("td").text(function(d){return d;}); //td
+   .data(v)
+   .enter()
+   //.append("td").text(function(d){return d;})
+   .append("td").text("")
+   .style("width", "25%"); //td
   */
 
   var b = t.append("tbody");
   var r = d3.select("tbody").selectAll("tr")
-   .data(file.data.graph.nodes).enter()
+   .data(file.data.graph.nodes)
+   .enter()
    .append("tr");
 
   //r.append("th").text(function(d){return d.name;});
   r.selectAll("td")
-   .data(function(d){ return v.map(function(k){ return /*k.toString().substr(0,2) + ":" +*/ d[k].toString(); }); }).enter()
+   .data(function(d){ return v.map(function(k){ return /*k.toString().substr(0,2) + ":" +*/ d[k].toString(); }); })
+   .enter()
    .append("td")
    .text(function(d){ return d; });
 
