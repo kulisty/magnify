@@ -1,5 +1,8 @@
 function resizePanels() {
 
+  var width = window.innerWidth,
+      height = window.innerHeight;
+
   var w = [440, 440, 440, 440],
       h = [110, 440,  25, 330],
       l = 3,
@@ -33,6 +36,9 @@ function resizePanels() {
 }
 
 function addPanels() {
+
+  var width = window.innerWidth,
+      height = window.innerHeight;
 
   var w = [440, 440, 440, 440],
       h = [110, 440,  25, 330],
@@ -80,7 +86,7 @@ function addPanels() {
     .style("height", h[2] + "px")
     .style("background", "#f0f0f0")
     .style("font", "16px sans-serif")
-    .style("color", "#fff")
+    .style("color", "#000") //"#fff"
     .style("border", "0px")
     .style("border-radius", "2px");
     //background-image: url('/css/searchicon.png'); /* Add a search icon to input */
@@ -178,7 +184,15 @@ function panelSunburst() { // at panel no 2
   //d3.json("http://bl.ocks.org/mbostock/raw/4063550/flare.json", function(error, root) {
   //  if (error) throw error;
   var root = d3.hierarchy(file.data.tree);//root
-  root.sum(function(d) { return d.size; });
+
+  temp = root;
+
+  root.sum( function(d) { return 1; } );
+  root.each( d => d.data.count = d.value );
+
+  root.sum( function(d) { return d.size; } );
+  root.each( d => d.data.sum = d.value );
+
   svg.selectAll("path")
      .data(partition(root).descendants())
      .enter().append("path")
@@ -192,6 +206,12 @@ function panelSunburst() { // at panel no 2
   function click(d) {
     path = "";
     curr = d;
+    //console.log(root.value);
+    //console.log(d.value);
+
+    var total = d3.sum(curr, d => d.size);
+    console.log(total);
+
     while (curr) {
       path = "\\" + curr.data.name + path;
       curr = curr.parent;
@@ -200,7 +220,7 @@ function panelSunburst() { // at panel no 2
     //path = path.replace(new RegExp("\\\\"+file.data.tree.name+"\\\\", ""), "");
     //s = file.data.tree.name.length+2;
     path = path.slice(1);
-    console.log(path);
+    //console.log(path);
     el = document.getElementById("myInput");
     el.value = path;
     // document.getElementById("myInput").setAttribute('value',path);

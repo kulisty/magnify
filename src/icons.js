@@ -3,10 +3,23 @@ function resizeIcons() {
   var width = window.innerWidth,
       height = window.innerHeight;
 
+  var w = 470,
+      h = 28,
+      m = 2,
+      p = 5;
+
   d3.select('body').selectAll(".icons")
     .transition().duration(500)
-    .style("left", width-490 + "px")
-    .style("top", height-40 + "px");
+    .style("left", width-w-m-2*p + "px")
+    .style("top", height-h-m + "px");
+
+  d3.select('body').selectAll(".info")
+    .transition().duration(500)
+    //.style("left", width-w-m-2*p + "px")
+    .style("left", 440 + 2*m + "px")
+    .style("width", width-440-w-4*m-4*p + "px")
+    //.style("top", height-2*h-2*m + "px");
+    .style("top", height-h-m + "px");
 
 }
 
@@ -16,20 +29,21 @@ function addIcons() {
       height = window.innerHeight;
 
   var icons = [
-    "git", "bug", "archive", "qrcode",
+    "git", "bug", "archive",
     "area-chart", "bar-chart", "line-chart", "building",
     "pie-chart", "dashboard", "history", "photo",
-    "file-image-o", "file-text-o", "print", "info-circle",
+    "file-image-o", "file-text-o", "print",
+    "info-circle", "qrcode",
     "desktop"
   ];
 
   var c = d3.select("body").append("div").attr("class", "icons")
     .style("left", width + "px")
-    .style("top", height-40 + "px")
+    .style("top", height + "px")
     .style("opacity", 0.75)
     .style("position", "absolute")
     .style("width", "470px")
-    .style("height", "20px")
+    .style("height", "18px")
     .style("padding", "5px")
     .style("text-align", "left")
     .style("font", "16px font-awesome")
@@ -46,6 +60,24 @@ function addIcons() {
     })
     .attr("aria-hidden", "true")
     .on("click", onIcon);
+
+  var i = d3.select("body").append("div").attr("class", "info")
+    .style("left", width + "px")
+    .style("top", height + "px")
+    .style("opacity", 0.75)
+    .style("position", "absolute")
+    .style("width", "470px")
+    .style("height", "18px")
+    .style("padding", "5px")
+    .style("text-align", "right")
+    .style("background", "#f0f0f0")
+    .style("font", "16px sans-serif")
+    .style("color", "#000")
+    .style("border", "0px")
+    .style("border-radius", "2px");
+
+  //i.text(file.data.project.name+"@"+file.data.project.owner+"#"+file.data.project.commit);
+  i.text(file.data.project.origin+"#"+file.data.project.commit);
 
   resizeIcons();
 
