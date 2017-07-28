@@ -25,9 +25,9 @@
   },
   "homepage": "https://github.com/kulisty/magnify#readme",
   "dependencies": {
-    "electron-prebuilt": "1.4.8",
+    "electron": "1.6.2",
     "font-awesome": "4.7.0",
-    "d3": "4.4.0",
+    "d3": "4.7.4",
     "c3": "0.4.11",
     "pivottable": "2.3.0"
   }

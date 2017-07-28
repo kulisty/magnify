@@ -19,11 +19,11 @@ var qr = require('qr-image');
 // var width = window.innerWidth,
 //     height = window.innerHeight;
 
-// Container for my application model
-var file = { name:'', data: null, copy: null};
-
-var simu = null;
-
+// Container for application model
+var file = { name:'', data: null, copy: null };
+// Container for application view and its handling
+var view = { svg: null, zoom: null, simu: null, obj: null };
+// testing and debugging, to be eventually removed
 var temp = null;
 
 // New menu overloading the default one
@@ -111,6 +111,15 @@ var menu = function() {
             //window.reload();
           }
         }, // View / Reload
+
+        { // View / Reload
+          label: 'Toggle board',
+          accelerator: 'F7',
+          click: function(item, focusedWindow) {
+            clickBoard();
+            //window.reload();
+          }
+        }, // View / Toggle board
 
         { // View / Toggle full screen
           label: 'Toggle Full Screen',

@@ -18,11 +18,12 @@ function resizeButtons() {
     .style("left", width-40 + "px")
     .style("top", 74 + "px");
 
+  /*
   d3.select('body').selectAll(".button4")
     .transition().duration(500)
     .style("left", width-40 + "px")
     .style("top", 106 + "px");
-
+  */
 }
 
 function addButtons() {
@@ -77,6 +78,7 @@ function addButtons() {
     .style("background-repeat", "no-repeat")
     .style("background-position", "center center");
 
+  /*
   var b4 = b.append("div").attr("class", "button4")
     .style("left", width-40 + "px")
     .style("top", 10 + "px")
@@ -91,7 +93,24 @@ function addButtons() {
     .style("background-image", "url('css/images/icon-layers.png')")
     .style("background-repeat", "no-repeat")
     .style("background-position", "center center");
+  */
+  
+  d3.select(".button1").on("click", zoomedIn);
+  d3.select(".button2").on("click", zoomedOut);
+  d3.select(".button3").on("click", resetted);
 
   resizeButtons();
+
+  function zoomedIn() {
+    view.svg.transition().duration(750).call(view.zoom.scaleBy, 1.50);
+  }
+
+  function zoomedOut() {
+    view.svg.transition().duration(750).call(view.zoom.scaleBy, 0.75);
+  }
+
+  function resetted() {
+    view.svg.transition().duration(750).call(view.zoom.transform, d3.zoomIdentity);
+  }
 
 }

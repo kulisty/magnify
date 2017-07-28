@@ -1,7 +1,5 @@
 function drawThePicture() {
 
-  addButtons();
-
   d3.select(window).on("resize", resized);
 
   var drag = d3.drag()
@@ -17,7 +15,8 @@ function drawThePicture() {
   var svg = d3.select("body")
       .append("svg")
       .attr("width", window.innerWidth)
-      .attr("height", window.innerHeight);
+      .attr("height", window.innerHeight)
+      .call(zoom);
 
   var graph = file.data.graph;
 
@@ -89,7 +88,8 @@ function drawThePicture() {
       .selectAll("line")
       .data(graph.links)
       .enter().append("line")
-      .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+      .style("stroke", function(d) { return 'orange'; })
+      .style("stroke-width", function(d) { return Math.sqrt(d.value); });
 
   var node = g.append("g").attr("class", "nodes")
       .selectAll("circle")
@@ -113,15 +113,15 @@ function drawThePicture() {
       .force("link")
       .links(graph.links);
 
-  // global; to be refactored later
-  simu = simulation;
+  //svg.call(zoom);
 
-  d3.select(".button1").on("click", zoomedIn);
-  d3.select(".button2").on("click", zoomedOut);
-  d3.select(".button3").on("click", resetted);
+  // global elements
+  view.svg = svg;
+  view.zoom = zoom;
+  view.simu = simulation;
 
-  svg.call(zoom);
-
+  // additional gui elements
+  addButtons();
   addPanels();
   addIcons();
 
@@ -158,18 +158,6 @@ function drawThePicture() {
     g.attr("transform", d3.event.transform);
   }
 
-  function zoomedIn() {
-    svg.transition().duration(750).call(zoom.scaleBy, 1.50);
-  }
-
-  function zoomedOut() {
-    svg.transition().duration(750).call(zoom.scaleBy, 0.75);
-  }
-
-  function resetted() {
-    svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity);
-  }
-
   function resized() {
     var width = window.innerWidth,
         height = window.innerHeight;
@@ -177,8 +165,8 @@ function drawThePicture() {
     simulation
       .force("center", d3.forceCenter(width / 2, height / 2))
       .alphaTarget(1).restart();
-    resizePanels();
     resizeButtons();
+    resizePanels();
     resizeIcons();
   }
 
@@ -186,9 +174,13 @@ function drawThePicture() {
     d.fx = null;
     d.fy = null;
     simulation.alphaTarget(1).restart();
+    //refreshIcons();
+    console.log(d);
   }
 
   function clickedRight(d) {
+    view.obj = d;
+    refreshIcons();
     console.log(d);
   }
 

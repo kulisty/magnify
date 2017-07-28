@@ -21,6 +21,15 @@ function resizeIcons() {
     //.style("top", height-2*h-2*m + "px");
     .style("top", height-h-m + "px");
 
+  d3.select('body').selectAll(".board")
+    .transition().duration(500)
+    .style("left", width-w-m-2*p + "px")
+    .style("top", height-h-w-3*p + "px");
+
+}
+
+function refreshIcons() {
+  d3.select(".info").text(view.obj.url);
 }
 
 function addIcons() {
@@ -77,7 +86,25 @@ function addIcons() {
     .style("border-radius", "2px");
 
   //i.text(file.data.project.name+"@"+file.data.project.owner+"#"+file.data.project.commit);
-  i.text(file.data.project.origin+"#"+file.data.project.commit);
+  //i.text(file.data.project.origin);
+  i.text("right-click to select...");
+
+  // Add board for drawing content related to icon actions
+  var b = d3.select("body").append("div").attr("class", "board")
+    .style("left", width + "px")
+    .style("top", height + "px")
+    .style("opacity", 0.75)
+    .style("position", "absolute")
+    .style("width", "470px")
+    .style("height", "470px")
+    .style("padding", "5px")
+    .style("text-align", "left")
+    .style("font", "14px sans-serif")
+    //.style("background", "rgba(0, 0, 0, 0.8)")
+    .style("background", "#f0f0f0")
+    .style("color", "#000")
+    .style("border", "0px")
+    .style("border-radius", "2px");
 
   resizeIcons();
 
@@ -107,19 +134,179 @@ function onIcon(d) {
 
 function onIcon_git(d) {
   //pan.html('');
-  //remote.shell.openExternal(sub.url);
-  remote.shell.openExternal("http://google.pl");
+  //remote.shell.openExternal("http://google.pl");
+  remote.shell.openExternal(view.obj.url);
+  //remote.shell.openExternal(file.data.project.origin);
 }
 
 function onIcon_bug(d) {
-  pan.html('');
-  remote.shell.openExternal(sub.url+'/issues');
+  //pan.html('');
+  remote.shell.openExternal(file.data.project.origin+'/issues');
 }
 
 function onIcon_archive(d) {
-  pan.html('');
-  // remote.shell.openExternal('https://github.com/kulisty/sova');
+  //pan.html('');
+  remote.shell.openExternal(file.data.project.origin+'/archive/master.zip');
+}
 
+function onIcon_desktop(d) {
+  var pan = d3.select('body').selectAll(".board");
+  pan.html('');
+}
+
+function onIcon_qrcode(d) {
+  var pan = d3.select('body').selectAll(".board");
+  pan.html('');
+  var svg_string = qr.imageSync(view.obj.url, { type: 'svg' });
+  //var qr_svg = qr.image(sub.url, { type: 'svg' });
+  // qr_svg.pipe(fs.createWriteStream('qrcode.svg'));
+  pan.html(svg_string);
+  pan.select("svg")
+    //.attr("viewBox", "0 0 50 50")
+    .attr("width", 470)
+    .attr("height", 470);
+}
+
+function onIcon_photo(d) {
+  var pan = d3.select('body').selectAll(".board");
+  pan.html('');
+  // d3.selectAll(".graph").node().getBoundingClientRect();
+  // zoom.translate()[1] / zoom.scale()
+  var svg_rect =
+    d3.selectAll(".nodes")
+      .node()
+      .getBBox();
+  var r = Math.max(svg_rect.width, svg_rect.height);
+  var x = svg_rect.x;
+  var y = svg_rect.y;
+  //
+  var svg_html_n =
+    d3.selectAll(".nodes")
+      //.attr("version", 1.1)
+      //.attr("xmlns", "http://www.w3.org/2000/svg")
+      .node()
+      //.parentNode
+      .innerHTML;
+  var svg_html_l =
+    d3.selectAll(".links")
+      //.attr("version", 1.1)
+      //.attr("xmlns", "http://www.w3.org/2000/svg")
+      .node()
+      //.parentNode
+      .innerHTML;
+  //
+  var svg_string =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="'+470+'" height="'+470+'" viewBox="'+ x +' '+ y +' '+ r +' '+ r +'">' +
+    svg_html_l +
+    svg_html_n +
+    '</svg>';
+  pan.html(svg_string);
+}
+
+function onIcon_fileimage(d) {
+  var pan = d3.select('body').selectAll(".board");
+  pan.html('');
+  var svg_rect =
+    d3.selectAll(".nodes")
+      .node()
+      .getBBox();
+  var r = Math.max(svg_rect.width, svg_rect.height);
+  var x = svg_rect.x;
+  var y = svg_rect.y;
+  var svg_html_n =
+    d3.selectAll(".nodes")
+      .node()
+      .innerHTML;
+  var svg_html_l =
+    d3.selectAll(".links")
+      .node()
+      .innerHTML;
+  var svg_string =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="'+470+'" height="'+470+'" viewBox="'+ x +' '+ y +' '+ r +' '+ r +'">' +
+    svg_html_l +
+    svg_html_n +
+    '</svg>';
+  var imgsrc = 'data:image/svg+xml;base64,'+ btoa(svg_string);
+  var img = '<img src="'+imgsrc+'">';
+  d3.select('body')
+    .append("canvas")
+    .attr("style", "display:none")
+    .attr("width", 470)
+    .attr("height", 470);
+  var canvas = document.querySelector("canvas"),
+  	  context = canvas.getContext("2d");
+  var image = new Image;
+  image.src = imgsrc;
+  image.onload = function() {
+	  context.drawImage(image, 0, 0);
+	  var canvasdata = canvas.toDataURL("image/png");
+	  var pngimg = '<img src="'+canvasdata+'">';
+    pan.html(pngimg);
+    var a = document.createElement("a");
+	  //a.download = "file.png";
+    a.download = path.basename(file.name, '.json')+'.png';
+	  a.href = canvasdata;
+	  a.click();
+  };
+  d3.select('body').selectAll('canvas').remove();
+}
+
+function onIcon_filetext(d) {
+  var pan = d3.select('body').selectAll(".board");
+  pan.html('');
+  var svg_rect =
+    d3.selectAll(".nodes")
+      .node()
+      .getBBox();
+  var r = Math.max(svg_rect.width, svg_rect.height);
+  var x = svg_rect.x;
+  var y = svg_rect.y;
+  var svg_html_n =
+    d3.selectAll(".nodes")
+      .node()
+      .innerHTML;
+  var svg_html_l =
+    d3.selectAll(".links")
+      .node()
+      .innerHTML;
+  var svg_string =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="'+470+'" height="'+470+'" viewBox="'+ x +' '+ y +' '+ r +' '+ r +'">' +
+    svg_html_l +
+    svg_html_n +
+    '</svg>';
+  var imgsrc = 'data:image/svg+xml;base64,'+ btoa(svg_string);
+  var img = '<img src="'+imgsrc+'">';
+  var image = new Image;
+  image.src = imgsrc;
+  image.onload = function() {
+    pan.html(img);
+    var a = document.createElement("a");
+	  //a.download = "file.svg";
+    a.download = path.basename(file.name, '.json')+'.svg';
+	  a.href = imgsrc;
+	  a.click();
+  };
+}
+
+function onIcon_info(d) {
+  var pan = d3.select('body').selectAll(".board");
+  pan.html(
+    '<pre>' +
+    'PROJECT' + '</br>' +
+    'origin : ' + file.data.project.origin + '</br>' +
+    'commit : ' + file.data.project.commit + '</br>' +
+    'owner  : ' + file.data.project.owner  + '</br>' +
+    'name   : ' + file.data.project.name   + '</br>' +
+    '</pre>' +
+    '<pre>' +
+    'GRAPH' + '</br>' +
+    'nodes  : ' + file.data.graph.nodes.length   + '</br>' +
+    'links  : ' + file.data.graph.links.length   + '</br>' +
+    '</pre>'
+  );
+}
+
+function onIcon_slider(d) {
   // Add time slider
   // formatDate = d3.time.format("%y/%m/%d");
   //  formatDate = d3.time.format("%Y-%m-%d");
@@ -180,53 +367,10 @@ function onIcon_archive(d) {
   //slider.attr("transform", "translate(" + (window.innerWidth - 500) + "," + 70 + ")");
   slider.transition().duration(500).style("opacity", 1.0);
   slider.attr("transform", "translate(" + 10 + "," + 10 + ")");
-
-}
-
-function onIcon_desktop(d) {
-  pan.html('');
-}
-
-function onIcon_qrcode(d) {
-  pan.html('');
-  var svg_string = qr.imageSync(sub.url, { type: 'svg' });
-  //var qr_svg = qr.image(sub.url, { type: 'svg' });
-  // qr_svg.pipe(fs.createWriteStream('qrcode.svg'));
-  pan.html(svg_string);
-  pan.select("svg")
-    //.attr("viewBox", "0 0 50 50")
-    .attr("width", 470)
-    .attr("height", 320);
-}
-
-function onIcon_photo(d) {
-  pan.html('');
-  // d3.selectAll(".graph").node().getBoundingClientRect();
-  // zoom.translate()[1] / zoom.scale()
-  var svg_rect =
-    d3.selectAll(".graph")
-      .node()
-      .getBBox();
-  var r = Math.max(svg_rect.width, svg_rect.height);
-  var x = svg_rect.x;
-  var y = svg_rect.y;
-  //
-  var svg_html =
-    d3.selectAll(".graph")
-      //.attr("version", 1.1)
-      //.attr("xmlns", "http://www.w3.org/2000/svg")
-      .node()
-      //.parentNode
-      .innerHTML;
-  //
-  var svg_string =
-    '<svg xmlns="http://www.w3.org/2000/svg" width="'+470+'" height="'+320+'" viewBox="'+ x +' '+ y +' '+ r +' '+ r +'">' +
-    svg_html +
-    '</svg>';
-  pan.html(svg_string);
 }
 
 function onIcon_piechart(d) {
+  var pan = d3.select('body').selectAll(".board");
   pan.html('');
   pan.append("div")
      .attr("id", "chart");
@@ -263,6 +407,7 @@ function onIcon_piechart(d) {
 }
 
 function onIcon_areachart(d){
+  var pan = d3.select('body').selectAll(".board");
   pan.html('');
   pan.append("div")
      .attr("id", "chart");
@@ -294,6 +439,7 @@ function onIcon_areachart(d){
 }
 
 function onIcon_barchart(d) {
+  var pan = d3.select('body').selectAll(".board");
   pan.html('');
   pan.append("div")
      .attr("id", "chart");
@@ -323,6 +469,7 @@ function onIcon_barchart(d) {
 }
 
 function onIcon_linechart(d){
+  var pan = d3.select('body').selectAll(".board");
   pan.html('');
   pan.append("div")
      .attr("id", "chart");
@@ -356,6 +503,7 @@ function onIcon_linechart(d){
 }
 
 function onIcon_building(d){
+  var pan = d3.select('body').selectAll(".board");
   pan.html('');
   pan.append("div")
      .attr("id", "chart");
@@ -412,6 +560,7 @@ function onIcon_building(d){
 }
 
 function onIcon_dashboard(d) {
+  var pan = d3.select('body').selectAll(".board");
   pan.html('');
   // CHART1
   pan.append("div")
@@ -478,6 +627,7 @@ function onIcon_dashboard(d) {
 }
 
 function onIcon_history(d) {
+  var str = d3.select('body').selectAll(".board");
   str.html('');
 
   var width = 470,
@@ -536,104 +686,4 @@ function onIcon_history(d) {
   }
 
   d3.select(self.frameElement).style("height", height + "px");
-}
-
-function onIcon_fileimage(d) {
-  pan.html('');
-  var svg_rect =
-    d3.selectAll(".graph")
-      .node()
-      .getBBox();
-  var r = Math.max(svg_rect.width, svg_rect.height);
-  var x = svg_rect.x;
-  var y = svg_rect.y;
-  var svg_html =
-    d3.selectAll(".graph")
-      .node()
-      .innerHTML;
-  var svg_string =
-    '<svg xmlns="http://www.w3.org/2000/svg" width="'+470+'" height="'+320+'" viewBox="'+ x +' '+ y +' '+ r +' '+ r +'">' +
-    svg_html +
-    '</svg>';
-  var imgsrc = 'data:image/svg+xml;base64,'+ btoa(svg_string);
-  var img = '<img src="'+imgsrc+'">';
-  d3.select('body')
-    .append("canvas")
-    .attr("style", "display:none")
-    .attr("width", 470)
-    .attr("height", 320);
-  var canvas = document.querySelector("canvas"),
-  	  context = canvas.getContext("2d");
-  var image = new Image;
-  image.src = imgsrc;
-  image.onload = function() {
-	  context.drawImage(image, 0, 0);
-	  var canvasdata = canvas.toDataURL("image/png");
-	  var pngimg = '<img src="'+canvasdata+'">';
-    pan.html(pngimg);
-    var a = document.createElement("a");
-	  //a.download = "file.png";
-    a.download = path.basename(view.file, '.json')+'.png';
-	  a.href = canvasdata;
-	  a.click();
-  };
-  d3.select('body').selectAll('canvas').remove();
-}
-
-function onIcon_filetext(d) {
-  pan.html('');
-  var svg_rect =
-    d3.selectAll(".graph")
-      .node()
-      .getBBox();
-  var r = Math.max(svg_rect.width, svg_rect.height);
-  var x = svg_rect.x;
-  var y = svg_rect.y;
-  var svg_html =
-    d3.selectAll(".graph")
-      .node()
-      .innerHTML;
-  var svg_string =
-    '<svg xmlns="http://www.w3.org/2000/svg" width="'+470+'" height="'+320+'" viewBox="'+ x +' '+ y +' '+ r +' '+ r +'">' +
-    svg_html +
-    '</svg>';
-  var imgsrc = 'data:image/svg+xml;base64,'+ btoa(svg_string);
-  var img = '<img src="'+imgsrc+'">';
-  var image = new Image;
-  image.src = imgsrc;
-  image.onload = function() {
-    pan.html(img);
-    var a = document.createElement("a");
-	  //a.download = "file.svg";
-    a.download = path.basename(view.file, '.json')+'.svg';
-	  a.href = imgsrc;
-	  a.click();
-  };
-}
-
-function onIcon_info(d) {
-  pan.html(
-    '<pre>' +
-    'PROJECT' + '</br>' +
-    'origin : ' + view.model.project.origin + '</br>' +
-    'commit : ' + view.model.project.commit + '</br>' +
-    'owner  : ' + view.model.project.owner  + '</br>' +
-    'name   : ' + view.model.project.name   + '</br>' +
-    '</pre>' +
-    '<pre>' +
-    'COMMITS' + '</br>' +
-    'nodes  : ' + view.model.commits.nodes.length   + '</br>' +
-    'links  : ' + view.model.commits.links.length   + '</br>' +
-    '</pre>' +
-    '<pre>' +
-    'FILES' + '</br>' +
-    'nodes  : ' + view.model.files.nodes.length   + '</br>' +
-    'links  : ' + view.model.files.links.length   + '</br>' +
-    '</pre>' +
-    '<pre>' +
-    'FUNCTIONS' + '</br>' +
-    'nodes  : ' + view.model.functions.nodes.length   + '</br>' +
-    'links  : ' + view.model.functions.links.length   + '</br>' +
-    '</pre>'
-  );
 }
