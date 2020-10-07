@@ -25,10 +25,11 @@
   },
   "homepage": "https://github.com/kulisty/magnify#readme",
   "dependencies": {
+    "c3": "0.4.11",
+    "d3": "4.7.4",
     "electron": "1.6.2",
     "font-awesome": "4.7.0",
-    "d3": "4.7.4",
-    "c3": "0.4.11",
-    "pivottable": "2.3.0"
+    "pivottable": "2.3.0",
+    "qr-image": "3.2.0"
   }
 }
