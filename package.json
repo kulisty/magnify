@@ -27,7 +27,7 @@
   "dependencies": {
     "c3": "0.4.11",
     "d3": "4.7.4",
-    "electron": "1.6.2",
+    "electron": "9.4.0",
     "font-awesome": "4.7.0",
     "pivottable": "2.3.0",
     "qr-image": "3.2.0"
